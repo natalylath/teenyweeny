@@ -11,6 +11,7 @@
 	<!-- css -->
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/select2.css"/>
+	<link rel="stylesheet" href="css/jquery.fancybox.css"/>
 	<!--[if gte IE 9]>
 	  <style type="text/css">
 	    .gradient {
@@ -32,7 +33,7 @@
 				<span class="time-icon"></span>Без выходных с 9:00 до 22:00
 			</div>
 			<div class="fright">
-				<a href="" class="underline"><span class="help-icon"></span>Нужна помощь</a>
+				<a href="#layer-help" class="underline fancybox"><span class="help-icon"></span>Нужна помощь</a>
 			</div>
 		</div>
 	</div>
@@ -82,29 +83,63 @@
 	<div class="menu">
 		<div class="width float-cont">
 			<div class="menu-item">
-				<a href=""><span class="menu-ico menu1"></span><span class="menu-txt">Собаки</span></a>
+				<a href="" class="menu-link">
+					<span class="menu-ico menu1"></span><span class="menu-txt">Собаки</span>
+					<span class="sh-fix"></span>
+				</a>
+				<div class="submenu">
+					<table>
+						<tr>
+							<td>
+								<ul class="submenu-list">
+									<li><a href="">Корма</a></li>
+									<li><a href="">Здоровье</a></li>
+									<li><a href="">Гигиена и уборка</a></li>
+									<li><a href="">Уход</a></li>
+									<li><a href="">Лежаки, домики</a></li>
+									<li><a href="">Миски</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="submenu-list">
+									<li><a href="">Ошейники, поводки</a></li>
+									<li><a href="">Игрушки</a></li>
+									<li><a href="">Одежда, обувь, аксессуары</a></li>
+									<li><a href="">Транспортировка</a></li>
+									<li><a href="">Ступеньки</a></li>
+								</ul>
+							</td>
+							<td class="submenu-spec">
+								<h5>товар недели</h5>
+								<a href="" class="submenu-spec-img"><img src="images/upload/c1.jpg" alt=""/></a>
+								<a href="" class="submenu-spec-link">Royal Canin сухой корм для щенков</a>
+								<div class="submenu-spec-pr">300 руб</div>
+							</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 			<div class="menu-item">
-				<a href=""><span class="menu-ico menu2"></span><span class="menu-txt">Кошки</span></a>
+				<a href="" class="menu-link"><span class="menu-ico menu2"></span><span class="menu-txt">Кошки</span><span class="sh-fix"></a>
 			</div>
 			<div class="menu-item">
-				<a href=""><span class="menu-ico menu3"></span><span class="menu-txt">Грызуны</span></a>
+				<a href="" class="menu-link"><span class="menu-ico menu3"></span><span class="menu-txt">Грызуны</span><span class="sh-fix"></a>
 			</div>
 			<div class="menu-item">
-				<a href=""><span class="menu-ico menu4"></span><span class="menu-txt">Рыбки</span></a>
+				<a href="" class="menu-link"><span class="menu-ico menu4"></span><span class="menu-txt">Рыбки</span><span class="sh-fix"></a>
 			</div>
 			<div class="menu-item">
-				<a href=""><span class="menu-ico menu5"></span><span class="menu-txt">Птицы</span></a>
+				<a href="" class="menu-link"><span class="menu-ico menu5"></span><span class="menu-txt">Птицы</span><span class="sh-fix"></a>
 			</div>
 			<div class="menu-item">
-				<a href=""><span class="menu-ico menu6"></span><span class="menu-txt">Рептилии</span></a>
+				<a href="" class="menu-link"><span class="menu-ico menu6"></span><span class="menu-txt">Рептилии</span><span class="sh-fix"></a>
 			</div>
 			<div class="menu-item">
-				<a href=""><span class="menu-ico menu7"></span><span class="menu-txt">Для хозяев</span></a>
+				<a href="" class="menu-link"><span class="menu-ico menu7"></span><span class="menu-txt">Для хозяев</span><span class="sh-fix"></a>
 			</div>
 			<div class="fright">
-				<div class="menu-item"><a href="" class="underline">Топ-20</a></div>
-				<div class="menu-item last"><a href="" class="underline">Sale</a></div>
+				<div class="menu-item no-submenu"><a href="" class="menu-link underline">Топ-20</a></div>
+				<div class="menu-item last no-submenu"><a href="" class="menu-link underline">Sale</a></div>
 			</div>
 		</div>
 	</div>
@@ -287,15 +322,33 @@
 			</div>
 			<div class="tab-box selected float-cont">
 				<div class="catalog-item">
-					<div class="catalog-item-img"><a href=""><img src="images/upload/c1.jpg" alt=""/></a></div>
+					<div class="quick-view-btn">
+						<span class="qv"></span>Быстрый просмотр
+					</div>
+					<div class="catalog-item-img">
+						<a href=""><img src="images/upload/c1.jpg" alt=""/></a>
+					</div>
 					<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
 					<div class="catalog-item-title"><a href="">Adult Neutered Small Dog, корм для собак мелких пород</a></div>
-					<div class="catalog-item-price">
-						<select class="select2">
-							<option data-volume="3,5 кг">1 625 Р</option>
-							<option selected data-volume="2 кг">920 Р</option>
-							<option data-volume="0,5 кг">550 Р</option>
-						</select>
+					<div class="float-cont">
+						<div class="catalog-item-price">
+							<div class="fs11">Цена</div>
+							<select class="select2-complex">
+								<option data-volume="3,5 кг">1 625 Р</option>
+								<option selected data-volume="2 кг">920 Р</option>
+								<option data-volume="0,5 кг">550 Р</option>
+							</select>
+						</div>
+						<div class="catalog-item-count">
+							<div class="fs11">Кол-во</div>
+							<select class="select2">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
 					</div>
 					<div class="btn-cont"><a href="" class="btn">Купить</a></div>
 					<div class="catalog-item-category">
@@ -307,16 +360,34 @@
 				<div class="catalog-sep"></div>
 
 				<div class="catalog-item">
-					<div class="catalog-item-img"><a href=""><img src="images/upload/c1.jpg" alt=""/></a></div>
+					<div class="quick-view-btn">
+						<span class="qv"></span>Быстрый просмотр
+					</div>
+					<div class="catalog-item-img">
+						<a href=""><img src="images/upload/c2.jpg" alt=""/></a>
+					</div>
 					<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
 					<div class="catalog-item-title"><a href="">Adult Neutered Small Dog, корм для собак мелких пород</a></div>
-					<div class="catalog-item-price">
-						<select class="select2">
-							<option data-volume="7,5 кг">2 625 Р</option>
-							<option data-volume="4,5 кг">1 050 Р</option>
-							<option data-volume="1 кг">700 Р</option>
-						</select>
-					</div>
+					<div class="float-cont">
+						<div class="catalog-item-price">
+							<div class="fs11">Цена</div>
+							<select class="select2-complex">
+								<option selected data-volume="3,5 кг">10 625 Р</option>
+								<option data-volume="2 кг">920 Р</option>
+								<option data-volume="0,5 кг">550 Р</option>
+							</select>
+						</div>
+						<div class="catalog-item-count">
+							<div class="fs11">Кол-во</div>
+							<select class="select2">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>	
 					<div class="btn-cont"><a href="" class="btn">Купить</a></div>
 					<div class="catalog-item-category">
 						В категории
@@ -327,16 +398,34 @@
 				<div class="catalog-sep"></div>
 
 				<div class="catalog-item">
-					<div class="catalog-item-img"><a href=""><img src="images/upload/c1.jpg" alt=""/></a></div>
-					<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
-					<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков, живущих в городских условиях</a></div>
-					<div class="catalog-item-price">
-						<select class="select2">
-							<option data-volume="7,5 кг">2 625 Р</option>
-							<option data-volume="4,5 кг">1 050 Р</option>
-							<option data-volume="1 кг">700 Р</option>
-						</select>
+					<div class="quick-view-btn">
+						<span class="qv"></span>Быстрый просмотр
 					</div>
+					<div class="catalog-item-img">
+						<a href=""><img src="images/upload/c3.jpg" alt=""/></a>
+					</div>
+					<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
+					<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков, живущих в городских...</a></div>
+					<div class="float-cont">
+						<div class="catalog-item-price">
+							<div class="fs11">Цена</div>
+							<select class="select2-complex">
+								<option selected data-volume="20 кг">109 625 Р</option>
+								<option data-volume="2 кг">920 Р</option>
+								<option data-volume="0,5 кг">550 Р</option>
+							</select>
+						</div>
+						<div class="catalog-item-count">
+							<div class="fs11">Кол-во</div>
+							<select class="select2">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>	
 					<div class="btn-cont"><a href="" class="btn">Купить</a></div>
 					<div class="catalog-item-category">
 						В категории
@@ -347,16 +436,34 @@
 				<div class="catalog-sep"></div>
 
 				<div class="catalog-item">
-					<div class="catalog-item-img"><a href=""><img src="images/upload/c1.jpg" alt=""/></a></div>
+					<div class="quick-view-btn">
+						<span class="qv"></span>Быстрый просмотр
+					</div>
+					<div class="catalog-item-img">
+						<a href=""><img src="images/upload/c4.jpg" alt=""/></a>
+					</div>
 					<div class="catalog-item-brand"><a href="">Pedigree Dentastix</a></div>
 					<div class="catalog-item-title"><a href="">Лакомство для собак для ухода за зубами</a></div>
-					<div class="catalog-item-price">
-						<select class="select2">
-							<option data-volume="7,5 кг">2 625 Р</option>
-							<option selected data-volume="4,5 кг">1 050 Р</option>
-							<option data-volume="1 кг">700 Р</option>
-						</select>
-					</div>
+					<div class="float-cont">
+						<div class="catalog-item-price">
+							<div class="fs11">Цена</div>
+							<select class="select2-complex">
+								<option selected data-volume="13,5 кг">10 625 Р</option>
+								<option data-volume="2 кг">920 Р</option>
+								<option data-volume="0,5 кг">550 Р</option>
+							</select>
+						</div>
+						<div class="catalog-item-count">
+							<div class="fs11">Кол-во</div>
+							<select class="select2">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>	
 					<div class="btn-cont"><a href="" class="btn">Купить</a></div>
 					<div class="catalog-item-category">
 						В категории
@@ -412,7 +519,7 @@
 						<p>Качественные товары, бесплатный возврат, вежливое обращение!
 						Подробнее о нашей компании вы можете прочитать на странице.</p>
 					</div>
-					<a href="" class="btn">О нас</a>
+					<a href="" class="btn btn-wide">О нас</a>
 				</div>
 			</div>
 			<div class="help-cont">
@@ -479,7 +586,7 @@
 						<td>
 							<div class="dig">05</div>
 							<div class="dig-desc">
-							Сохрание товаров<br/>в списки избранного
+							Сохранение товаров<br/>в списки избранного
 							</div>
 						</td>
 					</tr>
@@ -580,7 +687,8 @@
 			<div class="f-catalog">
 				<div class="h4 black">Каталог</div>
 				<ul>
-					<li><a href=""><img src="images/ico/dog.png" alt="" class="link-ico"/>Собаки</a></li>
+					<li><a href=""><img src="images/ico/dog.png" alt="" class="link-ico"/>Собаки</a>
+					</li>
 					<li><a href=""><img src="images/ico/cat.png" alt="" class="link-ico"/>Кошки</a></li>
 					<li><a href=""><img src="images/ico/rodent.png" alt="" class="link-ico"/>Грызуны</a></li>
 					<li><a href=""><img src="images/ico/fish.png" alt="" class="link-ico"/>Рыбки</a></li>
@@ -603,6 +711,10 @@
 		<div class="width">
 			2014г. © TeenyWeeny.
 		</div>
+	</div>
+
+	<div class="layer" id="layer-help">
+		test
 	</div>
 	
 <!-- jquery -->	

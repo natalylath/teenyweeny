@@ -27,20 +27,19 @@ Version: 3.5.2 Timestamp: Sat Nov  1 14:43:36 EDT 2014
 
 .select2-container .select2-choice {
     display: block;
-    height: 39px;
+    height: 28px;
     padding: 0;
     overflow: hidden;
     position: relative;
 
     border: 1px solid #c3c3c3;
-    border-bottom: none;
     white-space: nowrap;
-    line-height: 39px;
+    line-height: 28px;
     color: #000;
     font-size: 13px;
     text-decoration: none;
 
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
 
     background-clip: padding-box;
 
@@ -74,7 +73,7 @@ html[dir="rtl"] .select2-container .select2-choice {
 }
 
 .select2-container .select2-choice > .select2-chosen {
-    margin-right: 26px;
+    margin-right: 20px;
     display: block;
     overflow: hidden;
 
@@ -83,6 +82,7 @@ html[dir="rtl"] .select2-container .select2-choice {
     text-overflow: ellipsis;
     float: none;
     width: auto;
+    padding-left: 6px;
 }
 
 html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
@@ -337,6 +337,9 @@ html[dir="rtl"] .select2-results {
     list-style: none;
     display: list-item;
     background-image: none;
+    line-height: 30px;
+    overflow: hidden;
+    padding-right: 20px;
 }
 
 .select2-results li.select2-result-with-children > .select2-result-label {
@@ -644,4 +647,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
     width: 100px;
     height: 100px;
     overflow: scroll;
+}
+
+.select2-results .select2-result-label {
+    padding-left: 6px;
 }
