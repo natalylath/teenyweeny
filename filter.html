@@ -147,7 +147,7 @@
 	</div>
 
 	<div class="width">
-		<div class="float-cont">
+		<div class="float-cont breadcrumb-cont">
 			<div class="breadcrumb fleft">
 				<a href="" class="bread">Главная</a><span class="sep">/</span>
 				<a href="" class="bread">Собаки</a><span class="sep">/</span>
@@ -165,8 +165,36 @@
 		</div>
 		<div class="float-cont">
 			<div class="sidebar">
-				<div class="breed-cont">
-					<a href="" class="breed-btn btn-big btn">Выбрать породу</a>
+				<div class="breed-cont popup-cont">
+					<a href="#" class="popup-btn btn-big btn breed-btn" data-yoffset="50">Выбрать породу</a>
+					<div class="tip-layer">
+						<div class="tip-corner"></div>
+						<div class="tip-content">
+							У нас есть специальные товары для некоторых пород. Выберите породу и посмотрите!
+						</div>
+					</div>
+					<div class="popup-layer">
+						<div class="popup-inner">
+							<form>
+								Любимая порода
+								<div class="tags">
+									<!-- see catalog_breed.html page for variant of this block -->
+								</div>
+								<div class="autocomplete-cont">
+									<input type="text" class="tag-input" value="Ма"/>
+									<a href="" class="btn autocomplete-submit">Выбрать</a>
+									<div class="autocomplete">
+										<div class="autocomplete-line">Мальтезе</div>
+										<div class="autocomplete-line">Малая аппенинская гончая</div>
+										<div class="autocomplete-line">Малинуа</div>
+										<div class="autocomplete-line">Малый брабансон</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="popup-close"></div>
+						<div class="popup-corner"></div>
+					</div>
 				</div>
 				<div class="level-up"><a href="">Каталог для собак</a></div>
 				<div class="filter-cont sh">
@@ -181,8 +209,10 @@
 					</div>
 					<div class="filter-block opened default-opened">
 						<div class="filter-title">Цена:<span class="filter-title-arrow"></span></div>
-						<div class="slider-form">
-							<div class="slider-range"></div>
+						<div class="slider-form filter-content">
+							<div class="slider-range-cont">
+								<div class="slider-range"></div>
+							</div>	
 							<div class="float-cont">
 								<div class="fleft">
 									от
@@ -282,15 +312,53 @@
 									<span class="qv"></span>Быстрый просмотр
 								</div>
 								<div class="catalog-item-img">
-									<a href=""><img src="images/upload/c3.jpg" alt=""/></a>
+									<a href=""><img src="images/upload/c1.jpg" alt=""/></a>
 								</div>
-								<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
-								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков, живущих в городских...</a></div>
+								<div class="catalog-item-brand"><a href="">OZ-Pet</a></div>
+								<div class="catalog-item-title"><a href="">Корм универсальный для собак</a></div>
 								<div class="float-cont">
 									<div class="catalog-item-price">
 										<div class="fs11">Цена</div>
 										<select class="select2-complex">
-											<option selected data-volume="20 кг">109 625 Р</option>
+											<option selected data-volume="2,5 кг">725 Р</option>
+											<option data-volume="1 кг">320 Р</option>
+											<option data-volume="0,5 кг">150 Р</option>
+										</select>
+									</div>
+									<div class="catalog-item-count">
+										<div class="fs11">Кол-во</div>
+										<select class="select2">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>	
+								<div class="btn-cont"><a href="" class="btn">Купить</a></div>
+								<div class="catalog-item-category">
+									В категории
+									<div class="catalog-item-category-link"><a href="">Уход за зубами</a>, <a href="">Лакомство для собак</a></div>
+								</div>
+							</div>
+
+							<div class="catalog-sep"></div>
+
+							<div class="catalog-item">
+								<div class="quick-view-btn">
+									<span class="qv"></span>Быстрый просмотр
+								</div>
+								<div class="catalog-item-img">
+									<a href=""><img src="images/upload/c2.jpg" alt=""/></a>
+								</div>
+								<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
+								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков...</a></div>
+								<div class="float-cont">
+									<div class="catalog-item-price">
+										<div class="fs11">Цена</div>
+										<select class="select2-complex">
+											<option selected data-volume="3,5 кг">1 200 Р</option>
 											<option data-volume="2 кг">920 Р</option>
 											<option data-volume="0,5 кг">550 Р</option>
 										</select>
@@ -320,53 +388,15 @@
 									<span class="qv"></span>Быстрый просмотр
 								</div>
 								<div class="catalog-item-img">
-									<a href=""><img src="images/upload/c3.jpg" alt=""/></a>
+									<a href=""><img src="images/upload/c1.jpg" alt=""/></a>
 								</div>
 								<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
-								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков, живущих в городских...</a></div>
+								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков...</a></div>
 								<div class="float-cont">
 									<div class="catalog-item-price">
 										<div class="fs11">Цена</div>
 										<select class="select2-complex">
-											<option selected data-volume="20 кг">109 625 Р</option>
-											<option data-volume="2 кг">920 Р</option>
-											<option data-volume="0,5 кг">550 Р</option>
-										</select>
-									</div>
-									<div class="catalog-item-count">
-										<div class="fs11">Кол-во</div>
-										<select class="select2">
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</div>
-								</div>	
-								<div class="btn-cont"><a href="" class="btn">Купить</a></div>
-								<div class="catalog-item-category">
-									В категории
-									<div class="catalog-item-category-link"><a href="">Консервы для щенков</a></div>
-								</div>
-							</div>
-
-							<div class="catalog-sep"></div>
-
-							<div class="catalog-item">
-								<div class="quick-view-btn">
-									<span class="qv"></span>Быстрый просмотр
-								</div>
-								<div class="catalog-item-img">
-									<a href=""><img src="images/upload/c3.jpg" alt=""/></a>
-								</div>
-								<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
-								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков, живущих в городских...</a></div>
-								<div class="float-cont">
-									<div class="catalog-item-price">
-										<div class="fs11">Цена</div>
-										<select class="select2-complex">
-											<option selected data-volume="20 кг">109 625 Р</option>
+											<option selected data-volume="3,5 кг">1 200 Р</option>
 											<option data-volume="2 кг">920 Р</option>
 											<option data-volume="0,5 кг">550 Р</option>
 										</select>
@@ -399,12 +429,126 @@
 									<a href=""><img src="images/upload/c3.jpg" alt=""/></a>
 								</div>
 								<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
-								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков, живущих в городских...</a></div>
+								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков...</a></div>
 								<div class="float-cont">
 									<div class="catalog-item-price">
 										<div class="fs11">Цена</div>
 										<select class="select2-complex">
-											<option selected data-volume="20 кг">109 625 Р</option>
+											<option selected data-volume="3,5 кг">1 200 Р</option>
+											<option data-volume="2 кг">920 Р</option>
+											<option data-volume="0,5 кг">550 Р</option>
+										</select>
+									</div>
+									<div class="catalog-item-count">
+										<div class="fs11">Кол-во</div>
+										<select class="select2">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>	
+								<div class="btn-cont"><a href="" class="btn">Купить</a></div>
+								<div class="catalog-item-category">
+									В категории
+									<div class="catalog-item-category-link"><a href="">Консервы для щенков</a></div>
+								</div>
+							</div>
+
+							<div class="catalog-sep"></div>
+
+							<div class="catalog-item">
+								<div class="quick-view-btn">
+									<span class="qv"></span>Быстрый просмотр
+								</div>
+								<div class="catalog-item-img">
+									<a href=""><img src="images/upload/c1.jpg" alt=""/></a>
+								</div>
+								<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
+								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков...</a></div>
+								<div class="float-cont">
+									<div class="catalog-item-price">
+										<div class="fs11">Цена</div>
+										<select class="select2-complex">
+											<option selected data-volume="3,5 кг">1 200 Р</option>
+											<option data-volume="2 кг">920 Р</option>
+											<option data-volume="0,5 кг">550 Р</option>
+										</select>
+									</div>
+									<div class="catalog-item-count">
+										<div class="fs11">Кол-во</div>
+										<select class="select2">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>	
+								<div class="btn-cont"><a href="" class="btn">Купить</a></div>
+								<div class="catalog-item-category">
+									В категории
+									<div class="catalog-item-category-link"><a href="">Консервы для щенков</a></div>
+								</div>
+							</div>
+
+							<div class="catalog-sep"></div>
+
+							<div class="catalog-item">
+								<div class="quick-view-btn">
+									<span class="qv"></span>Быстрый просмотр
+								</div>
+								<div class="catalog-item-img">
+									<a href=""><img src="images/upload/c2.jpg" alt=""/></a>
+								</div>
+								<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
+								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков...</a></div>
+								<div class="float-cont">
+									<div class="catalog-item-price">
+										<div class="fs11">Цена</div>
+										<select class="select2-complex">
+											<option selected data-volume="3,5 кг">1 200 Р</option>
+											<option data-volume="2 кг">920 Р</option>
+											<option data-volume="0,5 кг">550 Р</option>
+										</select>
+									</div>
+									<div class="catalog-item-count">
+										<div class="fs11">Кол-во</div>
+										<select class="select2">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>	
+								<div class="btn-cont"><a href="" class="btn">Купить</a></div>
+								<div class="catalog-item-category">
+									В категории
+									<div class="catalog-item-category-link"><a href="">Консервы для щенков</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="line">
+							<div class="catalog-item">
+								<div class="quick-view-btn">
+									<span class="qv"></span>Быстрый просмотр
+								</div>
+								<div class="catalog-item-img">
+									<a href=""><img src="images/upload/c2.jpg" alt=""/></a>
+								</div>
+								<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
+								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков...</a></div>
+								<div class="float-cont">
+									<div class="catalog-item-price">
+										<div class="fs11">Цена</div>
+										<select class="select2-complex">
+											<option selected data-volume="3,5 кг">1 200 Р</option>
 											<option data-volume="2 кг">920 Р</option>
 											<option data-volume="0,5 кг">550 Р</option>
 										</select>
@@ -437,12 +581,12 @@
 									<a href=""><img src="images/upload/c3.jpg" alt=""/></a>
 								</div>
 								<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
-								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков, живущих в городских...</a></div>
+								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков...</a></div>
 								<div class="float-cont">
 									<div class="catalog-item-price">
 										<div class="fs11">Цена</div>
 										<select class="select2-complex">
-											<option selected data-volume="20 кг">109 625 Р</option>
+											<option selected data-volume="3,5 кг">1 200 Р</option>
 											<option data-volume="2 кг">920 Р</option>
 											<option data-volume="0,5 кг">550 Р</option>
 										</select>
@@ -472,15 +616,15 @@
 									<span class="qv"></span>Быстрый просмотр
 								</div>
 								<div class="catalog-item-img">
-									<a href=""><img src="images/upload/c3.jpg" alt=""/></a>
+									<a href=""><img src="images/upload/c2.jpg" alt=""/></a>
 								</div>
 								<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
-								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков, живущих в городских...</a></div>
+								<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков...</a></div>
 								<div class="float-cont">
 									<div class="catalog-item-price">
 										<div class="fs11">Цена</div>
 										<select class="select2-complex">
-											<option selected data-volume="20 кг">109 625 Р</option>
+											<option selected data-volume="3,5 кг">1 200 Р</option>
 											<option data-volume="2 кг">920 Р</option>
 											<option data-volume="0,5 кг">550 Р</option>
 										</select>
