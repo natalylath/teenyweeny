@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 var path = {
     build: {
-        html: 'build',
+        html: 'build/',
         fonts: 'build/static/fonts/',
         css: 'build/static/css/',
         js: 'build/static/js/',
@@ -28,7 +28,7 @@ var path = {
         html: 'src/templates/**/*.html',
         fonts: 'src/static/fonts/**/*.*',
         css: 'src/static/css/**/*.css',
-        scss: 'src/static/css/**/*.scss',
+        scss: 'src/static/scss/**/*.scss',
         js: 'src/static/js/**/*.js',
         img: 'src/static/images/**/*.*'
     },
@@ -59,6 +59,7 @@ gulp.task('html:build', function () {
 gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
+        .pipe(reload({stream: true}));
 });
 
 gulp.task('css:build', function () {
@@ -103,10 +104,10 @@ gulp.task('watch', function(){
     watch([path.watch.fonts], function(event, cb) {
         gulp.start('fonts:build');
     });
-    watch([path.watch.style], function(event, cb) {
+    watch([path.watch.css], function(event, cb) {
         gulp.start('css:build');
     });
-    watch([path.watch.style], function(event, cb) {
+    watch([path.watch.scss], function(event, cb) {
         gulp.start('scss:build');
     });
     watch([path.watch.img], function(event, cb) {
