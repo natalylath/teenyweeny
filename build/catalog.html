@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title>ТиниВини</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width"/>
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <link rel="stylesheet" href="static/css/select2.css"/>
+    <link rel="stylesheet" href="static/css/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="static/css/jquery.bxslider.css"/>
+    <link rel="stylesheet" href="static/css/jquery-ui-1.10.4.custom.css"/>
+
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+<div class="service-top">
+    <div class="width float-cont">
+        <div class="fleft">
+            <a href=""class="city"><span class="city-icon"></span>Мой город: <span class="underline">Москва</span></a>
+        </div>
+        <div class="fleft">
+            <span class="delivery-icon"></span>Бесплатная доставка от 999
+        </div>
+        <div class="fleft">
+            <span class="time-icon"></span>Без выходных с 9:00 до 22:00
+        </div>
+        <div class="fright">
+            <a href="#layer-help" class="underline fancybox"><span class="help-icon"></span>Нужна помощь</a>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="width">
+        <div class="float-cont">
+            <a href="index.html" class="logo"></a>
+            <div class="fright">
+                <form class="search-block">
+                    <input type="text" class="search-input" placeholder="Найти в каталоге" />
+                    <input type="submit" class="search-sub" value=""/>
+                    <div class="tip">Например, <a href="">Royal Canin Urban Life</a></div>
+                </form>
+                <div class="shop-block">
+                    <div class="cab-link"><a href="">Личный кабинет</a></div>
+                    <div class="shop-cart float-cont">
+                        <div class="fleft">
+                            <img src="static/images/ico/cart.png" alt="" class="shop-cart-img"/>
+                            <div class="price-cont">
+                                <div class="price">13 890 Р</div>
+                                <div class="fs11">В корзину</div>
+                            </div>
+                        </div>
+                        <a href="" class="btn"><span class="btn-inner">Оформить</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="float-cont">
+            <ul class="service-menu">
+                <li class="first"><a href="">Доставка</a></li>
+                <li><a href="">Оплата</a></li>
+                <li><a href="">Возврат</a></li>
+                <li><a href="">Безопасность</a></li>
+                <li><a href="">Контакты</a></li>
+                <li class="last"><a href="">О нас</a></li>
+            </ul>
+            <div class="contact-block">
+                <div class="ph">+7(495)111-11-11</div>
+                <a href="" class="underline">Заказать обратный звонок</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu">
+    <div class="width float-cont">
+        <div class="menu-item">
+            <a href="" class="menu-link">
+                <span class="menu-ico menu1"></span><span class="menu-txt">Собаки</span>
+                <span class="sh-fix"></span>
+            </a>
+            <div class="submenu">
+                <table>
+                    <tr>
+                        <td>
+                            <ul class="submenu-list">
+                                <li><a href="">Корма</a></li>
+                                <li><a href="">Здоровье</a></li>
+                                <li><a href="">Гигиена и уборка</a></li>
+                                <li><a href="">Уход</a></li>
+                                <li><a href="">Лежаки, домики</a></li>
+                                <li><a href="">Миски</a></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="submenu-list">
+                                <li><a href="">Ошейники, поводки</a></li>
+                                <li><a href="">Игрушки</a></li>
+                                <li><a href="">Одежда, обувь, аксессуары</a></li>
+                                <li><a href="">Транспортировка</a></li>
+                                <li><a href="">Ступеньки</a></li>
+                            </ul>
+                        </td>
+                        <td class="submenu-spec">
+                            <h5>товар недели</h5>
+                            <a href="" class="submenu-spec-img"><img src="static/images/upload/c1.jpg" alt=""/></a>
+                            <a href="" class="submenu-spec-link">Royal Canin сухой корм для щенков</a>
+                            <div class="submenu-spec-pr">300 руб</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="" class="menu-link"><span class="menu-ico menu2"></span><span class="menu-txt">Кошки</span><span class="sh-fix"></a>
+        </div>
+        <div class="menu-item">
+            <a href="" class="menu-link"><span class="menu-ico menu3"></span><span class="menu-txt">Грызуны</span><span class="sh-fix"></a>
+        </div>
+        <div class="menu-item">
+            <a href="" class="menu-link"><span class="menu-ico menu4"></span><span class="menu-txt">Рыбки</span><span class="sh-fix"></a>
+        </div>
+        <div class="menu-item">
+            <a href="" class="menu-link"><span class="menu-ico menu5"></span><span class="menu-txt">Птицы</span><span class="sh-fix"></a>
+        </div>
+        <div class="menu-item">
+            <a href="" class="menu-link"><span class="menu-ico menu6"></span><span class="menu-txt">Рептилии</span><span class="sh-fix"></a>
+        </div>
+        <div class="menu-item">
+            <a href="" class="menu-link"><span class="menu-ico menu7"></span><span class="menu-txt">Для хозяев</span><span class="sh-fix"></a>
+        </div>
+        <div class="fright">
+            <div class="menu-item no-submenu"><a href="" class="menu-link underline">Топ-20</a></div>
+            <div class="menu-item last no-submenu"><a href="" class="menu-link underline">Sale</a></div>
+        </div>
+    </div>
+</div>
+
+<div class="width">
+	<div class="float-cont breadcrumb-cont">
+		<div class="breadcrumb fleft">
+			<a href="" class="bread">Главная</a><span class="sep">/</span>
+			<a href="" class="bread-current">Собаки</a>
+		</div>
+	</div>
+	<div class="float-cont">
+		<div class="sidebar">
+			<div class="breed-cont popup-cont">
+				<a href="#" class="popup-btn btn-big btn breed-btn" data-yoffset="50">Выбрать породу</a>
+				<div class="tip-layer">
+					<div class="tip-corner"></div>
+					<div class="tip-content">
+						У нас есть специальные товары для некоторых пород. Выберите породу и посмотрите!
+					</div>
+				</div>
+				<div class="popup-layer">
+					<div class="popup-inner">
+						<form>
+							Любимая порода
+							<div class="tags">
+								<div class="tag">Мальтезе <span class="tag-remove"></span></div>
+							</div>
+							<div class="autocomplete-cont">
+								<input type="text" class="tag-input" value="Ма"/>
+								<a href="" class="btn autocomplete-submit">Выбрать</a>
+								<div class="autocomplete">
+									<div class="autocomplete-line">Мальтезе</div>
+									<div class="autocomplete-line">Малая аппенинская гончая</div>
+									<div class="autocomplete-line">Малинуа</div>
+									<div class="autocomplete-line">Малый брабансон</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="popup-close"></div>
+					<div class="popup-corner"></div>
+				</div>
+			</div>
+
+			<div class="filter-cont sh">
+				<div class="small-section">
+					<div class="section-title">
+						<span class="section-title-txt">Все для</span>
+						<img class="title-ico" alt="" src="static/images/ico/dog2.png">
+						<span class="section-title-txt right">собак</span>
+					</div>
+				</div>
+				<ul class="catalog-list">
+					<li><a href="filter.html" class="catalog-list-link">Корма</a></li>
+					<li><a href="filter.html" class="catalog-list-link">Здоровье</a></li>
+					<li><a href="filter.html" class="catalog-list-link">Гигиена и уборка</a></li>
+					<li><a href="filter.html" class="catalog-list-link">Уход</a></li>
+					<li><a href="filter.html" class="catalog-list-link">Лежаки, домики</a></li>
+					<li><a href="filter.html" class="catalog-list-link">Ошейники, поводки</a></li>
+					<li><a href="filter.html" class="catalog-list-link">Одежда, обувь, аксессуары</a></li>
+					<li><a href="filter.html" class="catalog-list-link">Игрушки</a></li>
+					<li><a href="filter.html" class="catalog-list-link">Транспортировка</a></li>
+					<li><a href="filter.html" class="catalog-list-link">Ступеньки</a></li>
+					<li><a href="filter.html" class="catalog-list-link">Миски</a></li>
+				</ul>
+			</div>
+
+			<div class="filter-cont sh">
+				<div class="catalog-title">Популярные бренды</div>
+				<ul class="catalog-list mb0">
+					<li><a href="brand.html" class="catalog-list-link">Acana</a></li>
+					<li><a href="brand.html" class="catalog-list-link">Dr. Clauder`s</a></li>
+					<li><a href="brand.html" class="catalog-list-link">Happy Dog</a></li>
+					<li><a href="brand.html" class="catalog-list-link">Pedigree</a></li>
+					<li><a href="brand.html" class="catalog-list-link">Royal Canin</a></li>
+				</ul>
+				<div class="brand-more">
+					<ul class="catalog-list">
+						<li><a href="brand.html" class="catalog-list-link">New brand 1</a></li>
+						<li><a href="brand.html" class="catalog-list-link">New brand 2</a></li>
+						<li><a href="brand.html" class="catalog-list-link">Happy Dog</a></li>
+						<li><a href="brand.html" class="catalog-list-link">Pedigree</a></li>
+						<li><a href="brand.html" class="catalog-list-link">Royal Canin</a></li>
+						<li><a href="brand.html" class="catalog-list-link">New brand 1</a></li>
+						<li><a href="brand.html" class="catalog-list-link">New brand 2</a></li>
+						<li><a href="brand.html" class="catalog-list-link">Happy Dog</a></li>
+						<li><a href="brand.html" class="catalog-list-link">Pedigree</a></li>
+						<li><a href="brand.html" class="catalog-list-link">Royal Canin</a></li>
+						<li><a href="brand.html" class="catalog-list-link">New brand 1</a></li>
+						<li><a href="brand.html" class="catalog-list-link">New brand 2</a></li>
+						<li><a href="brand.html" class="catalog-list-link">Happy Dog</a></li>
+						<li><a href="brand.html" class="catalog-list-link">Pedigree</a></li>
+						<li><a href="brand.html" class="catalog-list-link">Royal Canin</a></li>
+					</ul>
+					<div class="brand-btn-cont">
+						<a href="" class="btn btn-block" data-originaltxt="Все бренды (92)">Все бренды (92)</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right-content">
+			<h1 class="v1">Каталог для собак</h1>
+
+			<div class="main-catalog float-cont">
+				<div class="main-catalog-item">
+					<div class="main-catalog-item-img"><a href="filter.html"><img src="static/images/upload/m1.jpg" alt=""/></a></div>
+					<div class="main-catalog-item-name"><a href="filter.html">Корма</a></div>
+				</div>
+				<div class="main-catalog-item">
+					<div class="main-catalog-item-img"><a href="filter.html"><img src="static/images/upload/m2.jpg" alt=""/></a></div>
+					<div class="main-catalog-item-name"><a href="filter.html">Здоровье</a></div>
+				</div>
+				<div class="main-catalog-item">
+					<div class="main-catalog-item-img"><a href="filter.html"><img src="static/images/upload/m3.jpg" alt=""/></a></div>
+					<div class="main-catalog-item-name"><a href="filter.html">Гигиена и уборка</a></div>
+				</div>
+				<div class="main-catalog-item every4">
+					<div class="main-catalog-item-img"><a href="filter.html"><img src="static/images/upload/m4.jpg" alt=""/></a></div>
+					<div class="main-catalog-item-name"><a href="filter.html">Уход</a></div>
+				</div>
+				<div class="main-catalog-item">
+					<div class="main-catalog-item-img"><a href="filter.html"><img src="static/images/upload/m5.jpg" alt=""/></a></div>
+					<div class="main-catalog-item-name"><a href="filter.html">Лежаки, домики</a></div>
+				</div>
+				<div class="main-catalog-item">
+					<div class="main-catalog-item-img"><a href="filter.html"><img src="static/images/upload/m6.jpg" alt=""/></a></div>
+					<div class="main-catalog-item-name"><a href="filter.html">Игрушки</a></div>
+				</div>
+				<div class="main-catalog-item">
+					<div class="main-catalog-item-img"><a href="filter.html"><img src="static/images/upload/m7.jpg" alt=""/></a></div>
+					<div class="main-catalog-item-name"><a href="filter.html">Ошейники, поводки</a></div>
+				</div>
+				<div class="main-catalog-item every4">
+					<div class="main-catalog-item-img"><a href="filter.html"><img src="static/images/upload/m8.jpg" alt=""/></a></div>
+					<div class="main-catalog-item-name"><a href="filter.html">Одежда, обувь, аксессуары</a></div>
+				</div>
+				<div class="main-catalog-item">
+					<div class="main-catalog-item-img"><a href="filter.html"><img src="static/images/upload/m9.jpg" alt=""/></a></div>
+					<div class="main-catalog-item-name"><a href="filter.html">Транспортировка</a></div>
+				</div>
+				<div class="main-catalog-item">
+					<div class="main-catalog-item-img"><a href="filter.html"><img src="static/images/upload/m10.jpg" alt=""/></a></div>
+					<div class="main-catalog-item-name"><a href="filter.html">Ступеньки</a></div>
+				</div>
+				<div class="main-catalog-item">
+					<div class="main-catalog-item-img"><a href="filter.html"><img src="static/images/upload/m11.jpg" alt=""/></a></div>
+					<div class="main-catalog-item-name"><a href="filter.html">Миски</a></div>
+				</div>
+			</div>
+			<div class="tabs-cont">
+				<div class="float-cont">
+					<ul class="tabs">
+						<li class="first selected">Новинки<span class="sh-fix"></span></li>
+						<li>Топ-20<span class="sh-fix"></span></li>
+						<li class="last">Распродажа<span class="sh-fix"></span></li>
+					</ul>
+				</div>
+				<div class="tab-box selected float-cont">
+					<div class="catalog-item">
+						<div class="quick-view-btn">
+							<span class="qv"></span>Быстрый просмотр
+						</div>
+						<div class="catalog-item-img">
+							<a href=""><img src="static/images/upload/c1.jpg" alt=""/></a>
+						</div>
+						<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
+						<div class="catalog-item-title"><a href="">Adult Neutered Small Dog, корм для собак мелких пород</a></div>
+						<div class="float-cont">
+							<div class="catalog-item-price">
+								<div class="fs11">Цена</div>
+								<select class="select2-complex">
+									<option data-volume="3,5 кг">1 625 Р</option>
+									<option selected data-volume="2 кг">920 Р</option>
+									<option data-volume="0,5 кг">550 Р</option>
+								</select>
+							</div>
+							<div class="catalog-item-count">
+								<div class="fs11">Кол-во</div>
+								<select class="select2">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+						<div class="btn-cont"><a href="" class="btn">Купить</a></div>
+						<div class="catalog-item-category">
+							В категории
+							<div class="catalog-item-category-link"><a href="">Консервы для щенков</a></div>
+						</div>
+					</div>
+
+					<div class="catalog-sep"></div>
+
+					<div class="catalog-item">
+						<div class="quick-view-btn">
+							<span class="qv"></span>Быстрый просмотр
+						</div>
+						<div class="catalog-item-img">
+							<a href=""><img src="static/images/upload/c2.jpg" alt=""/></a>
+						</div>
+						<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
+						<div class="catalog-item-title"><a href="">Adult Neutered Small Dog, корм для собак мелких пород</a></div>
+						<div class="float-cont">
+							<div class="catalog-item-price">
+								<div class="fs11">Цена</div>
+								<select class="select2-complex">
+									<option selected data-volume="3,5 кг">10 625 Р</option>
+									<option data-volume="2 кг">920 Р</option>
+									<option data-volume="0,5 кг">550 Р</option>
+								</select>
+							</div>
+							<div class="catalog-item-count">
+								<div class="fs11">Кол-во</div>
+								<select class="select2">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+						<div class="btn-cont"><a href="" class="btn">Купить</a></div>
+						<div class="catalog-item-category">
+							В категории
+							<div class="catalog-item-category-link"><a href="">Корм для кастрированных собак</a></div>
+						</div>
+					</div>
+
+					<div class="catalog-sep"></div>
+
+					<div class="catalog-item">
+						<div class="quick-view-btn">
+							<span class="qv"></span>Быстрый просмотр
+						</div>
+						<div class="catalog-item-img">
+							<a href=""><img src="static/images/upload/c3.jpg" alt=""/></a>
+						</div>
+						<div class="catalog-item-brand"><a href="">Royal Canin</a></div>
+						<div class="catalog-item-title"><a href="">Urban Life Junior Wet, корм влажный для щенков, живущих в городских...</a></div>
+						<div class="float-cont">
+							<div class="catalog-item-price">
+								<div class="fs11">Цена</div>
+								<select class="select2-complex">
+									<option selected data-volume="20 кг">109 625 Р</option>
+									<option data-volume="2 кг">920 Р</option>
+									<option data-volume="0,5 кг">550 Р</option>
+								</select>
+							</div>
+							<div class="catalog-item-count">
+								<div class="fs11">Кол-во</div>
+								<select class="select2">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+						<div class="btn-cont"><a href="" class="btn">Купить</a></div>
+						<div class="catalog-item-category">
+							В категории
+							<div class="catalog-item-category-link"><a href="">Консервы для щенков</a></div>
+						</div>
+					</div>
+
+				</div>
+				<div class="tab-box">контент2...</div>
+				<div class="tab-box">контент3...</div>
+			</div>
+
+			<div class="sh p20 def-color">
+				<h3>Что нужно вашей собаке?</h3>
+				<p>Небольшой сео текст с названиями популярных брендов и товарами.</p>
+
+				<p>Магазин «ТинниВинни» создавался, чтобы ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+
+				<p>Небольшой сео текст с названиями популярных брендов и товарами.</p>
+
+				<p>Магазин «ТинниВинни» создавался, чтобы ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+			</div>
+
+			<div class="sh p20 def-color">
+				<h3 class="mb10">Вам будет полезно</h3>
+				<div class="link-small"><a href="" class="underline">Все записи</a></div>
+
+				<div class="float-cont">
+					<div class="blog-short-item w300">
+						<a href="" class="blog-short-img"><img src="static/images/upload/b1.jpg" alt=""/></a>
+						<div class="blog-short-date">15 декабря 2015</div>
+						<div class="blog-short-title"><a href="">Выбираем корм для щенка</a></div>
+						<div class="blog-short-txt">Как правильно выбрать корм: в зависимости от породы, возраста и активности вашего щенка.</div>
+					</div>
+
+					<div class="blog-short-item w300">
+						<a href="" class="blog-short-img"><img src="static/images/upload/b1.jpg" alt=""/></a>
+						<div class="blog-short-date">15 декабря 2015</div>
+						<div class="blog-short-title"><a href="">Дрессировка собаки - с какого возраста начать...</a></div>
+						<div class="blog-short-txt">Как правильно выбрать корм: в зависимости от породы, возраста и активности вашего щенка.</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="search-bottom">
+    <div class="width float-cont">
+        <div class="search-bottom-txt">
+            Самый большой интернет-магазин товаров для домашних животных.
+        </div>
+        <form class="search-block">
+            <input type="text" class="search-input" placeholder="Найти в каталоге" />
+            <input type="submit" class="search-sub" value=""/>
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="width float-cont">
+        <div class="f-delivery">
+            <div class="h4 black">Скучно не будет</div>
+            <form class="delivery-block">
+                <input type="text" class="delivery-input" placeholder="Ваш e-mail" />
+                <input type="submit" class="delivery-sub" value="ОК"/>
+            </form>
+            <div class="delivery-note">Полезная рассылка<br/>2 раза в месяц</div>
+            <div class="float-cont">
+                <a href="" class="soc-ico"><img src="static/images/ico/vk.png" alt=""/></a>
+                <a href="" class="soc-ico"><img src="static/images/ico/tw.png" alt=""/></a>
+                <a href="" class="soc-ico"><img src="static/images/ico/od.png" alt=""/></a>
+                <a href="" class="soc-ico mr0"><img src="static/images/ico/fb.png" alt=""/></a>
+            </div>
+        </div>
+        <div class="f-menu">
+            <div class="h4 black">Покупателям</div>
+            <ul>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Способы оплаты</a></li>
+                <li><a href="">Покупателям</a></li>
+                <li><a href="">Возврат товара</a></li>
+                <li><a href="">Вопросы и ответы</a></li>
+                <li><a href="">Узнать статус заказа</a></li>
+                <li><a href="">Письмо директору</a></li>
+            </ul>
+        </div>
+        <div class="f-menu">
+            <div class="h4 black">ТинниВинни</div>
+            <ul>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Партнерам</a></li>
+                <li><a href="">Правовая информация</a></li>
+                <li><a href="">Работа у нас</a></li>
+                <li><a href="">Карта сайта</a></li>
+            </ul>
+        </div>
+        <div class="f-catalog">
+            <div class="h4 black">Каталог</div>
+            <ul>
+                <li><a href=""><img src="static/images/ico/dog.png" alt="" class="link-ico"/>Собаки</a>
+                </li>
+                <li><a href=""><img src="static/images/ico/cat.png" alt="" class="link-ico"/>Кошки</a></li>
+                <li><a href=""><img src="static/images/ico/rodent.png" alt="" class="link-ico"/>Грызуны</a></li>
+                <li><a href=""><img src="static/images/ico/fish.png" alt="" class="link-ico"/>Рыбки</a></li>
+                <li><a href=""><img src="static/images/ico/bird.png" alt="" class="link-ico"/>Птицы</a></li>
+                <li><a href=""><img src="static/images/ico/reptile.png" alt="" class="link-ico"/>Рептилии</a></li>
+                <li><a href=""><img src="static/images/ico/host.png" alt="" class="link-ico"/>Для хозяев</a></li>
+            </ul>
+        </div>
+        <div class="f-contacts">
+            <div class="h4 black">Свяжитесь с нами</div>
+            <div class="ph">+7(495)111-11-11</div>
+            <div class="mb20 fs13"><a href="mailto:shop@teenyweeny.ru">shop@teenyweeny.ru</a></div>
+            <div class="mb20"><a href=""><img src="static/images/upload/ya.png" alt="" class="img-block"/></a></div>
+            <div><img src="static/images/ico/pay-img.png" alt=""/></div>
+        </div>
+    </div>
+</div>
+
+<div class="after-footer">
+    <div class="width">
+        2014г. © TeenyWeeny.
+    </div>
+</div>
+
+<div class="layer" id="layer-help">
+    test
+</div>
+
+<!-- jquery -->
+<script src="static/js/libs/jquery-1.10.1.min.js"></script>
+<script src="static/js/select2.min.js"></script>
+<script src="static/js/plugins.js"></script>
+<script src="static/js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="static/js/script.js"></script>
+</body>
+</html>
