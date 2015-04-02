@@ -39,9 +39,9 @@
 }
 
 .fancybox-opened .fancybox-skin {
-	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .fancybox-outer, .fancybox-inner {
@@ -75,8 +75,8 @@
 	max-height: 100%;
 }
 
-#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background-image: url(fancybox_sprite.png);
+#fancybox-loading, .fancybox-prev span, .fancybox-next span {
+	background-image: url(../images/ico/fancybox_sprite.png);
 }
 
 #fancybox-loading {
@@ -94,17 +94,20 @@
 #fancybox-loading div {
 	width: 44px;
 	height: 44px;
-	background: url(fancybox_loading.gif) center center no-repeat;
+	background: url(../images/ico/fancybox_loading.gif) center center no-repeat;
 }
 
 .fancybox-close {
 	position: absolute;
-	top: -18px;
-	right: -18px;
-	width: 36px;
-	height: 36px;
+	top: -20px;
+	right: -20px;
+	width: 30px;
+	height: 30px;
 	cursor: pointer;
 	z-index: 8040;
+	background: url(../images/ico/close1.png) no-repeat center center #fff;
+	border-radius: 50px;
+	box-shadow: 0 2px 7px 1px rgba(0,0,0,0.3);
 }
 
 .fancybox-nav {
@@ -114,7 +117,7 @@
 	height: 100%;
 	cursor: pointer;
 	text-decoration: none;
-	background: transparent url(blank.gif); /* helps IE */
+	background: transparent url(../images/ico/blank.gif); /* helps IE */
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	z-index: 8040;
 }
@@ -183,7 +186,7 @@
 	overflow: hidden;
 	display: none;
 	z-index: 8010;
-	background: url(fancybox_overlay.png);
+	background: url(../images/ico/fancybox_overlay.png);
 }
 
 .fancybox-overlay-fixed {
@@ -262,12 +265,12 @@
 	   only screen and (min-device-pixel-ratio: 1.5){
 
 	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-		background-image: url(fancybox_sprite@2x.png);
+		background-image: url(../images/ico/fancybox_sprite@2x.png);
 		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 
 	#fancybox-loading div {
-		background-image: url(fancybox_loading@2x.gif);
+		background-image: url(../images/ico/fancybox_loading@2x.gif);
 		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 }

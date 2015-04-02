@@ -25,6 +25,11 @@ $(document).ready(function() {
 	priceList();
 
     $('.fancybox').fancybox({
+    	padding: 0,
+    	fitToView: false,
+    	tpl: {
+			closeBtn : '<a class="fancybox-item fancybox-close close2"></a>'
+		}
     });
 
     $(document).on('click', '.top-page', function(e) {
