@@ -1,0 +1,27 @@
+{
+  "name": "teenyweeny",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.5.2",
+    "gulp-sass": "^1.3.3",
+    "gulp": "^3.8.11"
+  },
+  "devDependencies": {
+    "gulp-rigger": "^0.5.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natalylath/teenyweeny"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natalylath/teenyweeny/issues"
+  },
+  "homepage": "https://github.com/natalylath/teenyweeny"
+}
