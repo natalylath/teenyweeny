@@ -2,24 +2,16 @@
 
 @import "_fonts";
 @import "_colors";
+@import "_mixins";
 @import "_reset";
+@import "_global";
+@import "_header";
+@import "_footer";
+@import "_content";
+@import "_titles";
+@import "_icons";
+@import "_buttons";
 
-.float-cont:before, .float-cont:after {
-  content: " ";
-  display: table;
-}
-.float-cont:after {
-  clear: both;
-}
-
-body {
-  min-width: 980px;
-}
-.width {
-  width: 940px;
-  margin: auto;
-  padding: 0 20px;
-}
 .header {
   background-color: $color-orange;
 }
@@ -147,12 +139,6 @@ a.menu-link .sh-fix {
 }
 .menu-item.last a {
   margin-right: 0;
-}
-.fleft {
-  float: left;
-}
-.fright {
-  float: right;
 }
 .service-menu {
   margin-bottom: 10px;
@@ -698,7 +684,7 @@ table.cols5 td {
   padding-top: 2px;
 }
 .def-color {
-  color: #787d82;
+  color: $color-text-grey;
 }
 .def-color h1,
 .def-color h2,
@@ -726,7 +712,7 @@ table.cols5 td {
 }
 .blog-short-date {
   margin-bottom: 5px;
-  color: #787d82;
+  color: $color-text-grey;
   font-size: 11px;
   line-height: 1em;
 }
@@ -735,7 +721,7 @@ table.cols5 td {
   margin-bottom: 5px;
 }
 .blog-short-txt {
-  color: #787d82;
+  color: $color-text-grey;
   line-height: 1.5em;
 }
 .link-small {
@@ -1011,7 +997,7 @@ ul.tabs li.selected .sh-fix {
   line-height: 17px;
 }
 .catalog-item-title a {
-  color: #787d82;
+  color: $color-text-grey;
   text-decoration: underline;
 }
 .catalog-item-title a:hover {
