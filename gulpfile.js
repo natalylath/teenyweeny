@@ -17,20 +17,20 @@ var path = {
 
     },
     src: {
-        html: 'src/templates/*.html',
-        fonts: 'src/static/fonts/**/*.*',
-        css: 'src/static/css/**/*.css',
-        scss: 'src/static/scss/**/style.scss',
-        js: 'src/static/js/**/*.js',
-        img: 'src/static/images/**/*.*'
+        html: 'templates/*.html',
+        fonts: 'static/fonts/**/*.*',
+        css: 'static/css/**/*.css',
+        scss: 'static/scss/**/style.scss',
+        js: 'static/js/**/*.js',
+        img: 'static/images/**/*.*'
     },
     watch: {
-        html: 'src/templates/**/*.html',
-        fonts: 'src/static/fonts/**/*.*',
-        css: 'src/static/css/**/*.css',
-        scss: 'src/static/scss/**/*.scss',
-        js: 'src/static/js/**/*.js',
-        img: 'src/static/images/**/*.*'
+        html: 'templates/**/*.html',
+        fonts: 'static/fonts/**/*.*',
+        css: 'static/css/**/*.css',
+        scss: 'static/scss/**/*.scss',
+        js: 'static/js/**/*.js',
+        img: 'static/images/**/*.*'
     },
     clean: './build'
 };
