@@ -1,0 +1,15 @@
+.float-cont:before,
+.float-cont:after {
+  content: " ";
+  display: table;
+}
+.float-cont:after {
+  clear: both;
+}
+
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
