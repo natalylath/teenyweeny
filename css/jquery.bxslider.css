@@ -222,19 +222,20 @@ ul.bxslider {
   background: -ms-linear-gradient(top,  #ffec56 0%,#ffd93f 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #ffec56 0%,#ffd93f 100%); /* W3C */
 }
-.bx-arrow-left a,
-.bx-arrow-right a {
-  display: inline-block;
-  width: 11px;
-  height: 17px;
-  vertical-align: middle;
-}
 .bx-arrow-left a {
   background: url(../images/ico/arrow-left.png) no-repeat;
 }
 .bx-arrow-right a {
   background: url(../images/ico/arrow-right.png) no-repeat;
 }
+.bx-arrow-left a,
+.bx-arrow-right a {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-position: center center;
+}
+
 .bx-cont {
   position: relative;
 }

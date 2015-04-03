@@ -222,6 +222,44 @@ $(document).ready(function() {
 		e.stopImmediatePropagation();
 	});
 
+	/* card scripts */
+	$('.bxslider-photo').bxSlider({
+	  	pagerCustom: '#bxpager',
+	  	minSlides: 1,
+	  	maxSlides: 1,
+	  	slideWidth: 378,
+	  	nextText: '',
+	  	prevText: '',
+	  	nextSelector: '.bxslider-photo-border .bx-arrow-right',
+		prevSelector: '.bxslider-photo-border .bx-arrow-left',
+		onSlideAfter: function ($slideElement, oldIndex, newIndex) {
+			$('.bxpager').removeClass('active');
+			var el = $('.bxpager'+'.'+'b'+ newIndex).not('.bx-clone');
+			el.addClass('active');
+		}
+	});
+
+	$('#bxpager').bxSlider({
+	  	minSlides: 4,
+	  	maxSlides: 4,
+	  	moveSlides: 1,
+	  	slideWidth: 70,
+	  	pager: false,
+	  	slideMargin: 5,
+	  	nextText: '',
+	  	prevText: '',
+	  	nextSelector: '.bxpager-cont .bx-arrow-right',
+		prevSelector: '.bxpager-cont .bx-arrow-left',
+        onSliderLoad: function (currentIndex) {
+ 			$('#bxpager .bxpager').eq(0).addClass('active');
+       	}
+	});
+	$(document).on('click','.bxpager', function() {
+		$('.bxpager').removeClass('active');
+		$(this).addClass('active');
+	});
+
+
 });
 
 
