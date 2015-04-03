@@ -21,7 +21,7 @@ body {
   padding: 0 20px;
 }
 .header {
-  background-color: #ffbf3f;
+  background-color: $color-orange;
 }
 .menu {
   background-color: $color-black;
@@ -50,13 +50,13 @@ body {
   z-index: 1000;
   padding: 30px 10px 20px 20px;
   display: none;
-  color: #000;
+  color: $color-black;
 }
 .menu-item:hover .submenu {
   display: block;
 }
 .submenu a {
-  color: #000;
+  color: $color-black;
   text-decoration: none;
 }
 .submenu a:hover {
@@ -73,7 +73,7 @@ ul.submenu-list li:last-child {
   margin-bottom: 0;
 }
 .submenu-spec {
-  border-left: 1px solid #eceaea;
+  border-left: 1px solid $color-grey-light;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -118,7 +118,7 @@ ul.submenu-list li:last-child {
 }
 .menu-item:hover a.menu-link {
   background-color: $color-white;
-  color: #000;
+  color: $color-black;
   border-radius: 5px 5px 0 0;
   position: relative;
   z-index: 30;
@@ -166,7 +166,7 @@ a.menu-link .sh-fix {
   line-height: 27px;
 }
 .service-menu li a {
-  color: #000;
+  color: $color-black;
 }
 .service-menu li.first {
   padding-left: 0;
@@ -186,7 +186,7 @@ a.menu-link .sh-fix {
   margin-right: 64px;
 }
 .header a {
-  color: #000;
+  color: $color-black;
 }
 .service-top {
   padding-top: 7px;
@@ -302,7 +302,7 @@ a.city:hover {
   border: 1px solid #fdb723;
   border-radius: 5px;
   padding: 0 18px;
-  color: #000;
+  color: $color-black;
   font-size: 13px;
   font-family: 'open_sanssemibold';
   box-shadow: 0 -3px 3px #fed466 inset;
@@ -318,7 +318,7 @@ a.city:hover {
 }
 a.btn {
   text-decoration: none;
-  color: #000;
+  color: $color-black;
 }
 .btn-wide {
   padding: 0 50px;
@@ -358,14 +358,14 @@ a.btn {
   font-size: 11px;
 }
 .search-block .tip {
-  color: #886622;
+  color: $color-link-brown;
   margin-top: 8px;
   text-align: center;
   font-size: 11px;
   line-height: 1em;
 }
 .search-block .tip a {
-  color: #886622;
+  color: $color-link-brown;
   background: url(../images/ico/dot.png) repeat-x left bottom;
   display: inline-block;
   padding-bottom: 2px;
@@ -489,10 +489,10 @@ a.promo-img:hover .go {
   border-radius: 5px;
 }
 .section-title {
-  background: #000;
+  background: $color-black;
   color: $color-white;
   font-size: 21px;
-  border: 2px solid #ffbf3f;
+  border: 2px solid $color-orange;
   border-bottom: 0;
   border-radius: 5px 5px 0 0;
   text-align: center;
@@ -500,7 +500,7 @@ a.promo-img:hover .go {
   height: 48px;
 }
 .section-body {
-  border: 2px solid #ffbf3f;
+  border: 2px solid $color-orange;
   border-top: 0;
   border-radius: 0 0 5px 5px;
   background-repeat: no-repeat;
@@ -704,7 +704,7 @@ table.cols5 td {
 .def-color h2,
 .def-color h3,
 .def-color h4 {
-  color: #000;
+  color: $color-black;
 }
 .no-float {
   float: none;
@@ -745,7 +745,7 @@ table.cols5 td {
   margin-right: 0 !important;
 }
 .search-bottom {
-  background: #000;
+  background: $color-black;
   color: $color-white;
   padding: 10px 0;
 }
@@ -773,7 +773,7 @@ table.cols5 td {
   font-size: 11px;
   padding-top: 52px;
   padding-bottom: 20px;
-  background: #ffbf3f;
+  background: $color-orange;
 }
 .f-delivery {
   float: left;
@@ -794,7 +794,7 @@ table.cols5 td {
   margin-right: 20px;
 }
 .footer a {
-  color: #000;
+  color: $color-black;
 }
 .f-menu ul li {
   margin-bottom: 9px;
@@ -929,7 +929,7 @@ ul.tabs li.selected .sh-fix {
 .catalog-sep {
   width: 1px;
   height: 350px;
-  background: #eceaea;
+  background: $color-grey-light;
   float: left;
   margin: 0 29px 0 29px;
 }
@@ -1053,7 +1053,7 @@ ul.tabs li.selected .sh-fix {
   overflow: hidden;
 }
 .alter-price .pr-cont:hover {
-  background: #eceaea;
+  background: $color-grey-light;
   cursor: pointer;
 }
 .pr-cont .pr {
@@ -1183,7 +1183,7 @@ select.select2-complex {
   background-color: $color-white;
 }
 .sort {
-  color: #000;
+  color: $color-black;
 }
 a.sort-btn {
   border: 1px solid #d9d9d9;
@@ -1198,7 +1198,7 @@ a.sort-btn {
 .sort-btn:hover {
   background-color: #d9d9d9;
   text-decoration: none;
-  color: #000;
+  color: $color-black;
 }
 .sort-btn.active {
   background-color: #17b6e8;
@@ -1226,7 +1226,7 @@ a.sort-btn {
 }
 .catalog .catalog-item {
   position: relative;
-  border-bottom: 1px solid #eceaea;
+  border-bottom: 1px solid $color-grey-light;
   padding-bottom: 20px;
   margin-bottom: 24px;
 }
@@ -1237,11 +1237,11 @@ a.sort-btn {
   margin-bottom: 20px;
 }
 .filter-cont {
-  border: 2px solid #ffbf3f;
+  border: 2px solid $color-orange;
   margin-bottom: 20px;
 }
 .catalog-title {
-  background-color: #000;
+  background-color: $color-black;
   text-align: center;
   padding: 15px;
   color: $color-white;
@@ -1335,7 +1335,7 @@ a.sort-btn {
   display: block;
 }
 .filter-content li {
-  border-bottom: 1px solid #eceaea;
+  border-bottom: 1px solid $color-grey-light;
   padding: 12px 0;
   line-height: 1em;
   cursor: pointer;
@@ -1417,7 +1417,7 @@ h5,.h5 {
 }
 .top-page:hover {
   text-decoration: none;
-  color: #000;
+  color: $color-black;
 }
 .pag-title,
 .page {
@@ -1425,7 +1425,7 @@ h5,.h5 {
   margin-right: 10px;
   height: 28px;
   line-height: 28px;
-  color: #000;
+  color: $color-black;
 }
 .page {
   border: 1px solid #d9d9d9;
@@ -1435,12 +1435,12 @@ h5,.h5 {
   text-decoration: none;
 }
 .page:hover {
-  color: #000;
+  color: $color-black;
   background: #d9d9d9;
 }
 .page.selected {
-  background: #ffbf3f;
-  border-color: #ffbf3f;
+  background: $color-orange;
+  border-color: $color-orange;
 }
 a.page {
   text-decoration: none;
@@ -1563,7 +1563,7 @@ input.tag-input {
   cursor: pointer;
 }
 .autocomplete-line:hover {
-  background: #eceaea;
+  background: $color-grey-light;
 }
 .autocomplete-submit {
   position: absolute;
@@ -1621,7 +1621,7 @@ input.tag-input {
   margin: 0 18px;
 }
 .catalog-list li a.catalog-list-link {
-  border-bottom: 1px solid #eceaea;
+  border-bottom: 1px solid $color-grey-light;
   line-height: 1em;
   padding: 13px 0;
   display: block;
@@ -1665,7 +1665,7 @@ h3.mb10 {
 }
 .brand-more .catalog-list li:first-child a.catalog-list-link {
   margin-top: 0;
-  border-top: 1px solid #eceaea;
+  border-top: 1px solid $color-grey-light;
 }
 .main-catalog-item {
   float: left;
@@ -1701,7 +1701,7 @@ h3.mb10 {
   line-height: 1em;
 }
 .subcatalog-title {
-  background: #ffbf3f;
+  background: $color-orange;
   border-radius: 5px 5px 0 0;
   padding: 18px 20px 15px;
 }
@@ -1714,7 +1714,7 @@ h2 {
   line-height: 1em;
 }
 .subcatalog-title a {
-  color: #000;
+  color: $color-black;
 }
 .subcatalog-title .fleft {
   width: 55%;
@@ -1729,7 +1729,7 @@ h2 {
 .sh.def-color strong {
   font-weight: normal;
   font-family: 'open_sanssemibold';
-  color: #000;
+  color: $color-black;
 }
 /* Алфавитный список */
 .alphabet {}
@@ -1766,7 +1766,7 @@ h2 {
 /* категории бренов*/
 .brands{}
 .brand-section {
-  border-bottom: 1px solid #eceaea;
+  border-bottom: 1px solid $color-grey-light;
 }
 .brand-section:last-child {
   border-bottom: 0;
