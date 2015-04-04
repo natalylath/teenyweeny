@@ -1,0 +1,61 @@
+.def-color h1,
+.def-color h2,
+.def-color h3,
+.def-color h4 {
+  color: $color-black;
+}
+
+.h1, h1 {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-family: 'helveticaneuecyrbold';
+  font-weight: normal;
+  margin-bottom: 24px;
+  line-height: 1em;
+}
+.right-content h1 {
+  margin-bottom: 15px;
+  padding-top: 2px;
+}
+.right-content h1.v1 {
+  padding-top: 10px;
+  margin-bottom: 40px;
+}
+.right-content h1.v2 {
+  margin-bottom: 22px;
+}
+
+h2 {
+  font-family: 'helveticaneuecyrbold';
+  font-weight: normal;
+}
+
+.h3, h3 {
+  font-size: 21px;
+  text-transform: uppercase;
+  font-family: 'helveticaneuecyrbold';
+  font-weight: normal;
+  margin-bottom: 28px;
+  line-height: 1em;
+}
+
+.h4, h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'helveticaneuecyrbold';
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.h4.black {
+  font-family: 'helveticaneuecyrblack';
+  text-transform: none;
+  margin-bottom: 15px;
+}
+
+h5,.h5 {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: 'helveticaneuecyrbold';
+  margin-bottom: 5px;
+  font-weight: normal;
+}

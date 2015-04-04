@@ -1,0 +1,74 @@
+.search-block {
+  position: relative;
+  float: left;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+.search-sub {
+  width: 32px;
+  height: 32px;
+  background: url(../images/ico/submit.png) no-repeat;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+}
+.search-sub:hover {
+  background-position: left bottom;
+}
+.search-input {
+  border-radius: 5px;
+  width: 216px;
+  padding: 0 12px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+}
+.search-block .search-sub {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+.search-block .tip {
+  color: $color-brown;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 1em;
+}
+.search-block .tip a {
+  color: $color-brown;
+  background: url(../images/ico/dot.png) repeat-x left bottom;
+  display: inline-block;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+.search-block .tip a:hover {
+  background-image: none;
+  text-decoration: none;
+}
+.search-bottom .search-block {
+  float: right;
+  width: 49%;
+  margin-right: 0;
+  margin-top: 0;
+}
+.search-bottom .search-input {
+  width: 437px;
+}
+.search-block.full {
+   width: 100%;
+   margin: 0 0 17px;
+ }
+.search-input.dark {
+  background: $color-bg-grey;
+  border: 1px solid $color-grey;
+}
+.search-block.full .search-input {
+  width: 634px;
+  color: $color-link-blue;
+  font-family: 'opensanssemibold';
+  font-size: 16px;
+  height: 38px;
+  line-height: 38px;
+}

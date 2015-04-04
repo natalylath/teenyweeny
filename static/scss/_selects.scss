@@ -1,0 +1,40 @@
+.select2-drop .pr,
+.select2-chosen .pr {
+  width: 64px;
+  font-size: 14px;
+  line-height: 28px;
+  font-family: 'opensansbold';
+  display: block;
+  float: left;
+}
+.select2-drop .val,
+.select2-chosen .val {
+  display: block;
+  float: right;
+}
+.select2-chosen {
+  overflow: hidden;
+}
+select.select2,
+select.select2-complex {
+  height: 28px;
+  line-height: 28px;
+}
+.catalog-item-price .select2,
+.catalog-item-price select {
+  width: 135px !important;
+}
+.catalog-item-count .select2,
+.catalog-item-count select {
+  width: 40px !important;
+}
+.ib {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.small-select .select2-container .select2-choice{
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+}

@@ -1,0 +1,65 @@
+.big-promo {
+  float: left;
+  width: 701px;
+  height: 356px;
+  padding-left: 11px;
+  padding-top: 2px;
+  overflow: hidden;
+  background: url(../images/pic/box.png) no-repeat;
+  margin-left: -11px;
+  margin-top: -2px;
+  position: relative;
+  border-radius: 5px;
+  z-index: 1;
+}
+.big-promo img {
+  border-radius: 4px;
+}
+.big-promo .promo-txt {
+  position: absolute;
+  left: 271px;
+  top: 145px;
+  line-height: 1.6em;
+  font-family: 'opensanssemibold';
+}
+.small-promo {
+  float: right;
+  padding-top: 1px;
+}
+a.promo-img {
+  display: block;
+  width: 248px;
+  height: 128px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  margin-top: -7px;
+}
+a.promo-img:hover {
+  text-decoration: none;
+}
+a.promo-img:hover .go {
+  text-decoration: underline;
+}
+.promo-width {
+  width: 950px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+.promo-img .promo-txt {
+  padding-left: 25px;
+  padding-top: 24px;
+  text-transform: uppercase;
+  color: $color-white;
+  font-family: 'helveticaneuecyrbold';
+  line-height: 1.3em;
+  height: 60px;
+}
+.go {
+  display: inline-block;
+  background: url(../images/ico/ar-white.png) no-repeat right center;
+  padding-right: 13px;
+  color: $color-white;
+  font-size: 11px;
+  padding-left: 25px;
+}

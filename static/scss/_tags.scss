@@ -1,0 +1,58 @@
+.tags {
+  margin-bottom: 10px;
+  margin-top: 13px;
+}
+.tag {
+  display: inline-block;
+  background: $color-blue;
+  color: $color-white;
+  border-radius: 5px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 7px 0 10px;
+  margin-bottom: 7px;
+}
+.tag-remove {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 15px;
+  background: url(../images/ico/remove.png) no-repeat;
+  cursor: pointer;
+  margin-left: 17px;
+}
+.tag-remove:hover {
+  background-position: left bottom;
+}
+input.tag-input {
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #cdcdcd;
+  background: #efefef;
+  border-radius: 5px;
+  width: 236px;
+  padding: 0 102px 0 20px;
+}
+.search-top {
+  padding: 20px 20px 3px;
+}
+.tags.toggle-tags {
+  margin-top: 16px;
+  overflow: hidden;
+}
+.tags.toggle-tags .tag {
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.tags.toggle-tags .tag.passive {
+  background: #c4c4c4;
+}
+.ver-inline-title {
+  float: left;
+  margin-right: 10px;
+  line-height: 30px;
+}
+.ver-inline .tags {
+  margin-top: 0;
+}
