@@ -1,0 +1,16 @@
+body {
+  min-width: 980px;
+}
+.width {
+  width: 940px;
+  margin: auto;
+  padding: 0 20px;
+}
+.sidebar {
+  float: left;
+  width: 220px;
+}
+.right-content {
+  float: right;
+  width: 700px;
+}

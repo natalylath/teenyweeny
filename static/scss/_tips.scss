@@ -1,0 +1,23 @@
+.tip-layer {
+  position: absolute;
+  left: 220px;
+  top: 0;
+  background: $color-white;
+  border-radius: 0 5px 5px 0;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  white-space: nowrap;
+  box-shadow: 0 3px 7px 1px rgba(0,0,0,0.3);
+  display: none;
+}
+.tip-corner {
+  width: 11px;
+  height: 11px;
+  background: url(../images/ico/tip-corner.png) no-repeat;
+  left: -10px;
+  top: 50%;
+  margin-top: -6px;
+  position: absolute;
+  display: block;
+}

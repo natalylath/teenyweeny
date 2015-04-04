@@ -1,0 +1,49 @@
+.top-page {
+  padding-right: 26px;
+  background: url(../images/ico/top-page.png) no-repeat right center;
+  min-height: 20px;
+  display: inline-block;
+  line-height: 20px;
+}
+.top-page:hover {
+  text-decoration: none;
+  color: $color-black;
+}
+.pag-title,
+.page {
+  float: left;
+  margin-right: 10px;
+  height: 28px;
+  line-height: 28px;
+  color: $color-black;
+}
+.page {
+  border: 1px solid $color-grey;
+  border-radius: 5px;
+  padding: 0 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.page:hover {
+  color: $color-black;
+  background: $color-grey;
+}
+.page.selected {
+  background: $color-orange;
+  border-color: $color-orange;
+}
+a.page {
+  text-decoration: none;
+}
+.catalog-btm {
+  background: $color-bg-grey;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.page.hidden {
+  display: none;
+}
+.catalog-btm .top-page {
+  line-height: 28px;
+  height: 28px;
+}

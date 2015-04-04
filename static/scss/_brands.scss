@@ -1,0 +1,25 @@
+.brands{}
+.brand-section {
+  border-bottom: 1px solid $color-grey-light;
+}
+.brand-section:last-child {
+  border-bottom: 0;
+}
+.brand-column {
+  display: inline-block;
+  vertical-align: top;
+}
+.brand-section-name {
+  width: 70px;
+  font: 34px/100px 'helveticaneuecyrbold';
+  text-transform: uppercase;
+}
+.brand-list {
+  width: 200px;
+  margin-right: 8px;
+  padding-top: 17px;
+}
+.brand-link {
+  line-height: 22px;
+  text-decoration: none;
+}

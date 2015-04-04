@@ -1,0 +1,36 @@
+.popup-cont {
+  position: relative;
+}
+.popup-layer {
+  position: absolute;
+  left: 0;
+  box-shadow: 0 5px 7px 1px rgba(0,0,0,0.25);
+  background: $color-white;
+  border-radius: 5px;
+  width: 400px;
+  z-index: 1000;
+  display: none;
+}
+.popup-inner {
+  padding: 20px;
+}
+.popup-close {
+  width: 14px;
+  height: 15px;
+  background: url(../images/ico/close.png) no-repeat;
+  cursor: pointer;
+  right: 13px;
+  top: 13px;
+  position: absolute;
+}
+.popup-close:hover {
+  background-position: left bottom;
+}
+.popup-corner {
+  position: absolute;
+  width: 18px;
+  height: 11px;
+  background: url(../images/ico/popup-corner.png) no-repeat;
+  top: -8px;
+  left: 20px;
+}

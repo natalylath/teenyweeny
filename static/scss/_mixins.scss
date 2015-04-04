@@ -1,0 +1,10 @@
+@mixin size($properties...){
+  @if length($properties) == 1 {
+    width: nth($properties, 1);
+    height: nth($properties, 1);
+  }
+  @else {
+    width: nth($properties, 1);
+    height: nth($properties, 2);
+  }
+}

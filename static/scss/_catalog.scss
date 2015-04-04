@@ -1,0 +1,116 @@
+.catalog {
+  background-color: $color-white;
+}
+.catalog .catalog-item {
+  position: relative;
+  border-bottom: 1px solid $color-grey-light;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+}
+.catalog .catalog-sep {
+  height: 320px;
+}
+.catalog-title {
+  background-color: $color-black;
+  text-align: center;
+  padding: 15px;
+  color: $color-white;
+  font-family: 'opensanssemibold';
+  border-radius: 4px 4px 0 0;
+}
+.catalog .catalog-item .catalog-item-category {
+  display: none;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  background: $color-white;
+  padding: 10px 0;
+  width: 180px;
+}
+.catalog .catalog-item:hover .catalog-item-category {
+  display: block;
+}
+.catalog-list {
+  margin-bottom: 13px;
+}
+.catalog-list li:first-child .inner-border {
+  margin-top: 17px;
+}
+.catalog-list li:last-child .inner-border {
+  border-bottom: medium none;
+}
+.catalog-list .inner-border {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.main-catalog-item {
+  float: left;
+  width: 160px;
+  background: $color-white;
+  border-radius: 5px;
+  box-shadow: 0 4px 7px 1px rgba(0, 0, 0, 0.3);
+  margin: 0 20px 20px 0;
+  text-align: center;
+}
+.main-catalog-item.every4 {
+  margin-right: 0;
+}
+.main-catalog-item-img {
+  height: 145px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  line-height: 145px;
+}
+.main-catalog-item-img img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-catalog-item-img a:hover img {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+.main-catalog-item-name {
+  height: 50px;
+}
+.main-catalog-item-name a {
+  font-family: 'opensanssemibold';
+  line-height: 1em;
+}
+.subcatalog-title {
+  background: $color-orange;
+  border-radius: 5px 5px 0 0;
+  padding: 18px 20px 15px;
+}
+.subcatalog-title h2 {
+  font-size: 16px;
+  line-height: 1em;
+}
+.subcatalog-title a {
+  color: $color-black;
+}
+.subcatalog-title .fleft {
+  width: 55%;
+}
+.subcatalog-title .fright {
+  text-align: right;
+  width: 43%;
+}
+.catalog.show-category .catalog-item .catalog-item-category {
+  position: relative;
+  display: block;
+  bottom: auto;
+  left: auto;
+  padding: 0;
+  height: 55px;
+  overflow: hidden;
+}
+.catalog.show-category .catalog-item {
+  padding-bottom: 7px;
+}
+.subcontent .catalog-list li:first-child .inner-border {
+  margin-top: 5px;
+}
+.subcontent .catalog-list li .inner-border {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}

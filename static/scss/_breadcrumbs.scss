@@ -1,0 +1,27 @@
+.breadcrumb {
+  font-size: 11px;
+  line-height: 1em;
+  margin-bottom: 13px;
+  overflow: hidden;
+}
+.bread {
+  float: left;
+  text-decoration: none;
+}
+.breadcrumb .sep {
+  margin: 0 5px;
+  float: left;
+}
+.bread-current {
+  font-family: 'helveticaneuecyrbold';
+  text-decoration: none;
+}
+.breadcrumb-cont {
+  margin-bottom: 5px;
+}
+.breadcrumb-cont .breadcrumb {
+  min-height: 24px;
+}
+.breadcrumb-cont .small-select {
+  margin-top: -7px;
+}

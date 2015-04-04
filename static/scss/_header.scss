@@ -1,0 +1,329 @@
+.header {
+  background-color: $color-orange;
+}
+.header a {
+  color: $color-black;
+}
+.menu {
+  background-color: $color-black;
+  color: $color-white;
+  margin-bottom: 22px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.menu .width {
+  padding-left: 0;
+  width: 960px;
+}
+.menu a {
+  color: $color-white;
+}
+.menu-item {
+  float: left;
+  position: relative;
+}
+.submenu {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  background: $color-white;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 9px 7px rgba(0,0,0,0.2);
+  z-index: 1000;
+  padding: 30px 10px 20px 20px;
+  display: none;
+  color: $color-black;
+}
+.menu-item:hover .submenu {
+  display: block;
+}
+.submenu a {
+  color: $color-black;
+  text-decoration: none;
+}
+.submenu a:hover {
+  color: $color-link-blue;
+}
+ul.submenu-list {
+  margin-right: 40px;
+  white-space: nowrap;
+}
+ul.submenu-list li {
+  margin-bottom: 13px;
+}
+ul.submenu-list li:last-child {
+  margin-bottom: 0;
+}
+.submenu-spec {
+  border-left: 1px solid $color-grey-light;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  min-width: 125px;
+}
+.submenu-spec img {
+  max-height: 85px;
+  max-width: 120px;
+}
+.submenu-spec-img {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.submenu-spec-pr {
+  font-size: 21px;
+  line-height: 1em;
+  font-family: 'opensanssemibold';
+  margin-top: 5px;
+}
+.submenu-spec-link {
+  text-decoration: underline !important;
+  font-family: 'opensanssemibold';
+  font-size: 12px;
+  line-height: 1.1em;
+}
+.submenu-spec-link:hover {
+  text-decoration: none !important;
+}
+.menu-item a.menu-link {
+  display: block;
+  line-height: 58px;
+  font-family: 'helveticaneuecyrblack';
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-right: 4px;
+  height: 58px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+.menu-item a.menu-link:hover {
+  text-decoration: none;
+}
+.menu-item:hover a.menu-link {
+  background-color: $color-white;
+  color: $color-black;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  z-index: 30;
+}
+.menu-item.no-submenu:hover a.menu-link {
+  background-color: transparent;
+  color: $color-white;
+}
+a.menu-link .sh-fix {
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  bottom: -4px;
+  left: 0;
+  display: none;
+  background-color: $color-white;
+  z-index: 2000;
+}
+.menu-item.opened a.menu-link .sh-fix,
+.menu-item:hover .sh-fix {
+  display: block;
+}
+.menu-txt {
+  display: inline-block;
+  vertical-align: middle;
+}
+.menu-item.last a {
+  margin-right: 0;
+}
+.service-menu {
+  margin-bottom: 10px;
+  float: left;
+  margin-top: 18px;
+}
+.service-menu li {
+  float: left;
+  padding: 0 27px;
+  border-right: 1px solid $color-white;
+  line-height: 27px;
+}
+.service-menu li a {
+  color: $color-black;
+}
+.service-menu li.first {
+  padding-left: 0;
+}
+.service-menu li.last {
+  border-right: 0;
+}
+.logo {
+  float: left;
+  display: block;
+  background: url(../images/ico/logo.png) no-repeat;
+  width: 261px;
+  height: 67px;
+  margin: 24px 0 4px 0;
+}
+.service-top .fleft {
+  margin-right: 64px;
+}
+.service-top {
+  padding-top: 7px;
+  padding-bottom: 3px;
+}
+.city-icon,
+.delivery-icon,
+.time-icon,
+.help-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.city-icon {
+  background: url(../images/ico/city.png) no-repeat;
+}
+.delivery-icon {
+  background: url(../images/ico/delivery.png) no-repeat;
+}
+.time-icon {
+  background: url(../images/ico/time.png) no-repeat;
+}
+.help-icon {
+  background: url(../images/ico/help.png) no-repeat;
+}
+a.menu-link.underline {
+  text-decoration: underline;
+  font-size: 13px;
+}
+a.menu-link.underline:hover {
+  text-decoration: none;
+}
+a.city {
+  text-decoration: none;
+}
+a.city:hover {
+  text-decoration: none;
+}
+.shop-block {
+  float: right;
+}
+.shop-cart {
+  background-color: $color-white;
+  border-radius: 5px;
+  height: 40px;
+  padding-left: 7px;
+  cursor: pointer;
+}
+.shop-cart .btn {
+  float: right;
+  margin-top: 3px;
+  margin-right: 3px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 11px;
+  font-family: 'helveticaneuecyrbold';
+}
+.shop-cart-img {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.cab-link {
+  height: 30px;
+  text-align: right;
+}
+.cab-link a {
+  line-height: 1em;
+  display: inline-block;
+  margin-top: 11px;
+  font-size: 11px;
+}
+.price-cont {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 7px;
+  margin-right: 7px;
+  background: url(../images/ico/ar1.png) no-repeat right center;
+  padding-right: 17px;
+}
+.price-cont .price {
+  font-family: 'opensansbold';
+  font-size: 13px;
+  line-height: 1em;
+}
+.contact-block {
+  float: right;
+  text-align: right;
+}
+.contact-block .ph,
+.f-contacts .ph {
+  font-size: 21px;
+  line-height: 1em;
+  margin-bottom: 3px;
+}
+.menu-ico {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  margin-right: 7px;
+}
+.menu1 {
+  background-image: url(../images/ico/dog.png);
+}
+.menu2 {
+  background-image: url(../images/ico/cat.png);
+}
+.menu3 {
+  background-image: url(../images/ico/rodent.png);
+}
+.menu4 {
+  background-image: url(../images/ico/fish.png);
+}
+.menu5 {
+  background-image: url(../images/ico/bird.png);
+}
+.menu6 {
+  background-image: url(../images/ico/reptile.png);
+}
+.menu7 {
+  background-image: url(../images/ico/host.png);
+}
+.top-fav {
+  float: left;
+  background: url(../images/ico/fav1.png) no-repeat;
+  padding-left: 21px;
+  min-height: 15px;
+  display: block;
+  margin-right: 20px;
+}
+.notice-block {
+  float: left;
+  position: relative;
+  margin-right: 20px;
+}
+.notice-layer {
+  position: absolute;
+  display: none;
+}
+.notice-txt {
+  background: url(../images/ico/notice.png) no-repeat;
+  padding-left: 19px;
+  display: inline-block;
+  min-height: 15px;
+  cursor: pointer;
+}
+.notice-new {
+  color: #f20000;
+}
+.person-block {
+  float: left;
+}
+.person-link {
+  background: url(../images/ico/person.png) no-repeat;
+  padding-left: 19px;
+  min-height: 15px;
+}
+.login-block {
+  padding-top: 10px;
+  margin-bottom: 5px;
+  font-size: 11px;
+  line-height: 1.3em;
+}

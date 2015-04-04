@@ -1,0 +1,110 @@
+.float-cont:before,
+.float-cont:after {
+  content: " ";
+  display: table;
+}
+.float-cont:after {
+  clear: both;
+}
+
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.no-float {
+  float: none;
+}
+
+.w240 {
+  width: 240px;
+}
+
+.mr0 {
+  margin-right: 0 !important;
+}
+.mb0 {
+  margin-bottom: 0 !important;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb25 {
+  margin-bottom: 25px;
+}
+.mb36 {
+  margin-bottom: 36px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.p20 {
+  padding: 20px;
+}
+.pl20 {
+  padding-left: 20px;
+}
+
+a.color {
+  color: $color-link-blue;
+}
+a.blue {
+  color: $color-link-blue;
+}
+a.underline {
+  text-decoration: underline;
+}
+a.underline:hover {
+  text-decoration: none;
+}
+.link-small {
+  margin-bottom: 30px;
+}
+
+.semibold {
+  font-family: 'opensanssemibold';
+}
+
+.fs11 {
+  font-size: 11px;
+}
+h4.fs13, .fs13 {
+  font-size: 13px;
+}
+
+.fs11-grey {
+  font-size: 11px;
+  color: $color-text-grey;
+  line-height: 1.1em;
+}
+
+.def-color {
+  color: $color-text-grey;
+}
+.def-color p {
+  margin-bottom: 20px;
+}
+
+.sm-grey {
+  color: $color-text-grey;
+}
+
+.img-block {
+  display: block;
+}
+
+.b {
+  font-family: 'opensansbold';
+}
+
+.bn {
+  margin-bottom: 36px;
+}
+.bn img {
+  display: block;
+}

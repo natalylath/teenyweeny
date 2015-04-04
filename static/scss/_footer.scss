@@ -1,0 +1,94 @@
+.search-bottom {
+  background: $color-black;
+  color: $color-white;
+  padding: 10px 0;
+}
+.search-bottom-txt {
+  float: left;
+  width: 49%;
+  line-height: 40px;
+}
+.footer {
+  font-size: 11px;
+  padding-top: 52px;
+  padding-bottom: 20px;
+  background: $color-orange;
+}
+.footer a {
+  color: $color-black;
+}
+.f-delivery {
+  float: left;
+  margin-right: 55px;
+  width: 170px;
+  /*padding-left: 20px;*/
+}
+.f-menu {
+  float: left;
+  margin-right: 55px;
+  max-width: 120px;
+}
+.f-catalog {
+  float: left;
+}
+.f-contacts {
+  float: right;
+  margin-right: 20px;
+}
+.f-menu ul li {
+  margin-bottom: 9px;
+  padding-top: 4px;
+}
+.f-contacts .ph {
+  margin-bottom: 5px;
+}
+.link-ico {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.soc-ico {
+  float: left;
+  margin-right: 5px;
+}
+.delivery-note {
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+.delivery-block {
+  position: relative;
+  margin-bottom: 15px;
+}
+.delivery-input {
+  border: 1px solid $color-border-orange;
+  border-radius: 2px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 50px 0 10px;
+  width: 109px;
+  background: #f4f4f4;
+  border-right: 0;
+}
+.delivery-sub {
+  background: #fcaf17;
+  border: 1px solid $color-border-orange;
+  border-width: 0 1px 0 1px;
+  cursor: pointer;
+  display: block;
+  height: 28px;
+  width: 38px;
+  position: absolute;
+  right: 0;
+  top: 1px;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 2px;
+}
+.delivery-sub:hover {
+  background: #f2a100;
+}
+.after-footer {
+  text-align: center;
+  padding: 26px 0;
+  line-height: 1em;
+}

@@ -1,0 +1,127 @@
+.catalog-item {
+  float: left;
+  width: 180px;
+  position: relative;
+}
+.catalog-sep {
+  width: 1px;
+  height: 350px;
+  background: $color-grey-light;
+  float: left;
+  margin: 0 29px 0 29px;
+}
+.catalog-item-img {
+  padding-top: 15px;
+  text-align: center;
+  height: 130px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  line-height: 130px;
+}
+.catalog-item-img img {
+  max-height: 130px;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 180px;
+}
+.catalog-item-price .fs11 {
+  margin-left: 2px;
+}
+.quick-view-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #def8ff;
+  border-radius: 5px;
+  z-index: 10;
+  padding: 7px 0 6px;
+  line-height: 1em;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+.quick-view-btn:hover {
+  background-color: #9de9ff;
+}
+.catalog-item:hover .quick-view-btn {
+  display: block;
+}
+.catalog-item:hover .catalog-item-img {
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+.qv {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 23px;
+  height: 24px;
+  background: url(../images/ico/zoom.png) no-repeat;
+}
+.catalog-item-category {
+  text-align: center;
+}
+.catalog-item-category-link {
+  min-height: 33px;
+  padding-top: 4px;
+}
+.catalog-item-category-link a {
+  color: $color-link-blue;
+}
+.catalog-item-brand {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.catalog-item-brand a {
+  font-family: 'opensanssemibold';
+  text-decoration: none;
+}
+.catalog-item-brand a:hover {
+  text-decoration: none;
+}
+.catalog-item-title {
+  text-align: center;
+  min-height: 51px;
+  overflow: hidden;
+  margin-bottom: 7px;
+  line-height: 17px;
+}
+.catalog-item-title a {
+  color: $color-text-grey;
+  text-decoration: underline;
+}
+.catalog-item-title a:hover {
+  color: $color-link-blue;
+}
+.catalog-item a.btn {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  font-family: 'opensanssemibold';
+}
+.catalog-item .btn-cont {
+  margin-bottom: 18px;
+}
+.catalog-item-price {
+  position: relative;
+  margin-bottom: 10px;
+  width: 135px;
+  float: left;
+}
+.catalog-item-count {
+  float: right;
+  width: 40px;
+}
+.super-txt {
+  vertical-align: super;
+  font-size: 10px;
+  line-height: 1em;
+  margin-left: 2px;
+}
+.line:last-child .catalog-item {
+  border-bottom: none;
+}
+.show-category .line:last-child .catalog-item {
+  margin-bottom: 0;
+}

@@ -1,0 +1,29 @@
+.blog-short-item {
+  float: left;
+  margin-right: 20px;
+  width: 210px;
+}
+.blog-short-item.w300 {
+  width: 300px;
+}
+.blog-short-img {
+  display: block;
+  width: 210px;
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.blog-short-date {
+  margin-bottom: 5px;
+  color: $color-text-grey;
+  font-size: 11px;
+  line-height: 1em;
+}
+.blog-short-title {
+  min-height: 33px;
+  margin-bottom: 5px;
+}
+.blog-short-txt {
+  color: $color-text-grey;
+  line-height: 1.5em;
+}

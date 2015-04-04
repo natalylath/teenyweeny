@@ -1,0 +1,95 @@
+.big-section {
+  width: 460px;
+  margin-bottom: 30px;
+}
+.big-section,
+.small-section {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.section-title {
+  background: $color-black;
+  color: $color-white;
+  font-size: 21px;
+  border: 2px solid $color-orange;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  font-family: 'opensanssemibold';
+  height: 48px;
+}
+.section-body {
+  border: 2px solid $color-orange;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: $color-white;
+  min-height: 226px;
+  overflow: hidden;
+  padding-bottom: 11px;
+}
+.section-body .col {
+  text-align: center;
+  width: 170px;
+  padding-top: 15px;
+}
+.section-body .col ul {
+  margin-bottom: 25px;
+}
+.section-body .col ul li {
+  margin-bottom: 4px;
+}
+.section-body .col-title {
+  margin-bottom: 26px;
+  font-family: 'opensanssemibold';
+  font-size: 14px;
+}
+.big-section .title-ico {
+  margin-top: -12px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.section-title-txt {
+  display: inline-block;
+  margin-top: 14px;
+  width: 190px;
+  text-align: right;
+}
+.section-title-txt.right {
+  text-align: left;
+}
+.small-section {
+  width: 220px;
+  margin-bottom: 20px;
+  background-color: $color-white;
+  margin-right: 20px;
+}
+.small-section.fright {
+  margin-right: 0;
+}
+.small-section .section-title {
+  font-size: 13px;
+  height: 38px;
+}
+.small-section .title-ico {
+  margin-top: -12px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.small-section .section-title-txt {
+  margin-top: 11px;
+  width: 75px;
+}
+.small-section .section-body {
+  padding-top: 122px;
+  min-height: 0;
+  padding-bottom: 29px;
+}
+.small-section .section-body .col {
+  width: 100%;
+}
