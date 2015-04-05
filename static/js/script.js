@@ -107,11 +107,11 @@ $(document).ready(function() {
 
 			if (parseInt(curValue) > MAX_PRICE) {
 				curValue = MAX_PRICE;
-			};
+			}
 			if (parseInt(curValue) < minValue) {
 				curValue = MAX_PRICE;
 				minValue = MIN_PRICE;
-			};
+			}
 
 			currentSlider.slider({values: [minValue, parseInt(curValue) ]});
 		});
@@ -129,7 +129,7 @@ $(document).ready(function() {
 				par.find('.filter-content').slideDown();
 			} else {
 				par.find('.filter-content').slideUp();
-			};
+			}
 		});
 
 		$(document).on('click', '.special-title', function() {
@@ -139,10 +139,10 @@ $(document).ready(function() {
 				par.find('.subcontent').slideDown();
 			} else {
 				par.find('.subcontent').slideUp();
-			};
+			}
 		});
 
-	};
+	}
 	filterBlock();
 
 	if ($('.bxslider').length) {
@@ -156,7 +156,7 @@ $(document).ready(function() {
 			minSlides: 6,
 			maxSlides: 6
 		});
-	};
+	}
 
 	$(document).on('click', '.sort-btn', function(e) {
 		if ($(this).hasClass('active')) {
@@ -168,7 +168,7 @@ $(document).ready(function() {
 		} else {
 			$(this).closest('.sort').find('.sort-btn').removeClass('active').removeClass('sort-up').removeClass('sort-down');
 			$(this).addClass('active').addClass('sort-down');
-		};
+		}
 		e.preventDefault();
 	});
 
@@ -178,11 +178,11 @@ $(document).ready(function() {
 		if ($(this).hasClass('opened')) {
 			if ($(this).data('yoffset') != '' && $(this).data('yoffset')) {
 				layer.css({'top': $(this).data('yoffset') + 'px'});
-			};
+			}
 			layer.show();
 		} else {
 			layer.hide();
-		};
+		}
 		e.preventDefault();
 	});
 	$(document).on('click', '.popup-close', function() {
@@ -202,7 +202,7 @@ $(document).ready(function() {
 			$(this).closest('.tag').toggleClass('passive');
 		} else {
 			(this).closest('.tag').hide();
-		};
+		}
 
 	});
 	$(document).on('click', '.autocomplete-line', function() {
@@ -218,14 +218,14 @@ $(document).ready(function() {
 			$(this).closest('.popup-cont').find('.popup-btn').removeClass('opened');
 			$('.breed-btn').addClass('active').text($(this).closest('.popup-cont').find('.tag-input').val());
 			e.preventDefault();
-		};
+		}
 	});
 
-	$(document).on('mouseenter', '.breed-btn', function() {
-		$(this).closest('.breed-cont').find('.tip-layer').show();
+	$(document).on('mouseenter', '.tip-init', function() {
+		$(this).closest('.tip-wrap').find('.tip').show();
 	});
-	$(document).on('mouseleave', '.breed-btn', function() {
-		$(this).closest('.breed-cont').find('.tip-layer').hide();
+	$(document).on('mouseleave', '.tip-init', function() {
+		$(this).closest('.tip-wrap').find('.tip').hide();
 	});
 
 	$(document).on('click', '.filter-option', function() {
@@ -273,5 +273,8 @@ $(document).ready(function() {
 		$(this).addClass('active');
 	});
 
+	$(document).on('click', '.alert .close', function() {
+		$(this).parent().fadeOut(150);
+	});
 
 });

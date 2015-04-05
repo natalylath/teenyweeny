@@ -1,0 +1,126 @@
+<div class="tab-box_top p20">
+    <div class="alert mb25">
+        <i class="close"></i>
+        <p>Заполните аккаунт на 100% и получите промо-код на покупки!</p>
+        <p>Добавить адрес, добавить питомца</p>
+    </div>
+    <h2 class="v1">Основная информация</h2>
+    <form action="#" method="post">
+        <div class="form_group">
+            <label for="name" class="form_label">Ваше имя:</label>
+            <input type="text" id="name" class="form_text" value="Владимир" />
+        </div>
+        <div class="form_group tip-wrap tip-init">
+            <label for="phone" class="form_label">Мобильный телефон:</label>
+            <input type="text" id="phone" class="form_text" />
+            <div class="tip tip_inside">Телефон нужен: для подтверждения заказа оператором, для восстановления пароля и для информации о статусе заказа по SMS. Используйте телефон для входа как логин.</div>
+        </div>
+        <div class="form_group tip-wrap tip-init">
+            <label for="email" class="form_label">E-mail:</label>
+            <input type="text" id="email" class="form_text" />
+            <div class="tip tip_inside">E-mail нужен: как логин для входа в аккаунт, для восстановления пароля и для отправления информации о статусе заказа.</div>
+        </div>
+        <div class="form_group">
+            <span>Пароль: <a href="#" class="blue">изменить пароль</a></span>
+        </div>
+        <div class="form_group mb0">
+            <input type="submit" class="btn btn_grey" value="Сохранить данные" />
+        </div>
+    </form>
+</div>
+<div class="sh p20">
+    <h2 class="v1 v2">Адрес для доставки</h2>
+    <form action="#" method="post">
+        <div class="form_group">
+            <label for="delivery" class="form_label">Название для адреса:</label>
+            <input type="text" id="delivery" class="form_text" value="Владимир" />
+        </div>
+        <div class="form_group">
+            <label for="city" class="form_label">Город:</label>
+            <input type="text" id="city" class="form_text" />
+        </div>
+        <div class="form_group">
+            <label for="station" class="form_label">Ближайшее метро:</label>
+            <input type="text" id="station" class="form_text" />
+        </div>
+        <div class="form_group_wide">
+            <div class="form_inline form_group">
+                <label for="street" class="form_label">Улица:</label>
+                <input type="text" id="street" class="form_text" />
+            </div>
+            <div class="form_inline form_group_thin">
+                <label for="house" class="form_label">Дом:</label>
+                <input type="text" id="house" class="form_text" />
+            </div>
+            <div class="form_inline form_group_thin">
+                <label for="corp" class="form_label">Строение/корпус:</label>
+                <input type="text" id="corp" class="form_text" />
+            </div>
+            <div class="form_inline form_group_thin">
+                <label for="office" class="form_label">Квартира/офис:</label>
+                <input type="text" id="office" class="form_text" />
+            </div>
+        </div>
+        <div class="form_group form_group_wide">
+            <div class="form_inline form_group_thin">
+                <label for="access" class="form_label">Подъезд:</label>
+                <input type="text" id="access" class="form_text" />
+            </div>
+            <div class="form_inline form_group_thin">
+                <label for="floor" class="form_label">Этаж:</label>
+                <input type="text" id="floor" class="form_text" />
+            </div>
+            <div class="form_inline form_group_thin">
+                <label for="intercom" class="form_label">Домофон:</label>
+                <input type="text" id="intercom" class="form_text" />
+            </div>
+        </div>
+        <div class="form_group mb0">
+            <input type="submit" class="btn btn_grey" value="Добавить адрес" />
+        </div>
+    </form>
+</div>
+<div class="sh p20 mb40">
+    <h2 class="v1 v2">Мои питомцы</h2>
+    <form action="#" method="post">
+        <div class="form_group tip-wrap tip-init">
+            <label for="intercom" class="form_label">Вид вашего питомца:</label>
+            <select class="select2">
+                <option>Собака</option>
+                <option selected>Кошка</option>
+                <option>Грызун</option>
+                <option>Рыбка</option>
+                <option>Птица</option>
+                <option>Рептилия</option>
+            </select>
+            <div class="tip tip_inside tip_top">
+                <p>Укажите вашего питомца, чтобы:</p>
+                <p>1) получать информацию об акциях, новых продуктах по почте именно для вашего вида питомца. Можно настроить в разделе <a href="#" class="blue">Моя рассылка</a></p>
+                <p>2) помочь нашему магазину понять, для каких животных нам стоит отбирать товары</p>
+            </div>
+        </div>
+        <div class="form_group">
+            <select class="select2">
+                <option>Собака</option>
+                <option selected>Кошка</option>
+                <option>Грызун</option>
+                <option>Рыбка</option>
+                <option>Птица</option>
+                <option>Рептилия</option>
+            </select>
+        </div>
+        <div class="form_group">
+            <label for="type" class="form_label">Вид вашего питомца:</label>
+            <input type="text" id="type" class="form_text" placeholder="По желанию" />
+        </div>
+        <div class="form_group">
+            <span>Фото питомца:</span>
+            <a href="#" class="blue form_file">загрузить фото<input type="file" />
+            </a>
+
+        </div>
+        <div class="form_group mb0">
+            <input type="submit" class="btn btn-block helveticabold" value="Добавить питомца" />
+        </div>
+    </form>
+</div>

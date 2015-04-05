@@ -78,3 +78,11 @@ select.select2-complex {
     line-height: 38px;
   }
 }
+
+.form_group .select2-container {
+  width: 100%!important;
+
+  .select2-choice {
+    background-color: $color-bg-grey;
+  }
+}

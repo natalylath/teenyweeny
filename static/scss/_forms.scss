@@ -10,6 +10,7 @@
   color: $color-black;
   font-size: 13px;
   font-family: 'opensanssemibold';
+  cursor: pointer;
   box-shadow: 0 -3px 3px #fed466 inset;
   background: #ffdc57; /* Old browsers */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZGM1NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmMzNDkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -67,6 +68,7 @@ input.btn {
   box-shadow: none;
   font-family: 'helveticaneuecyrbold';
   text-align: center;
+  cursor: pointer;
 }
 .btn_default {
   display: inline-block;
@@ -90,14 +92,69 @@ input.btn {
   line-height: 40px;
 }
 
-.text-form {
+.text-box {
   display: block;
   box-sizing: border-box;
   width: 100%;
   height: 38px;
   padding: 0 6px;
-  background-color: $color-white;
   border: 1px solid $color-border-grey;
   border-radius: 5px;
+  background-color: $color-white;
   line-height: 38px;
+
+  &:focus {
+    border-color: #a4a4a4;
+  }
+}
+
+.form_group {
+  width: 200px;
+  margin-bottom: 18px;
+}
+.form_group_wide {
+  width: 100%;
+}
+.form_group_thin {
+  width: 110px;
+}
+.form_inline {
+  display: inline-block;
+  margin-right: 10px;
+}
+.form_label {
+  display: block;
+  margin-bottom: 6px;
+}
+.form_text {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid $color-border-grey;
+  border-radius: 5px;
+  background-color: $color-bg-grey;
+  line-height: 30px;
+
+  &:focus {
+    border-color: #a4a4a4;
+  }
+  &:-ms-input-placeholder,
+  &::-moz-placeholder,
+  &::-webkit-input-placeholder {
+    font-style: italic;
+  }
+}
+.form_file {
+  position: relative;
+
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include size(100%);
+    opacity: 0;
+    cursor: pointer;
+  }
 }
