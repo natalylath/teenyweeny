@@ -5,7 +5,7 @@
   color: $color-black;
 }
 
-.h1, h1 {
+h1, .h1 {
   text-transform: uppercase;
   font-size: 21px;
   font-family: 'helveticaneuecyrbold';
@@ -13,15 +13,18 @@
   margin-bottom: 24px;
   line-height: 1em;
 }
-.right-content h1 {
+h1.v1,
+.h1.v1 {
   margin-bottom: 15px;
   padding-top: 2px;
 }
-.right-content h1.v1 {
+h1.v2,
+.h1.v2 s{
   padding-top: 10px;
   margin-bottom: 40px;
 }
-.right-content h1.v2 {
+h1.v3,
+.h1.v3 {
   margin-bottom: 22px;
 }
 
@@ -30,7 +33,7 @@ h2 {
   font-weight: normal;
 }
 
-.h3, h3 {
+h3, .h3 {
   font-size: 21px;
   text-transform: uppercase;
   font-family: 'helveticaneuecyrbold';
@@ -39,7 +42,7 @@ h2 {
   line-height: 1em;
 }
 
-.h4, h4 {
+h4, .h4 {
   font-size: 14px;
   text-transform: uppercase;
   font-family: 'helveticaneuecyrbold';

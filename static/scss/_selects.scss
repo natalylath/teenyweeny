@@ -1,17 +1,39 @@
-.select2-drop .pr,
-.select2-chosen .pr {
-  width: 64px;
-  font-size: 14px;
-  line-height: 28px;
-  font-family: 'opensansbold';
-  display: block;
-  float: left;
+.select2-drop,
+.select2-chosen {
+  .pr {
+    width: 64px;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: 'opensansbold';
+    display: block;
+    float: left;
+  }
+  .val {
+    display: block;
+    float: right;
+  }
+  .color {
+    display: inline-block;
+    vertical-align: middle;
+    @include size(20px);
+    margin-right: 6px;
+    border-radius: 2px;
+
+    &.red {
+      background-color: #e5150b;
+    }
+    &.green {
+      background-color: green;
+    }
+    &.yellow {
+      background-color: yellow;
+    }
+    &.black {
+      background-color: black;
+    }
+  }
 }
-.select2-drop .val,
-.select2-chosen .val {
-  display: block;
-  float: right;
-}
+
 .select2-chosen {
   overflow: hidden;
 }
@@ -20,13 +42,15 @@ select.select2-complex {
   height: 28px;
   line-height: 28px;
 }
-.catalog-item-price .select2,
-.catalog-item-price select {
-  width: 135px !important;
+.catalog-item-price {
+  select, .select2 {
+    width: 135px !important;
+  }
 }
-.catalog-item-count .select2,
-.catalog-item-count select {
-  width: 40px !important;
+.catalog-item-count {
+  select, .select2 {
+    width: 40px !important;
+  }
 }
 .ib {
   display: inline-block;
@@ -37,4 +61,20 @@ select.select2-complex {
   height: 22px;
   line-height: 22px;
   font-size: 12px;
+}
+.big-select .select2-container {
+  width: 100%!important;
+
+  .select2-drop,
+  .select2-chosen {
+    .pr {
+      height: 38px;
+      line-height: 38px;
+      font-size: 21px;
+    }
+  }
+  .select2-choice {
+    height: 38px;
+    line-height: 38px;
+  }
 }

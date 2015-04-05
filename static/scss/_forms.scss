@@ -52,8 +52,52 @@ input.btn {
 }
 .btn.btn-block {
   display: block;
+  box-sizing: border-box;
   text-align: center;
   padding-left: 0;
   padding-right: 0;
   width: 100%;
+}
+.btn_grey,
+.btn_grey:hover {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  @include gradient-vertical($color-gradient-grey-light, $color-gradient-grey);
+  box-shadow: none;
+  font-family: 'helveticaneuecyrbold';
+  text-align: center;
+}
+.btn_default {
+  display: inline-block;
+  width: 100%;
+  height: 38px;
+  box-sizing: border-box;
+  border: 1px solid$color-border-grey;
+  border-radius: 5px;
+  font-family: 'helveticaneuecyrbold';
+  line-height: 38px;
+  text-align: center;
+}
+.btn_cut-top {
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+}
+.btn_behind {
+  height: 44px;
+  margin-top: -4px;
+  padding-top: 2px;
+  line-height: 40px;
+}
+
+.text-form {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 38px;
+  padding: 0 6px;
+  background-color: $color-white;
+  border: 1px solid $color-border-grey;
+  border-radius: 5px;
+  line-height: 38px;
 }

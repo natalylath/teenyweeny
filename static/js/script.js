@@ -14,15 +14,29 @@ $(document).ready(function() {
 		function format(item) {
 			var originalOption = $(item.element);
 			return '<span class="pr">' + item.text + '</span>' + '<span class="val">' + originalOption.data('volume') + '</span>';
-		};
+		}
 		$('.select2-complex').select2({
 			'width': 135,
 			formatResult: format,
 			formatSelection: format,
 			minimumResultsForSearch: 20
 		});
-	};
+	}
 	priceList();
+
+	function pruductColor() {
+		function format(item) {
+			var originalOption = $(item.element);
+			return '<span class="color ' + originalOption.data('volume') + '"></span>' + item.text;
+		}
+		$('.select2-color').select2({
+			'width': '100%',
+			formatResult: format,
+			formatSelection: format,
+			minimumResultsForSearch: 20
+		});
+	}
+	pruductColor();
 
 	$('.fancybox').fancybox({
 		padding: 0,
