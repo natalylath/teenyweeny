@@ -203,7 +203,6 @@ $(document).ready(function() {
 		} else {
 			(this).closest('.tag').hide();
 		}
-
 	});
 	$(document).on('click', '.autocomplete-line', function() {
 		$(this).closest('.popup-layer').find('.tags').html('<div class="tag">' + $(this).text() + '<span class="tag-remove"></span></div>');
@@ -277,4 +276,7 @@ $(document).ready(function() {
 		$(this).parent().fadeOut(150);
 	});
 
+	$(document).on('click', '.alphabet_letter', function(e) {
+		$.scrollTo($('.brand-section').eq($(this).index()).offset().top, 500);
+	});
 });
