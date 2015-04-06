@@ -5,7 +5,7 @@
         <p><a href="#" class="no-underline s-scroll" data-scroll="addAddress">Добавить адрес</a>, <a href="#" class="no-underline s-scroll" data-scroll="addPet">добавить питомца</a></p>
     </div>
     <h2 class="v1">Основная информация</h2>
-    <form action="#" method="post" class="s-form">
+    <form action="#" method="post" class="s-change" data-change="user">
         <div class="form_group">
             <label for="name" class="form_label">Ваше имя:</label>
             <input type="text" id="name" class="form_text" value="Владимир" />
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="form_group mb0">
-            <input type="submit" class="btn btn_grey" value="Сохранить данные" disabled />
+            <input type="submit" class="btn btn_grey" value="Сохранить данные"  data-change="user" disabled />
         </div>
     </form>
 </div>
@@ -44,7 +44,7 @@
         <button class="btn btn_block s-toggle" data-toggle="addAddress">Добавить адрес</button>
         <div class="tip tip_inside">Заполните 1 раз адрес доставки, и он будет автоматически подставляться при оформлении новых заказов, а также учитываться при доставке. Это удобно!</div>
     </div>
-    <form action="#" method="post" class="form_hidden s-form" data-show="addAddress">
+    <form action="#" method="post" class="form_hidden s-change" data-change="addAddress" data-show="addAddress">
         <div class="form_group">
             <label for="delivery" class="form_label">Название для адреса:</label>
             <input type="text" id="delivery" class="form_text" value="Адрес №1" />
@@ -96,7 +96,7 @@
             </div>
         </div>
         <div class="form_group mb0">
-            <input type="submit" class="btn btn_grey" value="Добавить адрес" disabled />
+            <input type="submit" class="btn btn_grey" value="Добавить адрес"  data-change="addAddress" disabled />
         </div>
     </form>
 </div>
@@ -128,7 +128,7 @@
             <button class="btn btn_block s-toggle" data-toggle="addPet">Добавить питомца</button>
         </div>
     </div>
-    <form action="#" method="post" class="form_hidden s-form" data-show="addPet">
+    <form action="#" method="post" class="form_hidden s-change" data-change="addPet" data-show="addPet">
         <div class="form_group tip-wrap tip-init">
             <label for="intercom" class="form_label">Вид вашего питомца:</label>
             <select class="select2">
@@ -165,7 +165,7 @@
 
         </div>
         <div class="form_group mb0">
-            <input type="submit" class="btn btn_block" value="Добавить питомца" />
+            <input type="submit" class="btn btn_grey" value="Добавить питомца"  data-change="addPet" disabled />
         </div>
     </form>
 </div>

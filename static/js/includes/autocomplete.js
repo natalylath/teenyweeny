@@ -35,7 +35,7 @@ var autocomplete = (function(){
                 set: function(){
                     nodes.body
                         .on('focus', '.autocomplete-input', methods.show)
-                        .on('blur', '.autocomplete-input', methods.hide)
+                        //.on('focusout', '.autocomplete-input', methods.hide)
                         .on('click', '.autocomplete-line', methods.insert)
                         .on('click', '.autocomplete-submit', methods.submit);
                 }

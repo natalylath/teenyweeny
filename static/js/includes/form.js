@@ -4,15 +4,15 @@ var form = (function(){
         },
         methods = {
             active: function(){
-                $(this)
-                    .find('.btn_grey[type="submit"]')
+                nodes.body
+                    .find('.btn_grey[data-change="' + $(this).data('change') + '"]')
                     .removeAttr('disabled')
                     .removeClass('btn_grey')
                     .addClass('btn_block');
             },
             events: {
                 set: function(){
-                    nodes.body.on('change, keyup', '.s-form', methods.active);
+                    nodes.body.on('change, keyup', '.s-change', methods.active);
                 }
             }
         };

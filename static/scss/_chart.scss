@@ -1,4 +1,8 @@
 .chart {}
+.chart_panel {
+  margin: 8px 0 10px;
+  @include gradient-vertical($color-gradient-grey-light, $color-gradient-grey);
+}
 .chart_title {
   padding: 0 20px 0 70px;
   line-height: 40px;
@@ -9,18 +13,34 @@
 .chart_title_price {
   display: inline-block;
 }
+
 .chart_product,
 .chart_title_product {
   width: 320px;
 }
+.chart_product_wide,
+.chart_title_product_wide {
+  width: 490px;
+}
+
 .chart_number,
 .chart_title_number {
   width: 150px;
 }
+.chart_number_wide,
+.chart_title_number_wide {
+  width: 200px;
+}
+
 .chart_price,
 .chart_title_price {
   width: 140px;
 }
+.chart_price_wide,
+.chart_title_price_wide {
+  width: 160px;
+}
+
 .chart_del {
   display: inline-block;
   @include size(18px);
@@ -29,8 +49,8 @@
   cursor: pointer;
 }
 .chart_product {
-  padding: 5px 0 20px;
-}
+   padding: 5px 0 20px;
+ }
 .chart_number,
 .chart_price {
   padding-top: 30px;
@@ -45,6 +65,9 @@
   padding: 0 50px 0 90px;
   color: $color-text-grey;
   line-height: 21px;
+}
+.chart_info_wide {
+  padding-right: 90px;
 }
 .chart_link {
   display: inline-block;
@@ -70,6 +93,10 @@
   display: inline-block;
   width: 120px;
 }
+.chart-select_wide {
+  display: inline-block;
+  width: 250px;
+}
 .chart_row {
   border-bottom: 1px solid $color-grey-light;
 }
@@ -80,8 +107,8 @@
   vertical-align: middle;
 }
 .chart_desc {
-  width: 360px;
-  margin-right: 10px;
+  width: 355px;
+  margin-right: 15px;
 
   b {
     display: block;
@@ -89,6 +116,10 @@
     font-family: 'opensanssemibold';
     font-weight: normal;
   }
+}
+.chart_desc_wide {
+  width: 595px;
+  text-align: right;
 }
 .chart_input {
   width: 140px;
@@ -115,7 +146,10 @@
 .chart_final {
   font: bold 21px/50px 'opensansbold';
 }
-.chart_panel {
+.chart_orders {
+  font: bold 21px/38px 'opensansbold';
+}
+.chart_action {
   padding: 20px 0 23px;
   overflow: hidden;
 }
@@ -167,4 +201,12 @@
   margin-bottom: 30px;
   font-family: 'opensanssemibold';
   line-height: 21px;
+}
+.chart_plus {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 8px;
+  padding-left: 40px;
+  line-height: 38px;
+  background: url(../images/ico/plus.png) 0 50% no-repeat;
 }
