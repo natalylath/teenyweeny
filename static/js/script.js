@@ -190,13 +190,6 @@ $(document).ready(function() {
 		$(this).closest('.popup-cont').find('.popup-btn').removeClass('opened');
 	});
 
-	$(document).on('focusin', '.tag-input', function() {
-		$(this).closest('.autocomplete-cont').find('.autocomplete').show();
-	});
-	$(document).on('focuout', '.tag-input', function() {
-		$(this).closest('.autocomplete-cont').find('.autocomplete').hide();
-	});
-
 	$(document).on('click', '.tag-remove', function() {
 		if ($(this).closest('.tags').hasClass('toggle-tags')) {
 			$(this).closest('.tag').toggleClass('passive');
@@ -204,28 +197,10 @@ $(document).ready(function() {
 			(this).closest('.tag').hide();
 		}
 	});
-	$(document).on('click', '.autocomplete-line', function() {
-		$(this).closest('.popup-layer').find('.tags').html('<div class="tag">' + $(this).text() + '<span class="tag-remove"></span></div>');
-		$(this).closest('.autocomplete').hide();
-		$(this).closest('.autocomplete-cont').find('.tag-input').val($(this).text());
-	});
 
-	/* add ajax for loading content of specified breed! */
-	$(document).on('click','.autocomplete-submit', function(e) {
-		if (!$(this).hasClass('link')) {
-			$(this).closest('.popup-layer').hide();
-			$(this).closest('.popup-cont').find('.popup-btn').removeClass('opened');
-			$('.breed-btn').addClass('active').text($(this).closest('.popup-cont').find('.tag-input').val());
-			e.preventDefault();
-		}
-	});
 
-	$(document).on('mouseenter', '.tip-init', function() {
-		$(this).closest('.tip-wrap').find('.tip').show();
-	});
-	$(document).on('mouseleave', '.tip-init', function() {
-		$(this).closest('.tip-wrap').find('.tip').hide();
-	});
+
+
 
 	$(document).on('click', '.filter-option', function() {
 		$(this).addClass('active');
@@ -272,11 +247,11 @@ $(document).ready(function() {
 		$(this).addClass('active');
 	});
 
-	$(document).on('click', '.alert .close', function() {
-		$(this).parent().fadeOut(150);
-	});
 
-	$(document).on('click', '.alphabet_letter', function(e) {
-		$.scrollTo($('.brand-section').eq($(this).index()).offset().top, 500);
-	});
+	//= includes/alert.js
+	//= includes/tip.js
+	//= includes/scrollTo.js
+	//= includes/toggle.js
+	//= includes/autocomplete.js
+	//= includes/form.js
 });

@@ -51,7 +51,7 @@ input.btn {
   font-family: 'helveticaneuecyrbold';
   text-align: center;
 }
-.btn.btn-block {
+.btn_block {
   display: block;
   box-sizing: border-box;
   text-align: center;
@@ -107,6 +107,9 @@ input.btn {
   }
 }
 
+.form_hidden {
+  display: none;
+}
 .form_group {
   width: 200px;
   margin-bottom: 18px;

@@ -1,6 +1,9 @@
 .tip-wrap {
   position: relative;
 }
+.tip-init {
+  cursor: pointer;
+}
 .tip {
   display: none;
 
@@ -18,9 +21,10 @@
 .tip_atop {
   position: absolute;
   left: 100%;
-  top: 0;
+  top: 50%;
   height: 40px;
   padding: 0 15px;
+  margin: -20px 0 0 10px;
   border-radius: 5px;
   box-shadow: 0 3px 7px 1px rgba(0,0,0,0.3);
   background: $color-white;

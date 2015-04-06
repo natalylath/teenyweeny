@@ -2,7 +2,7 @@
     <div class="alert mb25">
         <i class="close"></i>
         <p>Заполните аккаунт на 100% и получите промо-код на покупки!</p>
-        <p>Добавить адрес, добавить питомца</p>
+        <p><a href="#" class="no-underline s-scroll" data-scroll="addAddress">Добавить адрес</a>, <a href="#" class="no-underline s-scroll" data-scroll="addPet">добавить питомца</a></p>
     </div>
     <h2 class="v1">Основная информация</h2>
     <form action="#" method="post">
@@ -20,24 +20,44 @@
             <input type="text" id="email" class="form_text" />
             <div class="tip tip_inside">E-mail нужен: как логин для входа в аккаунт, для восстановления пароля и для отправления информации о статусе заказа.</div>
         </div>
-        <div class="form_group">
-            <span>Пароль: <a href="#" class="blue">изменить пароль</a></span>
+        <div class="form_group" data-hide="changePassword">
+            <span>Пароль: <a href="#" class="blue s-toggle" data-toggle="changePassword">изменить пароль</a></span>
+        </div>
+        <div class="form_hidden" data-show="changePassword">
+            <div class="form_group">
+                <label for="oldPas" class="form_label">Старый пароль:</label>
+                <input type="text" id="oldPas" class="form_text" />
+            </div>
+            <div class="form_group">
+                <label for="newPas" class="form_label">Новый пароль:</label>
+                <input type="text" id="newPas" class="form_text" />
+            </div>
         </div>
         <div class="form_group mb0">
-            <input type="submit" class="btn btn_grey" value="Сохранить данные" />
+            <input type="submit" class="btn btn_grey" value="Сохранить данные" disabled />
         </div>
     </form>
 </div>
-<div class="sh p20">
+<div class="sh p20" data-scrollTo="addAddress">
     <h2 class="v1 v2">Адрес для доставки</h2>
-    <form action="#" method="post">
+    <div class="form_group mb0  tip-wrap tip-init" data-hide="addAddress">
+        <button class="btn btn_block s-toggle" data-toggle="addAddress">Добавить адрес</button>
+        <div class="tip tip_inside">Заполните 1 раз адрес доставки, и он будет автоматически подставляться при оформлении новых заказов, а также учитываться при доставке. Это удобно!</div>
+    </div>
+    <form action="#" method="post" class="form_hidden" data-show="addAddress">
         <div class="form_group">
             <label for="delivery" class="form_label">Название для адреса:</label>
-            <input type="text" id="delivery" class="form_text" value="Владимир" />
+            <input type="text" id="delivery" class="form_text" value="Адрес №1" />
         </div>
         <div class="form_group">
-            <label for="city" class="form_label">Город:</label>
-            <input type="text" id="city" class="form_text" />
+            <div class="autocomplete-cont">
+                <label for="city" class="form_label">Город:</label>
+                <input type="text" id="city" class="form_text autocomplete-input" value="М"/>
+                <div class="autocomplete">
+                    <div class="autocomplete-line">Москва</div>
+                    <div class="autocomplete-line">Мурманск</div>
+                </div>
+            </div>
         </div>
         <div class="form_group">
             <label for="station" class="form_label">Ближайшее метро:</label>
@@ -76,11 +96,11 @@
             </div>
         </div>
         <div class="form_group mb0">
-            <input type="submit" class="btn btn_grey" value="Добавить адрес" />
+            <input type="submit" class="btn btn_grey" value="Добавить адрес" disabled />
         </div>
     </form>
 </div>
-<div class="sh p20 mb40">
+<div class="sh p20 mb40" data-scrollTo="addPet">
     <h2 class="v1 v2">Мои питомцы</h2>
     <form action="#" method="post">
         <div class="form_group tip-wrap tip-init">
@@ -100,14 +120,13 @@
             </div>
         </div>
         <div class="form_group">
-            <select class="select2">
-                <option>Собака</option>
-                <option selected>Кошка</option>
-                <option>Грызун</option>
-                <option>Рыбка</option>
-                <option>Птица</option>
-                <option>Рептилия</option>
-            </select>
+            <div class="autocomplete-cont">
+                <input type="text" id="breed" class="form_text autocomplete-input" placeholder="Порода неизвестна" />
+                <div class="autocomplete">
+                    <div class="autocomplete-line">Персидская</div>
+                    <div class="autocomplete-line">Британская короткошерстная</div>
+                </div>
+            </div>
         </div>
         <div class="form_group">
             <label for="type" class="form_label">Вид вашего питомца:</label>
@@ -120,7 +139,7 @@
 
         </div>
         <div class="form_group mb0">
-            <input type="submit" class="btn btn-block helveticabold" value="Добавить питомца" />
+            <input type="submit" class="btn btn_block" value="Добавить питомца" />
         </div>
     </form>
 </div>

@@ -13,6 +13,7 @@ var path = {
         fonts: 'build/static/fonts/',
         css: 'build/static/css/',
         js: 'build/static/js/',
+        js_my: 'build/static/js/',
         img: 'build/static/images/'
 
     },
@@ -20,8 +21,9 @@ var path = {
         html: 'templates/*.html',
         fonts: 'static/fonts/**/*.*',
         css: 'static/css/**/*.css',
-        scss: 'static/scss/**/style.scss',
-        js: 'static/js/**/*.js',
+        scss: 'static/scss/style.scss',
+        js: 'static/js/libs/*.js',
+        js_my: 'static/js/script.js',
         img: 'static/images/**/*.*'
     },
     watch: {
@@ -29,7 +31,8 @@ var path = {
         fonts: 'static/fonts/**/*.*',
         css: 'static/css/**/*.css',
         scss: 'static/scss/**/*.scss',
-        js: 'static/js/**/*.js',
+        js: 'static/js/libs/*.js',
+        js_my: 'static/js/**/*.js',
         img: 'static/images/**/*.*'
     },
     clean: './build'
@@ -82,6 +85,13 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('js_my:build', function () {
+    gulp.src(path.src.js_my)
+        .pipe(rigger())
+        .pipe(gulp.dest(path.build.js_my))
+        .pipe(reload({stream: true}));
+});
+
 gulp.task('image:build', function () {
     return gulp
         .src(path.src.img)
@@ -95,6 +105,7 @@ gulp.task('build', [
     'css:build',
     'scss:build',
     'js:build',
+    'js_my:build',
     'image:build'
 ]);
 
@@ -111,11 +122,14 @@ gulp.task('watch', function(){
     watch([path.watch.scss], function(event, cb) {
         gulp.start('scss:build');
     });
-    watch([path.watch.img], function(event, cb) {
-        gulp.start('image:build');
-    });
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build');
+    });
+    watch([path.watch.js_my], function(event, cb) {
+        gulp.start('js_my:build');
+    });
+    watch([path.watch.img], function(event, cb) {
+        gulp.start('image:build');
     });
 });
 
