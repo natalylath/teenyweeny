@@ -13,27 +13,27 @@
 }
 
 .brands{}
-.brand-section {
+.brands_section {
   border-bottom: 1px solid $color-grey-light;
 }
-.brand-section:last-child {
+.brands_section:last-child {
   border-bottom: 0;
 }
-.brand-column {
-  display: inline-block;
-  vertical-align: top;
-}
-.brand-section-name {
+.brands_section-name {
   width: 70px;
   font: 34px/100px 'helveticaneuecyrbold';
   text-transform: uppercase;
 }
-.brand-list {
+.brands_column {
+  display: inline-block;
+  vertical-align: top;
+}
+.brands_list {
   width: 200px;
   margin-right: 7px;
   padding-top: 17px;
 }
-.brand-link {
+.brands_link {
   line-height: 22px;
   text-decoration: none;
 }

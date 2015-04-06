@@ -12,7 +12,7 @@ var form = (function(){
             },
             events: {
                 set: function(){
-                    nodes.body.on('change, keyup', 'form', methods.active);
+                    nodes.body.on('change, keyup', '.s-form', methods.active);
                 }
             }
         };

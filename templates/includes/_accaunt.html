@@ -5,7 +5,7 @@
         <p><a href="#" class="no-underline s-scroll" data-scroll="addAddress">Добавить адрес</a>, <a href="#" class="no-underline s-scroll" data-scroll="addPet">добавить питомца</a></p>
     </div>
     <h2 class="v1">Основная информация</h2>
-    <form action="#" method="post">
+    <form action="#" method="post" class="s-form">
         <div class="form_group">
             <label for="name" class="form_label">Ваше имя:</label>
             <input type="text" id="name" class="form_text" value="Владимир" />
@@ -44,7 +44,7 @@
         <button class="btn btn_block s-toggle" data-toggle="addAddress">Добавить адрес</button>
         <div class="tip tip_inside">Заполните 1 раз адрес доставки, и он будет автоматически подставляться при оформлении новых заказов, а также учитываться при доставке. Это удобно!</div>
     </div>
-    <form action="#" method="post" class="form_hidden" data-show="addAddress">
+    <form action="#" method="post" class="form_hidden s-form" data-show="addAddress">
         <div class="form_group">
             <label for="delivery" class="form_label">Название для адреса:</label>
             <input type="text" id="delivery" class="form_text" value="Адрес №1" />
@@ -102,7 +102,33 @@
 </div>
 <div class="sh p20 mb40" data-scrollTo="addPet">
     <h2 class="v1 v2">Мои питомцы</h2>
-    <form action="#" method="post">
+    <div class="pets" data-hide="addPet">
+        <div class="pets_item">
+            <img src="static/images/upload/pet.jpg" class="pets_image" alt="" />
+            <div class="pets_info">
+                <a href="#" class="tag tag_edit">Бекки (мальтезе)</a>
+                <a href="#" class="blue">Посмотреть рекомендуемые товары для мальтезе</a>
+            </div>
+        </div><!--
+        --><div class="pets_item">
+            <span class="pets_image pets_placeholder"></span>
+            <div class="pets_info">
+                <a href="#" class="tag tag_edit">Бекки (мальтезе)</a>
+                <a href="#" class="blue">Посмотреть рекомендуемые товары для мальтезе</a>
+            </div>
+        </div><!--
+        --><div class="pets_item">
+            <img src="static/images/upload/pet.jpg" class="pets_image" alt="" />
+            <div class="pets_info">
+                <a href="#" class="tag tag_edit">Бекки (мальтезе)</a>
+                <a href="#" class="blue">Посмотреть рекомендуемые товары для мальтезе</a>
+            </div>
+        </div>
+        <div class="form_group mb0">
+            <button class="btn btn_block s-toggle" data-toggle="addPet">Добавить питомца</button>
+        </div>
+    </div>
+    <form action="#" method="post" class="form_hidden s-form" data-show="addPet">
         <div class="form_group tip-wrap tip-init">
             <label for="intercom" class="form_label">Вид вашего питомца:</label>
             <select class="select2">

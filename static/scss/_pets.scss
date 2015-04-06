@@ -1,0 +1,21 @@
+.pets {}
+.pets_item {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 33%;
+  margin-bottom: 30px;
+  line-height: 21px;
+}
+.pets_image {
+  float: left;
+  margin-right: 20px;
+}
+.pets_placeholder {
+  @include size(76px);
+  border: 2px solid #e4e4e4;
+  background: url(../images/ico/placeholder.png) 50% 50% no-repeat $color-bg-grey;
+}
+.pets_info {
+  overflow: hidden;
+}

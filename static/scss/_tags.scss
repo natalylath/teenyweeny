@@ -12,6 +12,24 @@
   padding: 0 7px 0 10px;
   margin-bottom: 7px;
 }
+a.tag {
+  color: $color-white;
+  text-decoration: none;
+}
+.tag_edit {
+  position: relative;
+  padding-right: 30px;
+
+  &:after {
+    content: '';
+    @include size(16px, 15px);
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    margin-top: -7px;
+    background: url(../images/ico/edit.png) 0 0 no-repeat;
+  }
+}
 .tag-remove {
   display: inline-block;
   vertical-align: middle;
@@ -20,9 +38,10 @@
   background: url(../images/ico/remove.png) no-repeat;
   cursor: pointer;
   margin-left: 17px;
-}
-.tag-remove:hover {
-  background-position: left bottom;
+
+  &:hover {
+    background-position: left bottom;
+  }
 }
 input.tag-input {
   height: 38px;
