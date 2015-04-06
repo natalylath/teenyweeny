@@ -66,7 +66,6 @@ input.btn {
   border: 1px solid #e6e6e6;
   @include gradient-vertical($color-gradient-grey-light, $color-gradient-grey);
   box-shadow: none;
-  font-family: 'helveticaneuecyrbold';
   text-align: center;
   cursor: pointer;
 }
@@ -77,7 +76,7 @@ input.btn {
   box-sizing: border-box;
   border: 1px solid$color-border-grey;
   border-radius: 5px;
-  font-family: 'helveticaneuecyrbold';
+  font-family: 'opensanssemibold';
   line-height: 38px;
   text-align: center;
 }

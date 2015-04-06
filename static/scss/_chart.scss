@@ -48,12 +48,12 @@
 }
 .chart_link {
   display: inline-block;
-  font-family: 'helveticaneuecyrbold';
+  font-family: 'opensanssemibold';
 }
 .chart_total {
   display: block;
   margin-bottom: 10px;
-  font: 34px/22px 'helveticaneuecyrbold';
+  font: 34px/22px 'opensansbold';
   color: $color-black;
   text-transform: uppercase;
 }
@@ -82,11 +82,12 @@
 .chart_desc {
   width: 360px;
   margin-right: 10px;
-  font-family: Arial, Helvetica, sans-serif;
 
   b {
     display: block;
     margin-bottom: 5px;
+    font-family: 'opensanssemibold';
+    font-weight: normal;
   }
 }
 .chart_input {
@@ -103,16 +104,16 @@
   text-align: right;
 }
 .chart_cost {
-  font: bold 21px/60px Arial, Helvetica, sans-serif;
+  font: 21px/60px 'opensansbold';
 }
 .chart_promo {
-  font: bold 16px/50px Arial, Helvetica, sans-serif;
+  font: 16px/50px 'opensansbold';
 }
 .chart_bonus {
-  font: 16px/50px Arial, Helvetica, sans-serif;
+  font: 16px/50px 'helveticaneuecyrroman';
 }
 .chart_final {
-  font: bold 21px/50px Arial, Helvetica, sans-serif;
+  font: bold 21px/50px 'opensansbold';
 }
 .chart_panel {
   padding: 20px 0 23px;
@@ -123,6 +124,7 @@
   margin-top: 8px;
 
   a {
+    font-family: 'opensanssemibold';
     font-size: 13px;
   }
 }
@@ -141,7 +143,7 @@
   }
 }
 .chart_aside {
-  padding: 15px 19px 19px;
+  padding: 15px 15px 20px;
   text-align: center;
 }
 .chart_aside_info {
@@ -163,6 +165,6 @@
 }
 .chart_aside_bonus .text {
   margin-bottom: 30px;
-  font-family: 'helveticaneuecyrbold';
+  font-family: 'opensanssemibold';
   line-height: 21px;
 }
