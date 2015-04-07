@@ -30,6 +30,9 @@
 .mb10 {
   margin-bottom: 10px;
 }
+.mb15 {
+  margin-bottom: 15px;
+}
 .mb20 {
   margin-bottom: 20px;
 }
@@ -118,4 +121,8 @@ h4.fs13, .fs13 {
 }
 .bn img {
   display: block;
+}
+
+.row {
+  border-bottom: 1px solid $color-grey-light;
 }

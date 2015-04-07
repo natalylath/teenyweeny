@@ -1,12 +1,13 @@
 .chart {}
-.chart_panel {
-  margin: 8px 0 10px;
-  @include gradient-vertical($color-gradient-grey-light, $color-gradient-grey);
-}
 .chart_title {
   padding: 0 20px 0 70px;
   line-height: 40px;
   color: $color-text-grey;
+}
+.chart_panel {
+  margin: 8px 0 10px;
+  @include gradient-vertical($color-gradient-grey-light, $color-gradient-grey);
+  line-height: 50px;
 }
 .chart_title_product,
 .chart_title_number,
@@ -96,9 +97,6 @@
 .chart-select_wide {
   display: inline-block;
   width: 250px;
-}
-.chart_row {
-  border-bottom: 1px solid $color-grey-light;
 }
 .chart_desc,
 .chart_input,

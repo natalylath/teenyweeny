@@ -160,3 +160,30 @@ input.btn {
     cursor: pointer;
   }
 }
+.form_radio {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+
+  i {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include size(14px);
+    background: url(../images/ico/checkbox.png) 0 0 no-repeat;
+  }
+
+  input[type="radio"] {
+    display: none;
+
+    &:checked + i {
+      background-position: 0 100%;
+    }
+  }
+}
+.form_checkbox {
+  display: inline-block;
+  vertical-align: text-top;
+  margin: 0;
+}
