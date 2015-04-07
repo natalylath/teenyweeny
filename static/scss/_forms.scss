@@ -51,6 +51,11 @@ input.btn {
   font-family: 'helveticaneuecyrbold';
   text-align: center;
 }
+.btn_small {
+  height: 28px;
+  line-height: 28px;
+  font-size: 11px;
+}
 .btn_block {
   display: block;
   box-sizing: border-box;

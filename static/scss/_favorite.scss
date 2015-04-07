@@ -1,0 +1,42 @@
+.favorite_lead {
+  font-size: 16px;
+  line-height: 21px;
+}
+.favorite_panel {
+  padding: 10px 20px;
+  background-color: $color-bg-grey;
+}
+.favorite_list-name {
+  display: inline-block;
+  margin-right: 32px;
+  font: 16px/30px 'helveticaneuecyrbold';
+}
+.favorite_link {
+  display: inline-block;
+  margin-right: 15px;
+  padding-left: 27px;
+  font-size: 11px;
+  line-height: 30px;
+
+  &.edit {
+    background: url(../images/ico/blue-edit.png) 0 50% no-repeat;
+  }
+  &.send {
+    background: url(../images/ico/blue-send.png) 0 50% no-repeat;
+  }
+  &.delete {
+    background: url(../images/ico/blue-delete.png) 0 50% no-repeat;
+  }
+}
+.favorite_chart {
+  float: right;
+  width: 230px;
+}
+.favorite_add {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 40px;
+  background: url(../images/ico/plus.png) 0 0 no-repeat;
+  font-family: 'opensanssemibold';
+  line-height: 30px;
+}

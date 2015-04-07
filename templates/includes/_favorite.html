@@ -1,0 +1,44 @@
+<div class="tab-box_top p20">
+    <h2 class="mb20">Избранные товары</h2>
+    <p class="favorite_lead">Создавайте списки товаров для разных целей: список для постоянных покупок, <br/>список для возможных покупок, список интересных товаров. <br/>Если у вас появятся вопросы по работе со списками, посмотрите раздел <a href="#" class="blue">Вопросы про избранное</a>.</p>
+</div>
+<div class="sh mb40">
+    <div class="float-cont p20">
+        <h2 class="v1 v2">Найти в избранном</h2>
+        <form class="search-block full">
+            <input type="text" class="search-input dark" placeholder="Найти в избранном" />
+            <input type="submit" class="search-sub" value=""/>
+        </form>
+    </div>
+    <div class="favorite_panel float-cont">
+        <div class="favorite_chart">
+            <a href="#" class="btn btn_block btn_small">Добавить весь список в корзину</a>
+        </div>
+        <div class="favorite_list-name">Основной список (2)</div>
+        <a href="#" class="favorite_link edit">Редактировать</a>
+        <a href="#" class="favorite_link send">Отправить по e-mail</a>
+        <a href="#" class="favorite_link delete">Удалить</a>
+    </div>
+    <div class="p20">
+        <div class="float-cont mb25">
+            <div class="line">
+                //= _catalog-item.html
+                <div class="catalog-sep"></div>
+                //= _catalog-item.html
+                <div class="catalog-sep"></div>
+                //= _catalog-item.html
+            </div>
+        </div>
+        <a href="#" class="favorite_add s-toggle" data-toggle="list" data-hide="list">Создать новый список</a>
+        <form action="#" method="post" class="hidden" data-show="list">
+            <div class="form_group tip-wrap tip-init">
+                <label for="list" class="form_label">Введите название списка:</label>
+                <input type="text" id="list" class="form_text" />
+                <div class="tip tip_inside">Например: список постоянных покупок, интересные товары, список для кошки Маруси</div>
+            </div>
+            <div class="form_group mb0">
+                <input type="submit" class="btn btn_block" value="Создать список" />
+            </div>
+        </form>
+    </div>
+</div>
