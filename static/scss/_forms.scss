@@ -112,15 +112,22 @@ input.btn {
   }
 }
 
+.form {}
 .form_group {
   width: 200px;
   margin-bottom: 18px;
 }
-.form_group_wide {
+.form_group_full {
   width: 100%;
+}
+.form_group_wide {
+  min-width: 240px;
 }
 .form_group_thin {
   width: 110px;
+}
+.form_group_middle {
+  width: 130px;
 }
 .form_inline {
   display: inline-block;
@@ -173,7 +180,7 @@ input.btn {
     top: 0;
     left: 0;
     @include size(14px);
-    background: url(../images/ico/checkbox.png) 0 0 no-repeat;
+    background: url(../images/ico/radio.png) 0 0 no-repeat;
   }
 
   input[type="radio"] {
@@ -186,6 +193,33 @@ input.btn {
 }
 .form_checkbox {
   display: inline-block;
-  vertical-align: text-top;
-  margin: 0;
+  position: relative;
+  padding: 3px 0 0 23px;
+
+  i {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include size(18px,17px);
+    background: url(../images/ico/checkbox.png) 0 0 no-repeat;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked + i {
+      background-position: 0 100%;
+    }
+  }
+}
+.form_hint {
+  margin-bottom: 5px;
+  line-height: 30px;
+  color: $color-text-grey;
+
+  img {
+    display: inline-block;
+    vertical-align: top;
+  }
 }
