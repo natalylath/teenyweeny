@@ -1,0 +1,91 @@
+.orders {
+  margin-bottom: 25px;
+  border-collapse: collapse;
+
+  th, td {
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 0 20px;
+  }
+  td {
+    height: 70px;
+    border: 1px solid #edebeb;
+
+    &:first-child {
+      border-left: 0;
+    }
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+.orders_head {
+  height: 50px;
+  @include gradient-vertical($color-gradient-grey-light, $color-gradient-grey);
+  color: $color-text-grey;
+  text-align: left;
+}
+.orders_number {
+  width: 130px;
+}
+.orders_cost {
+  width: 280px;
+}
+.orders_date {
+  width: 130px;
+}
+.orders_status {
+  width: 250px;
+}
+.orders_action {
+  width: 150px;
+}
+.orders_img {
+  float: left;
+  margin-right: 10px;
+
+  img {
+    max-height: 40px;
+  }
+}
+.orders_link {
+  display: block;
+  line-height: 21px;
+  overflow: hidden;
+}
+.orders_state {
+  position: relative;
+  padding-left: 22px;
+  color: $color-text-grey;
+
+  &:before {
+    content: '';
+    @include size(15px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+  }
+
+  &.blue:before {
+    background-color: $color-blue;
+  }
+  &.orange:before {
+    background-color: $color-orange;
+  }
+  &.green:before {
+    background-color: #91ba01;
+  }
+}
+.orders_action_link {
+  display: inline-block;
+  padding-left: 40px;
+  line-height: 30px;
+
+  &.edit {
+    background: url(../images/ico/round-edit.png) 0 0 no-repeat;
+  }
+  &.repeat {
+    background: url(../images/ico/round-repeat.png) 0 0 no-repeat;
+  }
+}

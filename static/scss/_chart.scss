@@ -5,7 +5,7 @@
   color: $color-text-grey;
 }
 .chart_panel {
-  margin: 8px 0 10px;
+  margin-bottom: 10px;
   @include gradient-vertical($color-gradient-grey-light, $color-gradient-grey);
   line-height: 50px;
 }

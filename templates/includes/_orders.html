@@ -1,192 +1,84 @@
-<div class="tab-box_top p0">
+<div class="tab-box_top float-cont p0" data-hide="edit-order">
     <div class="p20">
-        <h2>Изменение заказа №12345</h2>
+        <h2>Мои заказы</h2>
     </div>
-    <div class="chart_panel chart_title">
-        <div class="chart_title_product chart_title_product_wide">Товар</div><!--
-        --><div class="chart_title_number chart_title_number_wide">Количество</div><!--
-        --><div class="chart_title_price chart_title_price_wide">Цена</div>
-    </div>
-    <div class="plr20 chart">
-        <table>
-            <tr class="row">
-                <td><span class="chart_del"></span></td>
-                <td class="chart_product chart_product_wide">
-                    <a href="#" class="fleft">
-                        <img src="static/images/upload/c2.jpg" class="chart_img" alt="" />
-                    </a>
-                    <div class="chart_info chart_info_wide">
-                        <a href="#" class="chart_link">Royal Canin</a>
-                        <p class="mb10">Adult Neutered Small Dog, корм собак мелких пород</p>
-                        <div class="big-select">
-                            <select class="select2-complex">
-                                <option selected data-volume="2,5 кг">725 Р</option>
-                                <option data-volume="1 кг">320 Р</option>
-                                <option data-volume="0,5 кг">150 Р</option>
-                            </select>
-                        </div>
+    <table class="orders">
+        <tr class="orders_head">
+            <th class="orders_number">Номер заказа</th>
+            <th class="orders_cost">Сумма заказа</th>
+            <th class="orders_date">Дата создания</th>
+            <th class="orders_status">Статус</th>
+            <th class="orders_action">Что сделать</th>
+        </tr>
+        <tr>
+            <td>12864</td>
+            <td>
+                <div class="orders_img tip-wrap">
+                    <img src="static/images/upload/c3.jpg" class="tip-init" alt="" />
+                    <div class="tip tip_atop tip_atop_b">
+                        <a href="#"><img src="static/images/upload/c1.jpg" alt="" /></a>
+                        <a href="#"><img src="static/images/upload/c2.jpg" alt="" /></a>
+                        <a href="#"><img src="static/images/upload/c3.jpg" alt="" /></a>
                     </div>
-                </td>
-                <td class="chart_number chart_number_wide">
-                    <span class="count-dec"></span><input type="text" class="card-count-input" value="1"/><span class="count-inc"></span>
-                </td>
-                <td class="chart_price chart_price_wide">
-                    <span class="chart_total">5250 Р</span>
-                    <span>(2625 Р x 2)</span>
-                </td>
-            </tr>
-            <tr class="row">
-                <td><span class="chart_del"></span></td>
-                <td class="chart_product chart_product_wide">
-                    <a href="#" class="fleft">
-                        <img src="static/images/upload/c3.jpg" class="chart_img" alt="" />
-                    </a>
-                    <div class="chart_info chart_info_wide">
-                        <a href="#" class="chart_link">Толстовка «Dog Star»</a>
-                        <div class="chart_params">
-                            <div class="mb10">
-                                <span class="chart-label">Размер:</span><!--
-                                --><span class="chart-select_wide big-select">
-                                    <select class="select2">
-                                        <option>12</option>
-                                        <option selected>13</option>
-                                        <option>14</option>
-                                        <option>15</option>
-                                        <option>16</option>
-                                    </select>
-                                </span>
-                            </div>
-                            <div>
-                                <span class="chart-label">Цвет:</span><!--
-                                --><span class="chart-select_wide big-select">
-                                    <select class="select2-color">
-                                        <option data-volume="red">Красный</option>
-                                        <option data-volume="green">Зеленый</option>
-                                        <option data-volume="yellow">Желтый</option>
-                                        <option data-volume="black">Черный</option>
-                                    </select>
-                                </span>
-                            </div>
-                        </div>
+                </div>
+                <a href="#" class="orders_link blue">2 товара на сумму 1080 руб (+80 бонусов)</a>
+            </td>
+            <td>
+                <div class="def-color">32.10.2014</div>
+            </td>
+            <td>
+                <div class="orders_state blue">Не оплачен / не подтвержден</div>
+            </td>
+            <td>
+                <a href="#" class="orders_action_link edit s-toggle" data-toggle="edit-order">Изменить</a>
+            </td>
+        </tr>
+        <tr>
+            <td>12864</td>
+            <td>
+                <div class="orders_img tip-wrap">
+                    <img src="static/images/upload/c3.jpg" class="tip-init" alt="" />
+                    <div class="tip tip_atop tip_atop_b">
+                        <a href="#"><img src="static/images/upload/c1.jpg" alt="" /></a>
+                        <a href="#"><img src="static/images/upload/c2.jpg" alt="" /></a>
                     </div>
-                </td>
-                <td class="chart_number chart_number_wide">
-                    <span class="count-dec"></span><input type="text" class="card-count-input" value="1"/><span class="count-inc"></span>
-                </td>
-                <td class="chart_price chart_price_wide">
-                    <span class="chart_total">2100 Р</span>
-                    <span>(1050 Р x 2)</span>
-                </td>
-            </tr>
-        </table>
-        <div class="row ptb20">
-            <span class="chart_desc chart_desc_wide">Если у вас есть промо-код или купон
-                <span class="tip-wrap tip-init">
-                    (?)
-                    <div class="tip tip_atop">Небольшое описание промо-кода и <a href="#" class="blue">ссылка</a> на страницу с подробным описанием понятия «Промо-код»</div>
-                </span>
-                , укажите его здесь:</span><!--
-            --><span class="chart_input"><input type="text" class="text-box s-change" data-change="promo" /></span><!--
-            --><span class="chart_button"><a href="#" class="btn btn_grey" data-change="promo">Пересчитать</a></span>
-        </div>
-        <div class="ptb20">
-            <div class="form_group form_inline mb0">
-                <a href="#" class="btn btn_block">Применить</a>
-            </div>
-            <a href="#" class="chart_plus">Добавить товары из корзины</a>
-            <div class="chart_orders fright">Стоимость товаров: 1380 Р</div>
-        </div>
-    </div>
+                </div>
+                <a href="#" class="orders_link blue">2 товара на сумму 1080 руб (+80 бонусов)</a>
+            </td>
+            <td>
+                <div class="def-color">32.10.2014</div>
+            </td>
+            <td>
+                <div class="orders_state orange">Не оплачен / ожидайте доставку</div>
+            </td>
+            <td>
+                <a href="#" class="orders_action_link edit s-toggle" data-toggle="edit-order">Изменить</a>
+            </td>
+        </tr>
+        <tr>
+            <td>12864</td>
+            <td>
+                <div class="orders_img tip-wrap">
+                    <img src="static/images/upload/c3.jpg" class="tip-init" alt="" />
+                    <div class="tip tip_atop tip_atop_b">
+                        <a href="#"><img src="static/images/upload/c2.jpg" alt="" /></a>
+                    </div>
+                </div>
+                <a href="#" class="orders_link blue">2 товара на сумму 1080 руб (+80 бонусов)</a>
+            </td>
+            <td>
+                <div class="def-color">32.10.2014</div>
+            </td>
+            <td>
+                <div class="orders_state green">Доставлен</div>
+            </td>
+            <td>
+                <a href="#" class="orders_action_link repeat">Повторить</a>
+            </td>
+        </tr>
+    </table>
 </div>
-<div class="sh p20">
-    <h2 class="mb20">Детали доставки</h2>
-    <div class="row mb20">
-        <p class="semibold mb15">Изменить способ доставки:</p>
-        <form action="#" method="post">
-            <div class="mb15">
-                <label for="delivery-self" class="form_radio"><input type="radio" name="delivery-type" id="delivery-self" checked/><i></i>Самовывоз</label>
-            </div>
-            <div class="mb15">
-                <label for="delivery-man" class="form_radio"><input type="radio" name="delivery-type" id="delivery-man" /><i></i>Курьером</label>
-            </div>
-            <div class="form_group mb20">
-                <input type="submit" class="btn btn_block" value="Изменить способ" />
-            </div>
-        </form>
-    </div>
-    <div class="row mb20">
-        <p class="semibold mb15">Изменить адрес доставки:</p>
-        <form action="#" method="post">
-            <div class="mb15">
-                <label for="delivery2" class="form_radio"><input type="radio" name="delivery-address" id="delivery2" checked/><i></i>Основной адрес (г. Москва, Химкинский бульвар, д. 5, кв.12)</label>
-            </div>
-            <div class="mb15">
-                <label for="delivery3" class="form_radio"><input type="radio" name="delivery-address" id="delivery3" /><i></i>Дача (г. Реутов, ул. Туристическая, 15)</label>
-            </div>
-            <div class="mb25">
-                <label for="delivery4" class="form_radio"><input type="radio" name="delivery-address" id="delivery4" /><i></i>Новый адрес</label>
-            </div>
-            <div class="form_group">
-                <div class="autocomplete-cont">
-                    <label for="city2" class="form_label">Город:</label>
-                    <input type="text" id="city2" class="form_text autocomplete-input" value="М"/>
-                    <div class="autocomplete">
-                        <div class="autocomplete-line">Москва</div>
-                        <div class="autocomplete-line">Мурманск</div>
-                    </div>
-                </div>
-            </div>
-            <div class="form_group_wide">
-                <div class="form_inline form_group">
-                    <label for="street2" class="form_label">Улица:</label>
-                    <input type="text" id="street2" class="form_text" />
-                </div>
-                <div class="form_inline form_group_thin">
-                    <label for="house2" class="form_label">Дом:</label>
-                    <input type="text" id="house2" class="form_text" />
-                </div>
-                <div class="form_inline form_group_thin">
-                    <label for="corp2" class="form_label">Строение/корпус:</label>
-                    <input type="text" id="corp2" class="form_text" />
-                </div>
-                <div class="form_inline form_group_thin">
-                    <label for="office2" class="form_label">Квартира/офис:</label>
-                    <input type="text" id="office2" class="form_text" />
-                </div>
-            </div>
-            <div class="form_group mb20">
-                <input type="submit" class="btn btn_block" value="Изменить адрес" />
-            </div>
-        </form>
-    </div>
-    <div>
-        <p class="semibold mb15">Изменить дату и время доставки:</p>
-        <form action="#" method="post">
-            <div class="form_group_wide">
-                <div class="form_inline form_group">
-                    <label class="form_label">Дата:</label>
-                    <div class="date-select">
-                        <select class="select2">
-                            <option selected>21.01.2015</option>
-                            <option>22.01.2015</option>
-                            <option>23.01.2015</option>
-                            <option>24.01.2015</option>
-                        </select>
-                    </div>
-                </div>
-                <label for="soon"><input type="checkbox" id="soon" class="form_checkbox" /> Как можно раньше</label>
-            </div>
-            <div class="form_group">
-                <label class="form_label">Время:</label>
-                <select class="select2">
-                    <option selected>утро (с 9:00 до 12:00)</option>
-                    <option>день (с 12:00 до 16:00)</option>
-                    <option>вечер (с 16:00 до 20:00)</option>
-                </select>
-            </div>
-            <div class="form_group mb0">
-                <input type="submit" class="btn btn_block" value="Изменить дату и время" />
-            </div>
-        </form>
-    </div>
+
+<div class="hidden" data-show="edit-order">
+    //= _orders_edit.html
 </div>

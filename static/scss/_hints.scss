@@ -5,34 +5,48 @@
   cursor: pointer;
 }
 .tip {
-  display: none;
+  visibility: hidden;
+  z-index: 1;
 
   &:before {
     content: '';
     @include size(0);
     position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border: 5px solid transparent;
-    border-right: 10px solid transparent;
+    border: 6px solid transparent;
   }
 }
 .tip_atop {
   position: absolute;
-  left: 100%;
-  top: 50%;
-  height: 40px;
-  padding: 0 15px;
-  margin: -20px 0 0 10px;
   border-radius: 5px;
   box-shadow: 0 3px 7px 1px rgba(0,0,0,0.3);
   background: $color-white;
-  line-height: 40px;
   white-space: nowrap;
+}
+.tip_atop_r {
+  top: 50%;
+  left: 100%;
+  margin-left: 10px;
+  padding: 0 15px;
+  line-height: 40px;
 
   &:before {
-    border-right-color: $color-white;
+    top: 50%;
+    right: 100%;
+    margin-top: -6px;
+    border-right: 10px solid $color-white;
+  }
+}
+.tip_atop_b {
+  top: 100%;
+  left: 50%;
+  margin-top: 10px;
+  padding: 15px;
+
+  &:before {
+    top: -15px;
+    left: 50%;
+    margin-left: -5px;
+    border-bottom: 10px solid #000;
   }
 }
 .tip_inside {
@@ -48,7 +62,10 @@
   color: $color-text-grey;
 
   &:before {
-    border-right-color: $color-bg-grey;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-right: 10px solid $color-bg-grey;
   }
 }
 .tip_top {
