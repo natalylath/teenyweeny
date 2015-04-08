@@ -1,0 +1,41 @@
+.bonuses_cols-3 {
+  padding: 35px 0 20px;
+}
+.bonuses_col-3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  line-height: 21px;
+  text-align: center;
+}
+.bonuses_cols-4 {
+  margin-bottom: 20px;
+}
+.bonuses_col-4 {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 25%;
+  padding-top: 15px;
+  border-right: 1px solid $color-grey-light;
+  text-align: center;
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+.bonuses_bold {
+  display: block;
+  font-family: 'helveticaneuecyrbold';
+  font-size: 21px;
+}
+.bonuses_percent {
+  display: block;
+  font: 89px/109px 'helveticaneuecyrblack';
+  color: $color-black;
+}
+.bonuses_key {
+  font-family: 'opensansbold';
+  color: $color-black;
+  font-weight: bold;
+}
