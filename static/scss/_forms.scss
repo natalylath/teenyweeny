@@ -182,11 +182,12 @@ input.btn {
   display: inline-block;
   position: relative;
   padding-left: 20px;
+  line-height: 21px;
 
   i {
     display: inline-block;
     position: absolute;
-    top: 0;
+    top: 3px;
     left: 0;
     @include size(14px);
     background: url(../images/ico/radio.png) 0 0 no-repeat;
@@ -198,14 +199,6 @@ input.btn {
     &:checked + i {
       background-position: 0 100%;
     }
-  }
-  .title {
-    display: block;
-    margin-bottom: 5px;
-    font-family: 'opensanssemibold';
-  }
-  .desc {
-    line-height: 21px;
   }
 }
 .form_checkbox {

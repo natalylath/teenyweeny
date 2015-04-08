@@ -1,0 +1,201 @@
+//= includes/_header.html
+
+<div class="width">
+    <h1 class="v1">Оформление заказа</h1>
+    <div class="float-cont">
+        <div class="sidebar_medium fleft mr20">
+            <div class="sh p20">
+                <h2 class="mb20">Контакты</h2>
+                <div class="ordering_contacts">
+                    <p class="semibold">Владимир!</p>
+                    <p>Ваши контактные данные не изменились?</p>
+                </div>
+                <div class="form_group">
+                    <label for="phone" class="form_label">
+                        Мобильный телефон:
+                        <span class="form_icon question tip-wrap tip-init">
+                            <div class="tip tip_atop tip_atop_r">Телефон нужен чтобы менеджер связался с вами и подтвердил заказ</div>
+                        </span>
+                    </label>
+                    <input type="text" id="phone" class="form_text" value="+7(965)111-11-11" />
+                </div>
+                <div class="form_group mb0">
+                    <label for="email" class="form_label">
+                        E-mail:
+                        <span class="form_icon question tip-wrap tip-init">
+                            <div class="tip tip_atop tip_atop_r">Телефон нужен чтобы менеджер связался с вами и подтвердил заказ</div>
+                        </span>
+                    </label>
+                    <input type="text" id="email" class="form_text" value="design@delme.ru" />
+                </div>
+            </div>
+        </div>
+        <div class="content_thin fleft">
+            <div class="sh p20">
+                <div class="float-cont">
+                    <div class="form form_group_medium fright mb20 ">
+                        <select class="select2">
+                            <option>Брянск</option>
+                            <option selected>Москва</option>
+                            <option>Воронеж</option>
+                        </select>
+                    </div>
+                    <h2 class="v2">Доставка в г.</h2>
+                </div>
+                <div class="form_substrate">
+                    <label for="delivery-self" class="form_radio">
+                        <input type="radio" name="delivery-type" id="delivery-self"/>
+                        <i></i>
+                        <p class="semibold">Самовывоз</p>
+                        <p>Бесплатно, можно забрать — послезавтра.</p>
+                        <p>Москва, метро Курская</p>
+                        <a href="#" class="blue">Схема проезда</a>
+                    </label>
+                </div>
+                <div class="form_substrate current corner">
+                    <label for="delivery-man" class="form_radio">
+                        <input type="radio" name="delivery-type" id="delivery-man" checked/>
+                        <i></i>
+                        <p class="semibold">Курьером</p>
+                        <p>Бесплатно (при заказе от 999 руб).</p>
+                        <p>В течение 1-3 дней</p>
+                        <a href="#" class="blue">Условия доставки</a>
+                    </label>
+                </div>
+                <div class="mb20">
+                    <label for="delivery2" class="form_radio">
+                        <input type="radio" name="delivery-address" id="delivery2" checked/>
+                        <i></i>
+                        <span class="semibold">Основной адрес</span>
+                        <span class="def-color">(г. Москва, Химкинский бульвар, д. 5, кв.12)</span>
+                    </label>
+                </div>
+                <div class="mb20">
+                    <label for="delivery3" class="form_radio">
+                        <input type="radio" name="delivery-address" id="delivery3" />
+                        <i></i>
+                        <span class="semibold">Дача</span>
+                        <span class="def-color">(г. Реутов, ул. Туристическая, 15)</span>
+                    </label>
+                </div>
+                <div class="mb25">
+                    <label for="delivery4" class="form_radio">
+                        <input type="radio" name="delivery-address" id="delivery4" />
+                        <i></i>
+                        <span class="semibold">Новый адрес</span>
+                    </label>
+                </div>
+                <div class="form_group_full">
+                    <div class="form_inline form_group">
+                        <label for="street" class="form_label">Улица:</label>
+                        <input type="text" id="street" class="form_text" />
+                    </div>
+                    <div class="form_group_x-thin fright">
+                        <label for="house" class="form_label">Дом:</label>
+                        <input type="text" id="house" class="form_text" />
+                    </div>
+                </div>
+                <div class="form_group form_group_full">
+                    <div class="form_inline form_group_x-medium">
+                        <label for="corp" class="form_label">Строение/корпус:</label>
+                        <input type="text" id="corp" class="form_text" />
+                    </div>
+                    <div class="form_group_x-medium fright">
+                        <label for="office" class="form_label">Квартира/офис:</label>
+                        <input type="text" id="office" class="form_text" />
+                    </div>
+                </div>
+                <p class="semibold mb15">Дата и время доставки:</p>
+                <div class="form form_group form_group_full">
+                    <div class="form_inline form_group_x-medium">
+                        <label class="form_label">Дата:</label>
+                        <div class="date-select">
+                            <select class="select2">
+                                <option selected>21.01.2015</option>
+                                <option>22.01.2015</option>
+                                <option>23.01.2015</option>
+                                <option>24.01.2015</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label for="soon" class="form_checkbox"><input type="checkbox" id="soon" checked /><i></i>Как можно раньше</label>
+                </div>
+                <div class="form form_group mb0">
+                    <label for="time" class="form_label">Время:</label>
+                    <select id="time" class="select2">
+                        <option selected>утро (с 9:00 до 12:00)</option>
+                        <option>день (с 12:00 до 16:00)</option>
+                        <option>вечер (с 16:00 до 20:00)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar_wide fright">
+            <div class="sh p20">
+                <h2 class="mb25">Оплата</h2>
+                <div class="form_substrate">
+                    <label for="payment-cash1" class="form_radio">
+                        <input type="radio" name="payment" id="payment-cash1"/>
+                        <i></i>
+                        <p class="semibold">При получении товара</p>
+                        <p>наличными курьеру</p>
+                    </label>
+                </div>
+                <div class="form_substrate current">
+                    <label for="payment-card" class="form_radio">
+                        <input type="radio" name="payment" id="payment-card" checked/>
+                        <i></i>
+                        <span class="title">Онлайн-оплата картой</span>
+                        <img src="static/images/ico/cards.png" alt="" />
+                    </label>
+                </div>
+                <div class="form_substrate mb0">
+                    <label for="payment-cash2" class="form_radio">
+                        <input type="radio" name="payment" id="payment-cash2"/>
+                        <i></i>
+                        <p class="semibold">При получении товара</p>
+                        <p>наличными курьеру</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sh p20">
+        <h2 class="v3">Заказ</h2>
+        <div class="ordering_table">
+            <div class="row p20">
+                <div class="orders_img_large">
+                    <a href="#"><img src="static/images/upload/c3.jpg" alt="" /></a>
+                </div>
+                <div class="orders_link">
+                    <a href="#">Royal Canin Adult Neutered Small Dog, сухой <br/>корм для собак мелких пород, 800 г</a>
+                    <p class="semibold">2 шт., 1080 руб</p>
+                </div>
+            </div>
+            <div class="row p20">
+                <div class="orders_img_large">
+                    <a href="#"><img src="static/images/upload/c2.jpg" alt="" /></a>
+                </div>
+                <div class="orders_link">
+                    <a href="#">Royal Canin Adult Neutered Small Dog, сухой <br/>корм для собак мелких пород, 800 г</a>
+                    <p class="semibold">2 шт., 1080 руб</p>
+                </div>
+            </div>
+        </div><!--
+        --><div class="ordering_info">
+            <div class="mb20">
+                <p><span class="sm-grey">Стоимость товаров:</span> <span class="semibold">1380 руб</span></p>
+                <p><span class="sm-grey">Стоимость с учетом всех скидок:</span> <span class="semibold">560 руб</span></p>
+                <p><span class="sm-grey">Стоимость доставки:</span> <span class="semibold">0 руб</span></p>
+            </div>
+            <div class="helveticabold fs21 mb36">Итого 1 560 руб</div>
+            <div class="form_inline form_group_x-medium">
+                <a href="#" class="btn btn_block">Подтвердить заказ</a>
+            </div>
+            <a href="#">Изменить заказ</a>
+        </div>
+
+    </div>
+</div>
+
+//= includes/_footer.html
