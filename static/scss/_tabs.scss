@@ -14,12 +14,12 @@ ul.tabs {
     cursor: pointer;
     margin-left: -1px;
 
-    &.first {
+    &:first-child {
       border-radius: 5px 0 0 0;
       margin-left: 0;
       border-left: 0;
     }
-    &.last {
+    &:last-child {
       border-right: none;
       border-radius: 0 5px 0 0;
     }
@@ -43,10 +43,24 @@ ul.tabs {
   }
 }
 
-ul.tabs_wide {
+ul.tabs_col3 {
   width: 100%;
-  background: $color-bg-blue;
-  border-radius: 5px 5px 0 0;
+
+  li {
+    width: 33%;
+    height: 110px;
+    padding-top: 20px;
+    line-height: 16px;
+    text-align: center;
+
+    &:last-child {
+      width: 238px;
+    }
+  }
+}
+
+ul.tabs_col5 {
+  width: 100%;
 
   li {
     width: 20%;
@@ -55,7 +69,7 @@ ul.tabs_wide {
     line-height: 16px;
     text-align: center;
 
-    &.last {
+    &:last-child {
       width: 192px;
     }
   }

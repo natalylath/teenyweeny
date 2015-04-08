@@ -93,7 +93,7 @@ a.inner-border {
   top: 16px;
 }
 .filter-option.active {
-  background: url(../images/ico/line.png) no-repeat 18px top #ffe2a7 !important;
+  background: url(../images/ico/line.png) no-repeat 18px top $color-bg-orange !important;
 }
 .filter-option.active:first-child {
   background-image: none !important;
@@ -183,4 +183,29 @@ a.inner-border {
 .brand-more .catalog-list li:first-child .inner-border {
   margin-top: 0;
   border-top: 1px solid $color-grey-light;
+}
+
+.filter-simple {}
+.filter-simple_title {
+  display: block;
+  padding: 0 44px 0 18px;
+  @include gradient-vertical($color-gradient-grey-light, $color-gradient-grey);
+  font: 13px/40px 'helveticaneuecyrbold';
+  text-decoration: none;
+
+  &:hover {
+    color: $color-black;
+  }
+  &.current {
+    background: none;
+  }
+}
+.filter-simple_option {
+  padding: 0 18px;
+  line-height: 40px;
+  cursor: pointer;
+
+  &.active {
+    background-color: $color-bg-orange;
+  }
 }

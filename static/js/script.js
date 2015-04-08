@@ -202,7 +202,7 @@ $(document).ready(function() {
 
 
 
-	$(document).on('click', '.filter-option', function() {
+	$(document).on('click', '.filter-option, .filter-simple_option', function() {
 		$(this).addClass('active');
 	});
 	$(document).on('click', '.option-del', function(e) {
