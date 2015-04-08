@@ -123,11 +123,20 @@ input.btn {
 .form_group_wide {
   min-width: 240px;
 }
+.form_group_medium {
+  width: 170px;
+}
+.form_group_x-medium {
+  width: 150px;
+}
+.form_group_xx-medium {
+  width: 130px;
+}
 .form_group_thin {
   width: 110px;
 }
-.form_group_middle {
-  width: 130px;
+.form_group_x-thin {
+  width: 100px;
 }
 .form_inline {
   display: inline-block;
@@ -190,6 +199,14 @@ input.btn {
       background-position: 0 100%;
     }
   }
+  .title {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'opensanssemibold';
+  }
+  .desc {
+    line-height: 21px;
+  }
 }
 .form_checkbox {
   display: inline-block;
@@ -213,6 +230,16 @@ input.btn {
     }
   }
 }
+.form_icon {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+
+  &.question {
+    @include size(12px);
+    background: url(../images/ico/blue-question.png) 0 0 no-repeat;
+  }
+}
 .form_hint {
   margin-bottom: 5px;
   line-height: 30px;
@@ -221,5 +248,35 @@ input.btn {
   img {
     display: inline-block;
     vertical-align: top;
+  }
+}
+.form_substrate {
+  margin-bottom: 20px;
+  padding: 15px 10px;
+  background-color: $color-bg-grey;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  &.current {
+    position: relative;
+    border-color: $color-orange;
+  }
+  &.corner {
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 35px;
+    }
+    &:before {
+      border: 6px solid transparent;
+      border-top-color: $color-orange;
+    }
+    &:after{
+      margin-left: 2px;
+      border: 4px solid transparent;
+      border-top-color: $color-bg-grey;
+    }
   }
 }
