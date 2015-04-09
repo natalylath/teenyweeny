@@ -205,7 +205,8 @@ a.inner-border {
   line-height: 40px;
   cursor: pointer;
 
-  &.active {
+  &.selected {
     background-color: $color-bg-orange;
+    cursor: default;
   }
 }

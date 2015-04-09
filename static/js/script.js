@@ -1,10 +1,6 @@
 $(document).ready(function() {
 
 	/* common scripts */
-	$('ul.tabs').on('click', 'li:not(.selected)', function() {
-		$(this).addClass('selected').siblings().removeClass('selected')
-			.parents('div.tabs-cont').find('div.tab-box').eq($(this).index()).fadeIn(150).siblings('div.tab-box').hide();
-	});
 
 	$('.select2').select2({
 		minimumResultsForSearch: 20
@@ -202,7 +198,7 @@ $(document).ready(function() {
 
 
 
-	$(document).on('click', '.filter-option, .filter-simple_option', function() {
+	$(document).on('click', '.filter-option', function() {
 		$(this).addClass('active');
 	});
 	$(document).on('click', '.option-del', function(e) {
@@ -254,4 +250,5 @@ $(document).ready(function() {
 	//= includes/toggle.js
 	//= includes/autocomplete.js
 	//= includes/form.js
+	//= includes/tabs.js
 });
