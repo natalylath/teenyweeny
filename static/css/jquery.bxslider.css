@@ -42,8 +42,9 @@ ul.bxslider {
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: -30px;
+  bottom: 10px;
   width: 100%;
+  z-index: 100;
 }
 /* LOADER */
 .bx-wrapper .bx-loading {
@@ -66,19 +67,29 @@ ul.bxslider {
   padding-top: 20px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
+  background: #dddddd;
   text-indent: -9999px;
   display: block;
   width: 10px;
   height: 10px;
   margin: 0 5px;
   outline: 0;
-  border-radius: 5px;
+  border-radius: 30px;
+  border: 1px solid #dddddd;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #000;
+  border-color: #fcb11a;
+  background: #ffdc57; /* Old browsers */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZGM1NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmMzNDkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #ffdc57 0%, #ffc349 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffdc57), color-stop(100%,#ffc349)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffdc57 0%,#ffc349 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffdc57 0%,#ffc349 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffdc57 0%,#ffc349 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #ffdc57 0%,#ffc349 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdc57', endColorstr='#ffc349',GradientType=0 ); /* IE6-8 */
 }
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
@@ -235,6 +246,7 @@ ul.bxslider {
   height: 28px;
   background-position: center center;
 }
+
 .bx-cont {
   position: relative;
 }
