@@ -2,6 +2,6 @@
   line-height: 21px;
   color: $color-text-grey;
 }
-#map_moscow {
+.map {
   @include size(700px, 340px);
 }
