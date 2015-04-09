@@ -251,4 +251,5 @@ $(document).ready(function() {
 	//= includes/autocomplete.js
 	//= includes/form.js
 	//= includes/tabs.js
+	//= includes/maps.js
 });
