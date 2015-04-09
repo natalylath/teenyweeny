@@ -15,7 +15,7 @@
             <a href="#" class="btn btn_block btn_small">Добавить весь список в корзину</a>
         </div>
         <div class="favorite_list-name">Основной список (2)</div>
-        <a href="#" class="favorite_link edit">Редактировать</a>
+        <a href="#layer-editfav" class="favorite_link edit fancybox">Редактировать</a>
         <a href="#" class="favorite_link send">Отправить по e-mail</a>
         <a href="#" class="favorite_link delete">Удалить</a>
     </div>
@@ -39,6 +39,17 @@
             <div class="form_group mb0">
                 <input type="submit" class="btn btn_block" value="Создать список" />
             </div>
+        </form>
+    </div>
+</div>
+
+<div class="layer" id="layer-editfav">
+    <div class="layer-inner w240">
+        <h3>Мои списки</h3>
+        <form>
+            <div class="label"><label for="f199">Название списка:</label></div>
+            <input type="text" class="def-input mb7" id="f199" value="Основной список"/>
+            <div class="sub-cont"><input type="submit" class="btn btn_block" value="Сохранить"/></div>
         </form>
     </div>
 </div>
