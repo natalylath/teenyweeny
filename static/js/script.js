@@ -154,8 +154,8 @@ $(document).ready(function() {
 	if ($('.bxslider').length) {
 		$('.bxslider').bxSlider({
 			pager: false,
-			nextSelector: '.bx-arrow-right',
-			prevSelector: '.bx-arrow-left',
+			nextSelector: '.quick-variant .bx-arrow-right',
+			prevSelector: '.quick-variant .bx-arrow-left',
 			nextText: '',
 			prevText: '',
 			slideWidth: 106,
