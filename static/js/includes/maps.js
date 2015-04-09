@@ -5,7 +5,7 @@ var maps = (function(){
                 if($('#map_moscow').length != 0) {
                     methods.create.mapMoscow();
                 }
-                if($('#map_region').length != 0) {
+                if($('#map_regions').length != 0) {
                     methods.create.mapRegion();
                 }
             },
@@ -24,10 +24,10 @@ var maps = (function(){
                     map.geoObjects.add(placemark);
                 },
                 mapRegion: function(){
-                    var map = new ymaps.Map("map_region", {
+                    var map = new ymaps.Map("map_regions", {
                         center: [55.753676, 37.619899],
                         zoom: 10,
-                        controls: ['zoomControl']
+                        controls: []
                     },{
                         minZoom: 9,
                         maxZoom: 10
