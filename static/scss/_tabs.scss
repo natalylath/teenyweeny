@@ -43,6 +43,22 @@ ul.tabs {
   }
 }
 
+ul.tabs_col2 {
+  width: 100%;
+
+  li {
+    width: 50%;
+    height: 110px;
+    padding-top: 20px;
+    line-height: 16px;
+    text-align: center;
+
+    &:last-child {
+      width: 351px;
+    }
+  }
+}
+
 ul.tabs_col3 {
   width: 100%;
 

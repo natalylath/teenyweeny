@@ -102,6 +102,9 @@
   &.repeat {
     background: url(../images/ico/orange-repeat.png) 0 0 no-repeat;
   }
+  &.revert {
+    background: url(../images/ico/orange-repeat.png) 0 0 no-repeat;
+  }
 }
 
 .ordering_text {
@@ -125,7 +128,6 @@
   display: inline-block;
   vertical-align: text-bottom;
   width: 50px;
-  margin-left: 10px;
   font-size: 11px;
   line-height: 11px;
 }
