@@ -42,16 +42,20 @@ ul.tabs {
     }
   }
 }
-
-ul.tabs_col2 {
+ul.tabs_cols {
   width: 100%;
 
   li {
-    width: 50%;
-    height: 110px;
     padding-top: 20px;
     line-height: 16px;
     text-align: center;
+  }
+}
+
+ul.tabs_col2 {
+  li {
+    width: 50%;
+    height: 110px;
 
     &:last-child {
       width: 351px;
@@ -60,14 +64,9 @@ ul.tabs_col2 {
 }
 
 ul.tabs_col3 {
-  width: 100%;
-
   li {
     width: 33%;
     height: 110px;
-    padding-top: 20px;
-    line-height: 16px;
-    text-align: center;
 
     &:last-child {
       width: 240px;
@@ -75,15 +74,21 @@ ul.tabs_col3 {
   }
 }
 
-ul.tabs_col5 {
-  width: 100%;
+ul.tabs_col4 {
+  li {
+    width: 25%;
+    height: 120px;
 
+    &:last-child {
+      width: 178px;
+    }
+  }
+}
+
+ul.tabs_col5 {
   li {
     width: 20%;
     height: 120px;
-    padding-top: 20px;
-    line-height: 16px;
-    text-align: center;
 
     &:last-child {
       width: 192px;

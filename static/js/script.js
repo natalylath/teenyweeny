@@ -124,31 +124,7 @@ $(document).ready(function() {
 		$(this).find('.ui-slider-handle').eq(0).addClass('left-handle');
 	});
 
-	function filterBlock() {
-		$(document).on('click', '.filter-title', function() {
-			if ($(this).hasClass('special-title')) return;
 
-			var par = $(this).closest('.filter-block');
-			par.toggleClass('opened');
-			if (par.hasClass('opened')) {
-				par.find('.filter-content').slideDown();
-			} else {
-				par.find('.filter-content').slideUp();
-			}
-		});
-
-		$(document).on('click', '.special-title', function() {
-			var par = $(this).closest('.filter-block');
-			par.toggleClass('opened');
-			if (par.hasClass('opened')) {
-				par.find('.subcontent').slideDown();
-			} else {
-				par.find('.subcontent').slideUp();
-			}
-		});
-
-	}
-	filterBlock();
 
 	/* filter last level - filter page */
 	if ($('.bxslider').length) {
@@ -518,4 +494,5 @@ $(document).ready(function() {
 	//= includes/form.js
 	//= includes/tabs.js
 	//= includes/maps.js
+	//= includes/filters.js
 });

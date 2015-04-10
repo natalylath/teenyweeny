@@ -149,7 +149,8 @@ input.btn {
   display: block;
   margin-bottom: 6px;
 }
-.form_text {
+.form_text,
+.form_textarea{
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -163,11 +164,9 @@ input.btn {
   &:focus {
     border-color: #a4a4a4;
   }
-  &:-ms-input-placeholder,
-  &::-moz-placeholder,
-  &::-webkit-input-placeholder {
-    font-style: italic;
-  }
+}
+.form_textarea {
+  @include size(380px, 120px);
 }
 .form_file {
   position: relative;

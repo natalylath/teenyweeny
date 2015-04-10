@@ -210,3 +210,16 @@ a.inner-border {
     cursor: default;
   }
 }
+
+.filter-help-title {
+  position: relative;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 44px 10px 20px;
+  @include gradient-vertical($color-gradient-grey-light, $color-gradient-grey);
+  line-height: 20px;
+  cursor: pointer;
+}
+.filter-help-content {
+  padding: 25px 40px 35px;
+}
