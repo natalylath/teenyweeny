@@ -1,11 +1,12 @@
 .sort {
   padding: 10px 20px;
   background-color: $color-bg-grey;
-}
-.sort {
   color: $color-black;
 }
-a.sort-btn {
+.sort_group {
+  margin-right: 12px;
+}
+a.sort_btn {
   border: 1px solid $color-grey;
   padding: 0 10px;
   height: 28px;
@@ -15,29 +16,29 @@ a.sort-btn {
   margin-right: 8px;
   text-decoration: none;
 }
-.sort-btn:hover {
+.sort_btn:hover {
   background-color: $color-grey;
   text-decoration: none;
   color: $color-black;
 }
-.sort-btn.active {
+.sort_btn.active {
   background-color: $color-blue;
   color: $color-white;
   border-color: $color-blue;
 }
-.sort-btn.active.sort-up {
+.sort_btn.active.sort-up {
   background: url(../images/ico/ar-up.png) no-repeat 10px center $color-blue;
   padding-left: 27px;
 }
-.sort-btn.active.sort-down {
+.sort_btn.active.sort-down {
   background: url(../images/ico/ar-down.png) no-repeat 10px center $color-blue;
   padding-left: 27px;
 }
-.sort-title {
+.sort_title {
   float: left;
   margin-right: 9px;
   line-height: 28px;
 }
-.sort-count {
+.sort_count {
   line-height: 28px;
 }
