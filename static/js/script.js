@@ -140,7 +140,7 @@ $(document).ready(function() {
 		});
 	}
 
-	$(document).on('click', '.sort-btn', function(e) {
+	$(document).on('click', '.sort_btn', function(e) {
 		if ($(this).hasClass('active')) {
 			if ($(this).hasClass('sort-down')) {
 				$(this).removeClass('sort-down').addClass('sort-up');
@@ -148,7 +148,7 @@ $(document).ready(function() {
 				$(this).removeClass('sort-up').addClass('sort-down');
 			}
 		} else {
-			$(this).closest('.sort').find('.sort-btn').removeClass('active').removeClass('sort-up').removeClass('sort-down');
+			$(this).closest('.sort').find('.sort_btn').removeClass('active').removeClass('sort-up').removeClass('sort-down');
 			$(this).addClass('active').addClass('sort-down');
 		}
 		e.preventDefault();
