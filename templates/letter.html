@@ -1,0 +1,64 @@
+//= includes/_header.html
+
+<div class="width">
+    <div class="float-cont">
+        <div class="sidebar fleft">
+            <div class="filter-cont sh">
+                <ul>
+                    <li><a href="#" class="filter-simple_title">Доставка</a></li>
+                    <li><a href="#" class="filter-simple_title">Оплата</a></li>
+                    <li><a href="#" class="filter-simple_title">Операции с товаром</a></li>
+                    <li><a href="#" class="filter-simple_title">Безопасность</a></li>
+                    <li><a href="#" class="filter-simple_title">Вопросы и ответы</a></li>
+                    <li><div class="filter-simple_title current">Письмо директору</div></li>
+                    <li><a href="#" class="filter-simple_title">Наш блог</a></li>
+                    <li><a href="#" class="filter-simple_title">Энциклопедия пород</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content fright">
+            <h1 class="mb10">Письмо директору</h1>
+            <div class="sh p20 mb40">
+                <div class="tab-box_text mb25">
+                    <p>Уважаемый клиент, вы можете направить ваше пожелание или жалобу <br/>напрямую директору TeenyWeeny.ru.</p>
+                    <p class="mb20">Для нас очень важно услышать ваше мнение о нашей работе.</p>
+                    <p>Спасибо!</p>
+                </div>
+                <form action="#" method="post" class="form">
+                    <div class="form_group">
+                        <label for="name" class="form_label">Имя (и отчество по желанию):</label>
+                        <input type="text" id="name" class="form_text" />
+                    </div>
+                    <div class="form_group">
+                        <label for="email" class="form_label">E-mail:</label>
+                        <input type="text" id="email" class="form_text" />
+                    </div>
+                    <div class="form_group form_group_wide">
+                        <label for="reason" class="form_label">Причина обращения:</label>
+                        <select id="reason" class="select2">
+                            <option>Ошибка</option>
+                            <option selected>Есть пожелания и предложения</option>
+                            <option>Жалоба</option>
+                        </select>
+                    </div>
+                    <div class="form_group form_group_wide">
+                        <label for="question" class="form_label">Сообщение:</label>
+                        <textarea id="question" class="form_textarea"></textarea>
+                    </div>
+                    <div class="form_group form_group_full">
+                        <a href="#" class="action_link file">Прикрепить файл если нужно</a>
+                    </div>
+                    <div class="form_group">
+                        <label for="order" class="form_label">Номер заказа (если есть):</label>
+                        <input type="text" id="order" class="form_text" />
+                    </div>
+                    <div class="form_group mb0">
+                        <input type="submit" class="btn btn_block" value="Отправить" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+//= includes/_footer.html

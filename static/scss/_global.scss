@@ -87,6 +87,24 @@ a.no-underline {
 .link-small {
   margin-bottom: 30px;
 }
+.action_link {
+  display: inline-block;
+  padding-left: 40px;
+  line-height: 30px;
+
+  &.edit {
+    background: url(../images/ico/orange-edit.png) 0 0 no-repeat;
+  }
+  &.repeat {
+    background: url(../images/ico/orange-repeat.png) 0 0 no-repeat;
+  }
+  &.revert {
+    background: url(../images/ico/orange-repeat.png) 0 0 no-repeat;
+  }
+  &.file {
+    background: url(../images/ico/orange-file.png) 0 0 no-repeat;
+  }
+}
 
 .semibold {
   font-family: 'opensanssemibold';
