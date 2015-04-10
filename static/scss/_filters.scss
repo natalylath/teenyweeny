@@ -210,6 +210,16 @@ a.inner-border {
     cursor: default;
   }
 }
+.filter-simple_selected {
+  margin-top: -1px;
+  padding: 1px 0;
+  background-color: $color-bg-orange;
+
+  .inner-border {
+    border-bottom: 0;
+    cursor: default;
+  }
+}
 
 .filter-help-title {
   position: relative;
