@@ -10,15 +10,19 @@
             <label for="name" class="form_label">Ваше имя:</label>
             <input type="text" id="name" class="form_text" value="Владимир" />
         </div>
-        <div class="form_group tip-wrap tip-init">
+        <div class="form_group">
             <label for="phone1" class="form_label">Мобильный телефон:</label>
-            <input type="text" id="phone1" class="form_text phone-mask" placeholder="+7" />
-            <div class="tip tip_inside">Телефон нужен: для подтверждения заказа оператором, для восстановления пароля и для информации о статусе заказа по SMS. Используйте телефон для входа как логин.</div>
+            <div class="tip-wrap">
+                <input type="text" id="phone1" class="form_text phone-mask" placeholder="+7" />
+                <div class="tip tip_inside">Телефон нужен: для подтверждения заказа оператором, для восстановления пароля и для информации о статусе заказа по SMS. Используйте телефон для входа как логин.</div>
+            </div>
         </div>
-        <div class="form_group tip-wrap tip-init">
+        <div class="form_group">
             <label for="email1" class="form_label">E-mail:</label>
-            <input type="text" id="email1" class="form_text" />
-            <div class="tip tip_inside">E-mail нужен: как логин для входа в аккаунт, для восстановления пароля и для отправления информации о статусе заказа.</div>
+            <div class="tip-wrap">
+                <input type="text" id="email1" class="form_text" />
+                <div class="tip tip_inside">E-mail нужен:</div>
+            </div>
         </div>
         <div class="form_group" data-hide="changePassword">
             <span>Пароль: <a href="#" class="blue s-toggle" data-toggle="changePassword">изменить пароль</a></span>
@@ -40,7 +44,7 @@
 </div>
 <div class="sh p20" data-scrollTo="addAddress">
     <h2 class="v1">Адрес для доставки</h2>
-    <div class="form_group mb0  tip-wrap tip-init" data-hide="addAddress">
+    <div class="form_group tip-wrap" data-hide="addAddress">
         <button class="btn btn_block s-toggle" data-toggle="addAddress">Добавить адрес</button>
         <div class="tip tip_inside">Заполните 1 раз адрес доставки, и он будет автоматически подставляться при оформлении новых заказов, а также учитываться при доставке. Это удобно!</div>
     </div>
@@ -60,8 +64,16 @@
             </div>
         </div>
         <div class="form_group">
-            <label for="station1" class="form_label">Ближайшее метро:</label>
-            <input type="text" id="station1" class="form_text" />
+            <div class="autocomplete-cont">
+                <label for="station1" class="form_label">Ближайшее метро:</label>
+                <input type="text" id="station1" class="form_text autocomplete-input" value="Ново"/>
+                <div class="autocomplete">
+                    <div class="autocomplete-line">Новокосино</div>
+                    <div class="autocomplete-line">Новослободская</div>
+                    <div class="autocomplete-line">Новокузнецкая</div>
+                    <div class="autocomplete-line">Новогиреево</div>
+                </div>
+            </div>
         </div>
         <div class="form_group_full">
             <div class="form_inline form_group">
@@ -102,7 +114,7 @@
 </div>
 <div class="sh p20 mb40" data-scrollTo="addPet">
     <h2 class="v1">Мои питомцы</h2>
-    <div class="pets" data-hide="addPet">
+    <div class="pets">
         <div class="pets_item">
             <img src="static/images/upload/pet.jpg" class="pets_image" alt="" />
             <div class="pets_info">
@@ -124,45 +136,45 @@
                 <a href="#" class="blue">Посмотреть рекомендуемые товары для мальтезе</a>
             </div>
         </div>
-        <div class="form_group mb0">
-            <button class="btn btn_block s-toggle" data-toggle="addPet">Добавить питомца</button>
-        </div>
     </div>
-    <form action="#" method="post" class="form hidden s-change" data-change="addPet" data-show="addPet">
-        <div class="form_group tip-wrap tip-init">
-            <label class="form_label">Вид вашего питомца:</label>
-            <select class="select2">
-                <option>Собака</option>
-                <option selected>Кошка</option>
-                <option>Грызун</option>
-                <option>Рыбка</option>
-                <option>Птица</option>
-                <option>Рептилия</option>
-            </select>
-            <div class="tip tip_inside tip_top">
-                <p>Укажите вашего питомца, чтобы:</p>
-                <p>1) получать информацию об акциях, новых продуктах по почте именно для вашего вида питомца. Можно настроить в разделе <a href="#" class="blue">Моя рассылка</a></p>
-                <p>2) помочь нашему магазину понять, для каких животных нам стоит отбирать товары</p>
-            </div>
-        </div>
+    <form action="#" method="post" class="form s-change" data-change="addPet">
         <div class="form_group">
-            <div class="autocomplete-cont">
-                <input type="text" id="breed" class="form_text autocomplete-input" placeholder="Порода неизвестна" />
-                <div class="autocomplete">
-                    <div class="autocomplete-line">Персидская</div>
-                    <div class="autocomplete-line">Британская короткошерстная</div>
+            <label class="form_label">Вид вашего питомца:</label>
+            <div class="tip-wrap">
+                <select class="select2 s-change" data-change="addPet">
+                    <option>Собака</option>
+                    <option>Кошка</option>
+                    <option>Грызун</option>
+                    <option>Рыбка</option>
+                    <option>Птица</option>
+                    <option>Рептилия</option>
+                </select>
+                <div class="tip tip_inside" style="bottom:-37px;">
+                    <p>Укажите вашего питомца, чтобы:</p>
+                    <p>1) получать информацию об акциях, новых продуктах по почте именно для вашего вида питомца. Можно настроить в разделе <a href="#" class="blue">Моя рассылка</a></p>
+                    <p>2) помочь нашему магазину понять, для каких животных нам стоит отбирать товары</p>
                 </div>
             </div>
         </div>
-        <div class="form_group">
-            <label for="type" class="form_label">Кличка:</label>
-            <input type="text" id="type" class="form_text" placeholder="По желанию" />
-        </div>
-        <div class="form_group">
-            <span>Фото питомца:</span>
-            <a href="#" class="blue form_file">загрузить фото<input type="file" />
-            </a>
-
+        <div class="hidden" data-show="addPet">
+            <div class="form_group">
+                <div class="autocomplete-cont">
+                    <input type="text" id="breed" class="form_text autocomplete-input" placeholder="Порода неизвестна" />
+                    <div class="autocomplete">
+                        <div class="autocomplete-line">Персидская</div>
+                        <div class="autocomplete-line">Британская короткошерстная</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_group">
+                <label for="type" class="form_label">Кличка:</label>
+                <input type="text" id="type" class="form_text" placeholder="По желанию" />
+            </div>
+            <div class="form_group">
+                <span>Фото питомца:</span>
+                <a href="#" class="blue form_file">загрузить фото<input type="file" /></a>
+                <p class="form_file_name"></p>
+            </div>
         </div>
         <div class="form_group mb0">
             <input type="submit" class="btn btn_grey" value="Добавить питомца"  data-change="addPet" disabled />

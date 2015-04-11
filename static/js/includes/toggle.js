@@ -4,12 +4,13 @@ var toggle = (function(){
         },
         methods = {
             toggle: function(){
-                var keyword = $(this).data('toggle');
+                var item = $(this),
+                    keyword = item.data('toggle');
 
                 $('[data-hide="' + keyword + '"]').hide();
                 $('[data-show="' + keyword + '"]').fadeIn(150);
 
-                return false;
+                if(!item.is('[type="radio"]')) return false;
             },
             events: {
                 set: function(){

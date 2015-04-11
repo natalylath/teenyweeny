@@ -5,7 +5,7 @@
   cursor: pointer;
 }
 .tip {
-  visibility: hidden;
+  display: none;
   z-index: 1;
 
   &:before {
@@ -52,7 +52,6 @@
 .tip_inside {
   position: absolute;
   left: 100%;
-  bottom: 0;
   width: 640px;
   margin-left: 20px;
   padding: 10px 20px;

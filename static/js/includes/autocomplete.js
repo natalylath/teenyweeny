@@ -7,7 +7,11 @@ var autocomplete = (function(){
                 $(this).closest('.autocomplete-cont').find('.autocomplete').show();
             },
             hide: function(){
-                $(this).closest('.autocomplete-cont').find('.autocomplete').hide();
+                var item = $(this);
+
+                setTimeout(function(){
+                    item.closest('.autocomplete-cont').find('.autocomplete').hide();
+                },100);
             },
             insert: function(){
                 var item = $(this),
@@ -35,7 +39,7 @@ var autocomplete = (function(){
                 set: function(){
                     nodes.body
                         .on('focus', '.autocomplete-input', methods.show)
-                        //.on('focusout', '.autocomplete-input', methods.hide)
+                        .on('blur', '.autocomplete-input', methods.hide)
                         .on('click', '.autocomplete-line', methods.insert)
                         .on('click', '.autocomplete-submit', methods.submit);
                 }

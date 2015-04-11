@@ -17,7 +17,7 @@
         <div class="favorite_list-name">Основной список (2)</div>
         <a href="#layer-editfav" class="favorite_link edit fancybox">Редактировать</a>
         <a href="#" class="favorite_link send">Отправить по e-mail</a>
-        <a href="#" class="favorite_link delete">Удалить</a>
+        <a href="#layer-deletefav" class="favorite_link delete fancybox">Удалить</a>
     </div>
     <div class="p20">
         <div class="float-cont mb25">
@@ -31,10 +31,12 @@
         </div>
         <a href="#" class="favorite_add s-toggle" data-toggle="list" data-hide="list">Создать новый список</a>
         <form action="#" method="post" class="hidden" data-show="list">
-            <div class="form_group tip-wrap tip-init">
+            <div class="form_group">
                 <label for="list" class="form_label">Введите название списка:</label>
-                <input type="text" id="list" class="form_text" />
-                <div class="tip tip_inside">Например: список постоянных покупок, интересные товары, список для кошки Маруси</div>
+                <div class="tip-wrap">
+                    <input type="text" id="list" class="form_text" />
+                    <div class="tip tip_inside">Например: список постоянных покупок, интересные товары, список для кошки Маруси</div>
+                </div>
             </div>
             <div class="form_group mb0">
                 <input type="submit" class="btn btn_block" value="Создать список" />
@@ -51,5 +53,12 @@
             <input type="text" class="def-input mb7" id="f199" value="Основной список"/>
             <div class="sub-cont"><input type="submit" class="btn btn_block" value="Сохранить"/></div>
         </form>
+    </div>
+</div>
+
+<div class="layer" id="layer-deletefav">
+    <div class="layer-inner w240">
+        <h3>Удалить список?</h3>
+        <button class="btn btn_block">Удалить</button>
     </div>
 </div>

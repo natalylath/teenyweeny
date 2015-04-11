@@ -92,17 +92,10 @@
                 <p class="semibold mb15">Дата и время доставки:</p>
                 <div class="form form_group form_group_full">
                     <div class="form_inline form_group_x-medium">
-                        <label class="form_label">Дата:</label>
-                        <div class="date-select">
-                            <select class="select2">
-                                <option selected>21.01.2015</option>
-                                <option>22.01.2015</option>
-                                <option>23.01.2015</option>
-                                <option>24.01.2015</option>
-                            </select>
-                        </div>
+                        <label for="date" class="form_label">Дата:</label>
+                        <input type="text" id="date" class="form_text date" value="04/10/2015" data-dependent="date" disabled/>
                     </div>
-                    <label for="soon" class="form_checkbox"><input type="checkbox" id="soon" checked /><i></i>Как можно раньше</label>
+                    <label for="soon" class="form_checkbox"><input type="checkbox" id="soon" class="s-depend" data-depend="date" checked /><i></i>Как можно раньше</label>
                 </div>
                 <div class="form form_group mb0">
                     <label for="time" class="form_label">Время:</label>

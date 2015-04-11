@@ -167,6 +167,10 @@ input.btn {
   &:focus {
     border-color: #a4a4a4;
   }
+
+  &.date {
+    background: url(../images/ico/date.png) 96% 50% no-repeat $color-bg-grey;
+  }
 }
 .form_textarea {
   height: 120px;

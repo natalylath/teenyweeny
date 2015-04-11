@@ -484,7 +484,7 @@ $(document).ready(function() {
     	e.preventDefault();
     });
 
-
+	$( "#date" ).datepicker();
 
 	//= includes/alert.js
 	//= includes/tip.js
