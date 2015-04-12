@@ -3,12 +3,12 @@
 }
 .layer-note2 {
 	text-align: center;
-	color: #000;
+	color: $color-black;
 	line-height: 1.5em;
 }
 .layer-note3 {
 	margin-bottom: 5px;
-	color: #000;
+	color: $color-black;
 }
 .layer-btm1 {
 	background: #f5f5f5;
@@ -28,7 +28,7 @@
 .card-desc {
 	float: left;
 	width: 378px;
-	border-right: 1px solid #eceaea;
+	border-right: 1px solid $color-grey-light;
 }
 .card-service {
 	float: right;
@@ -40,7 +40,7 @@
 	margin-bottom: 13px;
 }
 .card-code {
-	color: #787d82;
+	color: $color-text-grey;
 	font-size: 11px;
 	line-height: 1em;
 	margin-bottom: 17px;
@@ -90,7 +90,7 @@
 	background-image: url(../images/ico/no-av.png);
 }
 .card-price-old {
-	color: #787d82;
+	color: $color-text-grey;
 	font-size: 13px;
 	font-family: 'opensanssemibold';
 	text-decoration: line-through;
@@ -99,7 +99,7 @@
 	margin-bottom: 10px;
 }
 .card-short-desc {
-	color: #787d82;
+	color: $color-text-grey;
 	line-height: 1.5em;
 	margin-bottom: 25px;
 }
@@ -122,9 +122,9 @@
 	width: 28px;
 	height: 29px;
 	line-height: 29px;
-	background: #f7f7f7;
+	background: $color-bg-grey;
 	border-radius: 5px;
-	border: 1px solid #d9d9d9;
+	border: 1px solid $color-border-grey-light;
 	padding: 0 10px;
 }
 .card-count {
@@ -137,7 +137,7 @@
 	margin-bottom: 16px;
 }
 .total-desc {
-	color: #787d82;
+	color: $color-text-grey;
 }
 .btn-buy {
 	padding: 0 55px;
@@ -176,7 +176,7 @@
 }
 .fs11-grey {
 	font-size: 11px;
-	color: #787d82;
+	color: $color-text-grey;
 	line-height: 1.1em;
 }
 .card-delivery {
@@ -187,7 +187,7 @@
 	padding-left: 40px;
 }
 .bxslider-photo-border {
-	border: 1px solid #dedede;
+	border: 1px solid $color-bxslider-grey;
 	border-radius: 5px;
 	margin-bottom: 20px;
 	position: relative;
@@ -196,17 +196,17 @@
 	display: block;
 }
 .bxpager-inner {
-	border: 1px solid #dedede;
+	border: 1px solid $color-bxslider-grey;
 	border-radius: 5px;
 	width: 68px;
 	text-align: center;
 	line-height: 68px;
 	height: 68px;
-	background: #fff;
+	background: $color-white;
 	display: block;
 }
 .bxpager.active .bxpager-inner {
-	border-color: #ffbf3f;
+	border-color: $color-orange;
 }
 .bxpager-inner img {
 	display: inline-block !important;
@@ -259,13 +259,13 @@ h4.ver2 {
 	margin-right: 10px;
 }
 .import {
-	color: #000;
+	color: $color-black;
 	font-family: 'opensanssemibold';
 }
 table.eq-cols td {
 	width: 47.5%;
 	padding-right: 2%;
-	border-top: 1px solid #eceaea;
+	border-top: 1px solid $color-grey-light;
 	padding-top: 20px;
 }
 table.eq-cols td.left-td {
@@ -284,12 +284,12 @@ table.eq-cols td.left-td {
 }
 .review-item.review-admin {
 	padding-left: 30px;
-	border-top: 1px solid #eceaea;
+	border-top: 1px solid $color-grey-light;
 	padding-top: 14px;
 	margin-top: 13px;
 }
 .review-block {
-	border-bottom: 1px solid #eceaea;
+	border-bottom: 1px solid $color-grey-light;
 	margin-bottom: 20px;
 	padding-bottom: 14px;
 }
@@ -304,7 +304,7 @@ table.eq-cols td.left-td {
 
 
 .review-extend {
-	border-top: 1px solid #eceaea;
+	border-top: 1px solid $color-grey-light;
 	margin-top: 20px;
 	padding-top: 14px;
 }
@@ -314,7 +314,7 @@ table.eq-cols td.left-td {
 	margin-bottom: 8px;
 }
 .review-author {
-	color: #787d82;
+	color: $color-text-grey;
 	font-size: 11px;
 	line-height: 1em;
 	margin-bottom: 13px;
@@ -352,8 +352,8 @@ ul.tabs li.selected .sh-fix {
 	margin-right: 20px;
 }
 textarea.def {
-	background: #f7f7f7;
-    border: 1px solid #d9d9d9;
+	background: $color-bg-grey;
+    border: 1px solid $color-border-grey-light;
     border-radius: 5px;
     box-sizing: border-box;
     font-family: "opensanssemibold";
@@ -384,7 +384,7 @@ input.qty {
 	padding: 0 8px;
 	height: 28px;
 	line-height: 28px;
-	border: 1px solid #c3c3c3;
+	border: 1px solid $color-border-grey;
 	border-radius: 5px;
 }
 .review-extend {
@@ -461,7 +461,7 @@ ul.tabs li {
 	position: relative;
 	padding: 0 20px;
 	height: 254px;
-	background: #fff;
+	background: $color-white;
 	overflow: hidden;
 }
 .bxgallery-cont .catalog-item {
@@ -493,7 +493,7 @@ ul.tabs li {
 	z-index: 1;
 }
 .zoomWindow {
-    border: 1px solid #dedede !important;
+    border: 1px solid $color-bxslider-grey !important;
     margin-top: -2px;
     border-radius: 5px;
     margin-left: 1px;
@@ -511,12 +511,12 @@ ul.tabs li {
 	line-height: 1.2em;
 	top: -10px;
 	left: -100px;
-	background: #ffbf3f;
+	background: $color-orange;
 	border-radius: 5px;
 	display: none;
 	padding: 7px 10px;
 	z-index: 100;
-	color: #000;
+	color: $color-black;
 	box-shadow: 0 0 4px rgba(0,0,0,0.3);
 }
 .card-service-item:hover .card-service-tip {
@@ -536,7 +536,7 @@ ul.tabs li {
 	position: absolute;
 	pointer-events: none;
 	border-color: rgba(255, 191, 63, 0);
-	border-left-color: #ffbf3f;
+	border-left-color: $color-orange;
 	border-width: 5px;
 	margin-top: -5px;
 }
@@ -545,7 +545,7 @@ ul.tabs li {
 }
 .related-suggest {
 	border-radius: 0 0 5px 5px;
-	border: 1px solid #dedede;
+	border: 1px solid $color-bxslider-grey;
 	border-top: none;
 	padding: 13px 0 7px;
 	text-align: center;
@@ -590,7 +590,7 @@ ul.tabs li {
 	width: 150px;
 	display: inline-block;
 	vertical-align: top;
-	color: #787d82;
+	color: $color-text-grey;
 	padding-top: 3px;
 }
 .linkcard-cont .related-suggest {
@@ -605,7 +605,7 @@ ul.tabs li {
 	float: left;
 	margin-right: 30px;
 	border-radius: 5px;
-	border: 1px solid #dedede;
+	border: 1px solid $color-bxslider-grey;
 	overflow: hidden;
 	width: 98px;
 	cursor: pointer;
@@ -615,7 +615,7 @@ ul.tabs li {
 	cursor: default;
 }
 .card-complex-item:hover .card-complex-bg {
-	background: #dedede;
+	background: $color-bxslider-grey;
 	filter: none;
 }
 .card-complex-item.no-aval:hover .card-complex-bg {
@@ -656,7 +656,7 @@ ul.tabs li {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdc57', endColorstr='#ffc349',GradientType=0 ); /* IE6-8 */
 }
 .card-complex-value {
-	color: #787d82;
+	color: $color-text-grey;
 	font-size: 11px;
 	margin-bottom: 5px;
 }
@@ -686,18 +686,18 @@ ul.tabs li {
 	float: left;
 	margin-right: 10px;
 	border-radius: 5px;
-	border: 1px solid #d9d9d9;
+	border: 1px solid $color-border-grey-light;
 	height: 28px;
 	line-height: 28px;
 	text-align: center;
 	padding: 0 5px;
 	min-width: 18px;
 	cursor: pointer;
-	background: #f7f7f7;
+	background: $color-bg-grey;
 	font-size: 16px;
 }
 .size-item:hover {
-	background: #dedede;
+	background: $color-bxslider-grey;
 }
 .size-item.selected {
 	border-color: #ffcc4b;
@@ -726,7 +726,7 @@ ul.tabs li {
 	opacity: 0.7;
 }
 .color-item.selected {
-	border: 3px solid #000;
+	border: 3px solid $color-black;
 	height: 34px;
 	width: 34px;
 }
@@ -747,26 +747,26 @@ ul.tabs li {
 	width: 600px;
 }
 .layer-top {
-	background: #f7f7f7;
+	background: $color-bg-grey;
 	font-size: 11px;
 	line-height: 1.4em;
 	border-radius: 4px 4px 0 0;
 	padding: 20px 0 15px 40px;
 }
 .layer-btm {
-	background: #f7f7f7;
+	background: $color-bg-grey;
 	line-height: 1.2em;
 	border-radius: 0 0 4px 4px;
 	padding: 20px 20px 16px;
-	color: #000;
+	color: $color-black;
 }
 .w280 {
 	width: 280px;
 }
 .soc-login {
-	border-top: 1px solid #d9d9d9;
+	border-top: 1px solid $color-border-grey-light;
 	padding-top: 7px;
-	color: #787d82;
+	color: $color-text-grey;
 }
 .soc-login .fs11 {
 	margin-bottom: 7px;
@@ -859,14 +859,14 @@ input.btn {
 .fav-list {
 	border-radius: 5px;
 	overflow: hidden;
-	background: #f7f7f7;
-	border: 1px solid #d9d9d9;
-	color: #000;
+	background: $color-bg-grey;
+	border: 1px solid $color-border-grey-light;
+	color: $color-black;
 	margin-bottom: 10px;
 }
 .fav-list-item {
 	padding: 5px 40px 9px 10px;
-	border-top: 1px solid #d9d9d9;
+	border-top: 1px solid $color-border-grey-light;
 	margin-top: -1px;
 	font-family: 'opensanssemibold';
 	cursor: pointer;
@@ -877,7 +877,7 @@ input.btn {
 	margin-top: 1px;
 }
 .fav-list-item:hover {
-	background: url(../images/ico/check.png) no-repeat 213px center #dedede;
+	background: url(../images/ico/check.png) no-repeat 213px center $color-bxslider-grey;
 }
 .fav-list-item.selected {
 	background: url(../images/ico/check.png) no-repeat 213px center;
