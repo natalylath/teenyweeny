@@ -7,7 +7,14 @@ var scrollTo = (function(){
         },
         methods = {
             scrollTo: function(){
-                $.scrollTo($('[data-scrollTo="' + $(this).data('scroll') + '"]'), vars.speed);
+                var keyword = $(this).data('scroll');
+
+                if(keyword == 'top') {
+                    $.scrollTo(0, vars.speed);
+                } else {
+                    $.scrollTo($('[data-scrollTo="' + keyword + '"]'), vars.speed);
+                }
+
                 return false;
             },
             events: {

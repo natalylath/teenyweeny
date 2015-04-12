@@ -1,4 +1,4 @@
-var form = (function(){
+var forms = (function(){
     var vars= {
             speed: 150
         },
@@ -18,6 +18,12 @@ var form = (function(){
                     .addClass('btn_block');
             },
             delivery: {
+                prepare: function(){
+                    nodes.deliveryAddressFormStreet = nodes.deliveryAddressForm.find('#street');
+                    nodes.deliveryAddressFormHouse = nodes.deliveryAddressForm.find('#house');
+                    nodes.deliveryAddressFormCorp = nodes.deliveryAddressForm.find('#corp');
+                    nodes.deliveryAddressFormOffice = nodes.deliveryAddressForm.find('#office');
+                },
                 type: function(){
                     var item = $(this);
                     if(!item.hasClass('current')) {
@@ -84,6 +90,58 @@ var form = (function(){
             addFile: function(){
                 nodes.fileName.text($(this).val());
             },
+            phoneMask: function(){
+                nodes.body.find('.phone-mask').mask('+7 (000) 000-00-00');
+            },
+            datepicker: function(){
+                nodes.body.find("#date").datepicker();
+            },
+            password: function(){
+                nodes.password = nodes.body.find('#password');
+                nodes.showPassword = nodes.body.find('#show_pass');
+
+                nodes.password.password()
+                    .on('show.bs.password',function (e) {
+                        nodes.showPassword.prop('checked', true);
+                    })
+                    .on('hide.bs.password', function (e) {
+                        nodes.showPassword.prop('checked', false);
+
+                        nodes.showPassword.click(function () {
+                            console.log(6);
+                            var txt = nodes.password.password('val'),
+                                cur = nodes.password.val();
+
+                            nodes.password.password('toggle');
+
+                            if (cur != '') {
+                                nodes.password.password('val', txt);
+                            }
+                        });
+                    });
+
+                nodes.password1 = nodes.body.find('#password1');
+                nodes.showPassword1 = nodes.body.find('#show_pass1');
+
+                nodes.password1.password()
+                    .on('show.bs.password',function (e) {
+                        nodes.showPassword1.prop('checked', true);
+                        })
+                    .on('hide.bs.password', function (e) {
+                        nodes.showPassword1.prop('checked', false);
+                    });
+
+                nodes.password1.click(function () {
+                    var txt = nodes.password1.password('val'),
+                        cur = nodes.password1.val();
+
+                    nodes.password1.password('toggle');
+
+                    if (cur != '') {
+                        nodes.password1.password('val', txt);
+                    }
+                });
+            },
             events: {
                 set: function(){
                     nodes.body
@@ -105,17 +163,20 @@ var form = (function(){
             nodes.deliveryAddressForm = nodes.body.find('.s-delivery-address-form');
 
             if(nodes.deliveryAddressForm.length != 0) {
-                nodes.deliveryAddressFormStreet = nodes.deliveryAddressForm.find('#street');
-                nodes.deliveryAddressFormHouse = nodes.deliveryAddressForm.find('#house');
-                nodes.deliveryAddressFormCorp = nodes.deliveryAddressForm.find('#corp');
-                nodes.deliveryAddressFormOffice = nodes.deliveryAddressForm.find('#office');
+                methods.delivery.prepare();
             }
 
             nodes.fileName = nodes.body.find('.form_file_name');
+
+            methods.phoneMask();
+            //methods.password();
+            methods.datepicker();
 
             methods.events.set();
         }
     }
 }());
 
-form.init();
+forms.init();
+
+

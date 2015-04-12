@@ -10,7 +10,7 @@ var toggle = (function(){
                 $('[data-hide="' + keyword + '"]').hide();
                 $('[data-show="' + keyword + '"]').fadeIn(150);
 
-                if(!item.is('[type="radio"]')) return false;
+                return false;
             },
             events: {
                 set: function(){

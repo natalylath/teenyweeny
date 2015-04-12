@@ -1,11 +1,13 @@
 var maps = (function(){
-    var nodes = {},
+    var nodes = {
+            body: $('body')
+        },
         methods = {
             prepare: function(){
-                if($('#map_moscow').length != 0) {
+                if(nodes.body.find('#map_moscow').length != 0) {
                     methods.create.mapMoscow();
                 }
-                if($('#map_regions').length != 0) {
+                if(nodes.body.find('#map_regions').length != 0) {
                     methods.create.mapRegion();
                 }
             },
@@ -42,11 +44,6 @@ var maps = (function(){
 
                     map.layers.add(hotspotLayer);
                     map.layers.add(imgLayer);
-                }
-            },
-            events: {
-                set: function(){
-                    nodes.body.on('click', '.s-scroll', methods.scrollTo);
                 }
             }
         };
