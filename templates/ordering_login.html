@@ -42,9 +42,9 @@
                     </div>
                     <h2 class="v2">Доставка в г.</h2>
                 </div>
-                <div class="form_substrate">
+                <div class="form_substrate s-delivery-type">
                     <label for="delivery-self" class="form_radio">
-                        <input type="radio" name="delivery-type" id="delivery-self" class="s-toggle" data-toggle="pickup"/>
+                        <input type="radio" name="delivery-type" id="delivery-self" />
                         <i></i>
                         <p class="semibold">Самовывоз</p>
                         <p>Бесплатно, можно забрать — послезавтра.</p>
@@ -52,9 +52,9 @@
                         <a href="#" class="blue">Схема проезда</a>
                     </label>
                 </div>
-                <div class="form_substrate current corner">
+                <div class="form_substrate current corner mb0 s-delivery-type" data-form="true">
                     <label for="delivery-man" class="form_radio">
-                        <input type="radio" name="delivery-type" id="delivery-man" checked/>
+                        <input type="radio" name="delivery-type" id="delivery-man" checked />
                         <i></i>
                         <p class="semibold">Курьером</p>
                         <p>Бесплатно (при заказе от 999 руб).</p>
@@ -62,31 +62,27 @@
                         <a href="#" class="blue">Условия доставки</a>
                     </label>
                 </div>
-                <div  data-hide="pickup">
-                    <div class="mb20">
-                        <label for="delivery2" class="form_radio">
-                            <input type="radio" name="delivery-address" id="delivery2" checked/>
-                            <i></i>
-                            <span class="semibold">Основной адрес</span>
-                            <span class="def-color">(г. Москва, Химкинский бульвар, д. 5, кв.12)</span>
-                        </label>
-                    </div>
-                    <div class="mb20">
-                        <label for="delivery3" class="form_radio">
-                            <input type="radio" name="delivery-address" id="delivery3" />
-                            <i></i>
-                            <span class="semibold">Дача</span>
-                            <span class="def-color">(г. Реутов, ул. Туристическая, 15)</span>
-                        </label>
-                    </div>
-                    <div class="mb25">
-                        <label for="delivery4" class="form_radio">
-                            <input type="radio" name="delivery-address" id="delivery4" class="s-toggle" data-toggle="newAdress" />
-                            <i></i>
-                            <span class="semibold">Новый адрес</span>
-                        </label>
-                    </div>
-                    <div class="hidden" data-show="newAdress">
+                <div class="ordering_address s-delivery-type-form">
+                    <label for="delivery2" class="form_radio mb20">
+                        <input type="radio" name="delivery-address" id="delivery2" class="s-delivery-address" checked/>
+                        <i></i>
+                        <span class="semibold">Основной адрес</span>
+                        <span class="def-color s-delivery-address-str">(<span class="street">Химкинский бульвар</span>, д. <span class="house">5</span>, корп. <span class="corp">4</span>, кв.<span class="office">12</span>)</span>
+                        <span class="form_icon edit s-delivery-address-edit"></span>
+                    </label>
+                    <label for="delivery3" class="form_radio mb20">
+                        <input type="radio" name="delivery-address" id="delivery3" class="s-delivery-address" />
+                        <i></i>
+                        <span class="semibold">Дача</span>
+                        <span class="def-color s-delivery-address-str">(ул. <span class="street">Туристическая</span>, <span class="house">15</span>)</span>
+                        <span class="form_icon edit s-delivery-address-edit"></span>
+                    </label>
+                    <label for="delivery4" class="form_radio mb25">
+                        <input type="radio" name="delivery-address" id="delivery4"  class="s-delivery-address" data-new="true" />
+                        <i></i>
+                        <span class="semibold">Новый адрес</span>
+                    </label>
+                    <form action="#" method="post" class="hidden s-delivery-address-form">
                         <div class="form_group_full">
                             <div class="form_inline form_group">
                                 <label for="street" class="form_label">Улица:</label>
@@ -107,7 +103,10 @@
                                 <input type="text" id="office" class="form_text" />
                             </div>
                         </div>
-                    </div>
+                        <div class="form_group form_group_full">
+                            <input type="submit" class="btn btn_block" value="Сохранить" />
+                        </div>
+                    </form>
                     <p class="semibold mb15">Дата и время доставки:</p>
                     <div class="form form_group form_group_full">
                         <div class="form_inline form_group_x-medium">
@@ -142,7 +141,7 @@
                     <label for="payment-card" class="form_radio">
                         <input type="radio" name="payment" id="payment-card" checked/>
                         <i></i>
-                        <span class="title">Онлайн-оплата картой</span>
+                        <span class="semibold">Онлайн-оплата картой</span>
                         <img src="static/images/ico/cards.png" alt="" />
                     </label>
                 </div>

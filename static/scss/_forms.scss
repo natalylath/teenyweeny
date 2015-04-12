@@ -170,6 +170,10 @@ input.btn {
 
   &.date {
     background: url(../images/ico/date.png) 96% 50% no-repeat $color-bg-grey;
+
+    &:disabled {
+      opacity: .5;
+    }
   }
 }
 .form_textarea {
@@ -188,7 +192,7 @@ input.btn {
   }
 }
 .form_radio {
-  display: inline-block;
+  display: block;
   position: relative;
   padding-left: 20px;
   line-height: 21px;
@@ -240,6 +244,10 @@ input.btn {
   &.question {
     @include size(12px);
     background: url(../images/ico/blue-question.png) 0 0 no-repeat;
+  }
+  &.edit {
+    @include size(20px);
+    background: url(../images/ico/blue-edit.png) 0 0 no-repeat;
   }
 }
 .form_hint {

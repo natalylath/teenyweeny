@@ -48,7 +48,7 @@
                     </div>
                     <h2 class="v2">Доставка в г.</h2>
                 </div>
-                <div class="form_substrate">
+                <div class="form_substrate s-delivery-type">
                     <label for="delivery-self" class="form_radio">
                         <input type="radio" name="delivery-type" id="delivery-self"/>
                         <i></i>
@@ -58,7 +58,7 @@
                         <a href="#" class="blue">Схема проезда</a>
                     </label>
                 </div>
-                <div class="form_substrate current corner">
+                <div class="form_substrate current corner mb0 s-delivery-type" data-form="true">
                     <label for="delivery-man" class="form_radio">
                         <input type="radio" name="delivery-type" id="delivery-man" checked/>
                         <i></i>
@@ -68,42 +68,44 @@
                         <a href="#" class="blue">Условия доставки</a>
                     </label>
                 </div>
-                <p class="semibold mb15">Адрес доставки:</p>
-                <div class="form_group_full">
-                    <div class="form_inline form_group">
-                        <label for="street" class="form_label">Улица:</label>
-                        <input type="text" id="street" class="form_text" />
+                <div class="ordering_address s-delivery-type-form">
+                    <p class="semibold mb15">Адрес доставки:</p>
+                    <div class="form_group_full">
+                        <div class="form_inline form_group">
+                            <label for="street" class="form_label">Улица:</label>
+                            <input type="text" id="street" class="form_text" />
+                        </div>
+                        <div class="form_group_x-thin fright">
+                            <label for="house" class="form_label">Дом:</label>
+                            <input type="text" id="house" class="form_text" />
+                        </div>
                     </div>
-                    <div class="form_group_x-thin fright">
-                        <label for="house" class="form_label">Дом:</label>
-                        <input type="text" id="house" class="form_text" />
+                    <div class="form_group form_group_full">
+                        <div class="form_inline form_group_x-medium">
+                            <label for="corp" class="form_label">Строение/корпус:</label>
+                            <input type="text" id="corp" class="form_text" />
+                        </div>
+                        <div class="form_group_x-medium fright">
+                            <label for="office" class="form_label">Квартира/офис:</label>
+                            <input type="text" id="office" class="form_text" />
+                        </div>
                     </div>
-                </div>
-                <div class="form_group form_group_full">
-                    <div class="form_inline form_group_x-medium">
-                        <label for="corp" class="form_label">Строение/корпус:</label>
-                        <input type="text" id="corp" class="form_text" />
+                    <p class="semibold mb15">Дата и время доставки:</p>
+                    <div class="form form_group form_group_full">
+                        <div class="form_inline form_group_x-medium">
+                            <label for="date" class="form_label">Дата:</label>
+                            <input type="text" id="date" class="form_text date" value="04/10/2015" data-dependent="date" disabled/>
+                        </div>
+                        <label for="soon" class="form_checkbox"><input type="checkbox" id="soon" class="s-depend" data-depend="date" checked /><i></i>Как можно раньше</label>
                     </div>
-                    <div class="form_group_x-medium fright">
-                        <label for="office" class="form_label">Квартира/офис:</label>
-                        <input type="text" id="office" class="form_text" />
+                    <div class="form form_group mb0">
+                        <label for="time" class="form_label">Время:</label>
+                        <select id="time" class="select2">
+                            <option selected>утро (с 9:00 до 12:00)</option>
+                            <option>день (с 12:00 до 16:00)</option>
+                            <option>вечер (с 16:00 до 20:00)</option>
+                        </select>
                     </div>
-                </div>
-                <p class="semibold mb15">Дата и время доставки:</p>
-                <div class="form form_group form_group_full">
-                    <div class="form_inline form_group_x-medium">
-                        <label for="date" class="form_label">Дата:</label>
-                        <input type="text" id="date" class="form_text date" value="04/10/2015" data-dependent="date" disabled/>
-                    </div>
-                    <label for="soon" class="form_checkbox"><input type="checkbox" id="soon" class="s-depend" data-depend="date" checked /><i></i>Как можно раньше</label>
-                </div>
-                <div class="form form_group mb0">
-                    <label for="time" class="form_label">Время:</label>
-                    <select id="time" class="select2">
-                        <option selected>утро (с 9:00 до 12:00)</option>
-                        <option>день (с 12:00 до 16:00)</option>
-                        <option>вечер (с 16:00 до 20:00)</option>
-                    </select>
                 </div>
             </div>
         </div>
