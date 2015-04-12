@@ -7,22 +7,22 @@ var filters = (function(){
                 par.toggleClass('opened');
 
                 if (par.hasClass('opened')) {
-                    if (item.hasClass('special-title')) {
-                        par.find('.subcontent').slideDown();
-                    } else {
-                        par.find('.filter-content').slideDown();
-                    }
+                    item.find('.s-filter-open').hide();
+                    item.find('.s-filter-close').show();
+
+                    par.find('.s-filter-content').slideDown();
                 } else {
-                    if (item.hasClass('special-title')) {
-                        par.find('.subcontent').slideUp();
-                    } else {
-                        par.find('.filter-content').slideUp();
-                    }
+                    item.find('.s-filter-open').show();
+                    item.find('.s-filter-close').hide();
+
+                    par.find('.s-filter-content').slideUp();
                 }
+
+                return false;
             },
             events: {
                 set: function(){
-                    $(document).on('click', '.filter-title, .filter-help-title, special-title', methods.toggle);
+                    $(document).on('click', '.s-filter', methods.toggle);
                 }
             }
         };

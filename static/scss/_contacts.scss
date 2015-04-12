@@ -1,0 +1,15 @@
+.contact_item {
+  min-height: 80px;
+  padding-left: 100px;
+  line-height: 21px;
+
+  &.phone {
+    background: url(../images/ico/contact1.png) 0 0 no-repeat;
+  }
+  &.mail {
+    background: url(../images/ico/contact2.png) 0 0 no-repeat;
+  }
+}
+.contects_map {
+  @include size(700px,276px);
+}

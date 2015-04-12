@@ -221,7 +221,7 @@ a.inner-border {
   }
 }
 
-.filter-help-title {
+.filter-help_title {
   position: relative;
   box-sizing: border-box;
   height: 40px;
@@ -230,6 +230,31 @@ a.inner-border {
   line-height: 20px;
   cursor: pointer;
 }
-.filter-help-content {
+.filter-help_content {
   padding: 25px 40px 35px;
+}
+
+.filter_link {
+  display: inline-block;
+  position: relative;
+  margin-left: 20px;
+
+  &:before {
+    content: '';
+    @include size(12px);
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    margin-top: -6px;
+    background: url(../images/ico/ar-toggle-blue.png) no-repeat 0 0;
+  }
+}
+.opened .filter_link:before {
+  background-position: left bottom;
+}
+
+.filter-contacts_content {
+  margin-bottom: 15px;
+  padding-top: 5px;
+  line-height: 30px;
 }

@@ -84,6 +84,15 @@ a.underline:hover {
 a.no-underline {
   text-decoration: none;
 }
+a.dashed {
+  text-decoration: none;
+  border-bottom: 1px dashed $color-link-blue;
+
+  &:hover {
+    border-bottom: 0;
+    padding-bottom: 1px;
+  }
+}
 .link-small {
   margin-bottom: 30px;
 }
