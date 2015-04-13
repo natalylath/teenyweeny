@@ -1,3 +1,4 @@
+
 var autocomplete = (function(){
     var nodes = {
             body: $('body')
@@ -51,5 +52,4 @@ var autocomplete = (function(){
         }
     }
 }());
-
 autocomplete.init();

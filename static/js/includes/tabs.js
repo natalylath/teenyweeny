@@ -1,3 +1,4 @@
+
 var tabs = (function(){
     var vars = {
             speed: 150
@@ -38,5 +39,4 @@ var tabs = (function(){
         }
     }
 }());
-
 tabs.init();

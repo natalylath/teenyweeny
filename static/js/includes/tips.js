@@ -1,3 +1,4 @@
+
 var tips = (function(){
     var vars = {
             speed: 150
@@ -71,6 +72,4 @@ var tips = (function(){
         }
     }
 }());
-
 tips.init();
-

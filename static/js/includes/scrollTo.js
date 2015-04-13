@@ -1,3 +1,4 @@
+
 var scrollTo = (function(){
     var vars = {
             speed: 150
@@ -29,5 +30,4 @@ var scrollTo = (function(){
         }
     }
 }());
-
 scrollTo.init();

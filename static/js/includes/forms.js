@@ -1,3 +1,4 @@
+
 var forms = (function(){
     var vars= {
             speed: 150
@@ -17,12 +18,37 @@ var forms = (function(){
                     .removeClass('btn_grey')
                     .addClass('btn_block');
             },
+            password: {
+                prepare: function(){
+                    nodes.password = nodes.body.find('.s-password');
+                    nodes.password.password();
+                },
+                show: function(){
+                    var item = $(this),
+                        password = nodes.password.filter('[data-password="' + item.data('password') + '"]'),
+                        txt = password.password('val'),
+                        cur = password.val();
+
+                    password.password('toggle');
+
+                    if (cur != '') {
+                        password.password('val', txt);
+                    } else {
+                        password.password('val', cur);
+                    }
+                }
+            },
             delivery: {
                 prepare: function(){
-                    nodes.deliveryAddressFormStreet = nodes.deliveryAddressForm.find('#street');
-                    nodes.deliveryAddressFormHouse = nodes.deliveryAddressForm.find('#house');
-                    nodes.deliveryAddressFormCorp = nodes.deliveryAddressForm.find('#corp');
-                    nodes.deliveryAddressFormOffice = nodes.deliveryAddressForm.find('#office');
+                    nodes.deliveryTypeForm = nodes.body.find('.s-delivery-type-form');
+                    nodes.deliveryAddressForm = nodes.body.find('.s-delivery-address-form');
+
+                    if(nodes.deliveryAddressForm.length != 0) {
+                        nodes.deliveryAddressFormStreet = nodes.deliveryAddressForm.find('#street');
+                        nodes.deliveryAddressFormHouse = nodes.deliveryAddressForm.find('#house');
+                        nodes.deliveryAddressFormCorp = nodes.deliveryAddressForm.find('#corp');
+                        nodes.deliveryAddressFormOffice = nodes.deliveryAddressForm.find('#office');
+                    }
                 },
                 type: function(){
                     var item = $(this);
@@ -88,59 +114,13 @@ var forms = (function(){
                 nodes.body.find('[data-dependent="' + item.data('depend') + '"]').attr('disabled', item.is(':checked'));
             },
             addFile: function(){
-                nodes.fileName.text($(this).val());
+                nodes.body.find('.form_file_name').text($(this).val());
             },
             phoneMask: function(){
                 nodes.body.find('.phone-mask').mask('+7 (000) 000-00-00');
             },
             datepicker: function(){
                 nodes.body.find("#date").datepicker();
-            },
-            password: function(){
-                nodes.password = nodes.body.find('#password');
-                nodes.showPassword = nodes.body.find('#show_pass');
-
-                nodes.password.password()
-                    .on('show.bs.password',function (e) {
-                        nodes.showPassword.prop('checked', true);
-                    })
-                    .on('hide.bs.password', function (e) {
-                        nodes.showPassword.prop('checked', false);
-
-                        nodes.showPassword.click(function () {
-                            console.log(6);
-                            var txt = nodes.password.password('val'),
-                                cur = nodes.password.val();
-
-                            nodes.password.password('toggle');
-
-                            if (cur != '') {
-                                nodes.password.password('val', txt);
-                            }
-                        });
-                    });
-
-                nodes.password1 = nodes.body.find('#password1');
-                nodes.showPassword1 = nodes.body.find('#show_pass1');
-
-                nodes.password1.password()
-                    .on('show.bs.password',function (e) {
-                        nodes.showPassword1.prop('checked', true);
-                        })
-                    .on('hide.bs.password', function (e) {
-                        nodes.showPassword1.prop('checked', false);
-                    });
-
-                nodes.password1.click(function () {
-                    var txt = nodes.password1.password('val'),
-                        cur = nodes.password1.val();
-
-                    nodes.password1.password('toggle');
-
-                    if (cur != '') {
-                        nodes.password1.password('val', txt);
-                    }
-                });
             },
             events: {
                 set: function(){
@@ -151,32 +131,21 @@ var forms = (function(){
                         .on('click', '.s-delivery-address', methods.delivery.address)
                         .on('click', '.s-delivery-address-edit', methods.delivery.addressEdit)
                         .on('click', '.s-depend', methods.depend)
+                        .on('click', '.s-show-password', methods.password.show)
                         .on('change', '[type="file"]', methods.addFile);
-
                 }
             }
         };
     return {
         init: function(){
-            nodes.deliveryTypeForm = nodes.body.find('.s-delivery-type-form');
-
-            nodes.deliveryAddressForm = nodes.body.find('.s-delivery-address-form');
-
-            if(nodes.deliveryAddressForm.length != 0) {
-                methods.delivery.prepare();
-            }
-
-            nodes.fileName = nodes.body.find('.form_file_name');
+            methods.delivery.prepare();
+            methods.password.prepare();
 
             methods.phoneMask();
-            //methods.password();
             methods.datepicker();
 
             methods.events.set();
         }
     }
 }());
-
 forms.init();
-
-

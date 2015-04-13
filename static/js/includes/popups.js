@@ -1,3 +1,4 @@
+
 var popups = (function(){
     var nodes = {
             body: $('body')
@@ -40,6 +41,4 @@ var popups = (function(){
         }
     }
 }());
-
 popups.init();
-

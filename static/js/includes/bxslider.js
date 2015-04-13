@@ -1,3 +1,4 @@
+
 var bxSlider = (function(){
     var vars = {},
         nodes = {
@@ -154,5 +155,4 @@ var bxSlider = (function(){
         }
     }
 }());
-
 bxSlider.init();

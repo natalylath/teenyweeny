@@ -1,3 +1,4 @@
+
 var filters = (function(){
     var nodes={
             body: $('body')
@@ -141,5 +142,4 @@ var filters = (function(){
         }
     }
 }());
-
 filters.init();

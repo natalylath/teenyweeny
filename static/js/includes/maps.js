@@ -1,3 +1,4 @@
+
 var maps = (function(){
     var nodes = {
             body: $('body')
@@ -53,5 +54,4 @@ var maps = (function(){
         }
     }
 }());
-
 maps.init();

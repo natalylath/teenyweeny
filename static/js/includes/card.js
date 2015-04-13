@@ -1,3 +1,4 @@
+
 var card = (function(){
     var nodes = {
             body: $('body')
@@ -99,5 +100,4 @@ var card = (function(){
         }
     }
 }());
-
 card.init();

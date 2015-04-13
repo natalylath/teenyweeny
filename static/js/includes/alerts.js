@@ -1,3 +1,4 @@
+
 var alerts = (function(){
     var vars = {
             speed: 150
@@ -21,6 +22,4 @@ var alerts = (function(){
         }
     }
 }());
-
 alerts.init();
-

@@ -1,3 +1,4 @@
+
 var fancybox = (function(){
     var vars = {
             delay: 200
@@ -74,6 +75,4 @@ var fancybox = (function(){
         }
     }
 }());
-
 fancybox.init();
-

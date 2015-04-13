@@ -1,3 +1,4 @@
+
 var toggle = (function(){
     var nodes = {
             body: $('body')
@@ -24,5 +25,4 @@ var toggle = (function(){
         }
     }
 }());
-
 toggle.init();

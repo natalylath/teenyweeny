@@ -1,3 +1,4 @@
+
 var select2 = (function(){
     var nodes = {
             body: $('body')
@@ -47,5 +48,4 @@ var select2 = (function(){
         }
     }
 }());
-
 select2.init();
