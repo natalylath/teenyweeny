@@ -234,10 +234,10 @@ ul.bxslider {
   background: linear-gradient(to bottom,  #ffec56 0%,#ffd93f 100%); /* W3C */
 }
 .bx-arrow-left a {
-  background: url(../images/ico/arrow-left.png) no-repeat;
+  background: url(../images/ico/ar-left.png) no-repeat;
 }
 .bx-arrow-right a {
-  background: url(../images/ico/arrow-right.png) no-repeat;
+  background: url(../images/ico/ar-right.png) no-repeat;
 }
 .bx-arrow-left a,
 .bx-arrow-right a {

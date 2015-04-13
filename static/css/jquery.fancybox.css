@@ -105,7 +105,7 @@
 	height: 30px;
 	cursor: pointer;
 	z-index: 8040;
-	background: url(../images/ico/close1.png) no-repeat center center #fff;
+	background: url(../images/ico/close-black.png) no-repeat center center #fff;
 	border-radius: 50px;
 	box-shadow: 0 2px 7px 1px rgba(0,0,0,0.3);
 }
@@ -156,11 +156,11 @@
 }
 
 .fancybox-prev span {
-	background: url(../images/ico/arrow-left.png) no-repeat center center;
+	background: url(../images/ico/ar-left.png) no-repeat center center;
 }
 
 .fancybox-next span {
-	background: url(../images/ico/arrow-right.png) no-repeat  center center;
+	background: url(../images/ico/ar-right.png) no-repeat  center center;
 }
 
 .fancybox-nav:hover span {

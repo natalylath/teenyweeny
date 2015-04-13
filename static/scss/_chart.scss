@@ -47,7 +47,7 @@
   display: inline-block;
   @include size(18px);
   margin: 30px 32px 0 0;
-  background: url(../images/ico/del.png) no-repeat;
+  background: url(../images/ico/blue-delete-small.png) no-repeat;
   cursor: pointer;
 }
 .chart_product {
@@ -206,5 +206,5 @@
   vertical-align: top;
   padding-left: 40px;
   line-height: 38px;
-  background: url(../images/ico/plus.png) 0 50% no-repeat;
+  background: url(../images/ico/orange-plus.png) 0 50% no-repeat;
 }

@@ -163,7 +163,7 @@
 	text-decoration: none;
 }
 .c-delivery {
-	background: url(../images/ico/delivery1.png) no-repeat;
+	background: url(../images/ico/orange-delivery.png) no-repeat;
 	padding-left: 40px;
 	min-height: 30px;
 	display: inline-block;
@@ -315,12 +315,12 @@ input.qty {
 	opacity: 0.5;
 }
 .recom {
-	background: url(../images/ico/recom.png) no-repeat;
+	background: url(../images/ico/black-recom.png) no-repeat;
 	margin-right: 10px;
 	margin-left: 5px;
 }
 .no-recom {
-	background: url(../images/ico/no-recom.png);
+	background: url(../images/ico/black-no-recom.png);
 }
 .recom:hover,
 .no-recom:hover {
@@ -425,13 +425,6 @@ ul.tabs li {
 .linkcard-cont {
 	width: 170px;
 	margin-bottom: 10px;
-}
-.btn_block {
-  width: auto;
-  padding-left: 0;
-  padding-right: 0;
-  display: block;
-  text-align: center;
 }
 .related-suggest-cont .btn_block,
 .linkcard-cont .btn_block.btn-buy {

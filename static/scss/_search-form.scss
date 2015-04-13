@@ -30,21 +30,21 @@
   top: 4px;
   right: 4px;
 }
-.search-block .tip {
+.search-block .hint {
   color: $color-brown;
   margin-top: 8px;
   text-align: center;
   font-size: 11px;
   line-height: 1em;
 }
-.search-block .tip a {
+.search-block .hint a {
   color: $color-brown;
   background: url(../images/ico/dot.png) repeat-x left bottom;
   display: inline-block;
   padding-bottom: 2px;
   text-decoration: none;
 }
-.search-block .tip a:hover {
+.search-block .hint a:hover {
   background-image: none;
   text-decoration: none;
 }

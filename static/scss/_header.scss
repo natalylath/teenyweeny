@@ -176,16 +176,16 @@ a.menu-link .sh-fix {
   vertical-align: middle;
 }
 .city-icon {
-  background: url(../images/ico/city.png) no-repeat;
+  background: url(../images/ico/topline-city.png) no-repeat;
 }
 .delivery-icon {
-  background: url(../images/ico/delivery.png) no-repeat;
+  background: url(../images/ico/topline-delivery.png) no-repeat;
 }
 .time-icon {
-  background: url(../images/ico/time.png) no-repeat;
+  background: url(../images/ico/topline-time.png) no-repeat;
 }
 .help-icon {
-  background: url(../images/ico/help.png) no-repeat;
+  background: url(../images/ico/topline-help.png) no-repeat;
 }
 a.menu-link.underline {
   text-decoration: underline;
@@ -240,7 +240,7 @@ a.city:hover {
   vertical-align: top;
   margin-top: 7px;
   margin-right: 7px;
-  background: url(../images/ico/ar1.png) no-repeat right center;
+  background: url(../images/ico/ar-orange.png) no-repeat right center;
   padding-right: 17px;
 }
 .price-cont .price {
@@ -267,29 +267,29 @@ a.city:hover {
   margin-right: 7px;
 }
 .menu1 {
-  background-image: url(../images/ico/dog.png);
+  background-image: url(../images/ico/orange-dog.png);
 }
 .menu2 {
-  background-image: url(../images/ico/cat.png);
+  background-image: url(../images/ico/orange-cat.png);
 }
 .menu3 {
-  background-image: url(../images/ico/rodent.png);
+  background-image: url(../images/ico/orange-rodent.png);
 }
 .menu4 {
-  background-image: url(../images/ico/fish.png);
+  background-image: url(../images/ico/orange-fish.png);
 }
 .menu5 {
-  background-image: url(../images/ico/bird.png);
+  background-image: url(../images/ico/orange-bird.png);
 }
 .menu6 {
-  background-image: url(../images/ico/reptile.png);
+  background-image: url(../images/ico/orange-reptile.png);
 }
 .menu7 {
-  background-image: url(../images/ico/host.png);
+  background-image: url(../images/ico/orange-host.png);
 }
 .top-fav {
   float: left;
-  background: url(../images/ico/fav1.png) no-repeat;
+  background: url(../images/ico/black-favorite.png) no-repeat;
   padding-left: 21px;
   min-height: 15px;
   display: block;
@@ -305,7 +305,7 @@ a.city:hover {
   display: none;
 }
 .notice-txt {
-  background: url(../images/ico/notice.png) no-repeat;
+  background: url(../images/ico/black-notice.png) no-repeat;
   padding-left: 19px;
   display: inline-block;
   min-height: 15px;
@@ -318,7 +318,7 @@ a.city:hover {
   float: left;
 }
 .person-link {
-  background: url(../images/ico/person.png) no-repeat;
+  background: url(../images/ico/black-person.png) no-repeat;
   padding-left: 19px;
   min-height: 15px;
 }
