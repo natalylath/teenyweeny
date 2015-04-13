@@ -5,7 +5,7 @@ var bxSlider = (function(){
             body: $('body')
         },
         methods = {
-            default: {
+            base: {
                 init: function(){
                     nodes.body.find('.bxslider').bxSlider({
                         pager: false,
@@ -148,7 +148,7 @@ var bxSlider = (function(){
         };
     return {
         init: function(){
-            methods.default.init();
+            methods.base.init();
             methods.photo.init();
             methods.pager.init();
             methods.gallery.prepare();

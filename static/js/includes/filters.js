@@ -22,9 +22,15 @@ var filters = (function(){
                     return false;
                 },
                 select: function(){
-                    $(this).addClass('active');
+                    var item = $(this);
+
+                    if(item.hasClass('active')) {
+                        item.removeClass('active');
+                    } else {
+                        item.addClass('active');
+                    }
                 },
-                delete: function(e){
+                remove: function(e){
                     $(this).closest('.filter-option').removeClass('active');
                     e.stopImmediatePropagation();
                 }
@@ -45,11 +51,11 @@ var filters = (function(){
                     maxVal.val(nodes.range.slider( "values", 1 ));
 
                     minVal.change(function () {
-                        methods.minValChange(this, MIN_PRICE, MAX_PRICE, maxVal, currentSlider);
+                        methods.range.minValChange(this, MIN_PRICE, MAX_PRICE, maxVal, currentSlider);
                     });
 
                     maxVal.change(function () {
-                        methods.maxValChange(this, MIN_PRICE, MAX_PRICE, minVal, currentSlider)
+                        methods.range.maxValChange(this, MIN_PRICE, MAX_PRICE, minVal, currentSlider)
                     });
 
                     item.find('.ui-slider-handle').eq(0).addClass('left-handle');
@@ -124,9 +130,9 @@ var filters = (function(){
                     nodes.body
                         .on('click', '.s-filter', methods.filter.toggle)
                         .on('click', '.filter-option', methods.filter.select)
-                        .on('click', '.option-del', methods.filter.delete)
+                        .on('click', '.option-del', methods.filter.remove)
                         .on('click', '.sort_btn', methods.sort.toggle)
-                        .on('click', '.tag-remove', methods.tag);
+                        .on('click', '.tag-remove', methods.tag.remove);
                 }
             }
         };

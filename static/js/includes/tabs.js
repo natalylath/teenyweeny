@@ -7,7 +7,7 @@ var tabs = (function(){
             body: $('body')
         },
         methods = {
-            switch: function(){
+            switcher: function(){
                 var item = $(this),
                     index = item.index(),
                     data = item.parent().data('tabs');
@@ -21,10 +21,10 @@ var tabs = (function(){
             },
             events: {
                 set: function(){
-                    nodes.tabs.on('click', 'li:not(.selected)', methods.switch);
+                    nodes.tabs.on('click', 'li:not(.selected)', methods.switcher);
 
                     if(nodes.tabsRelated.length != 0) {
-                        nodes.tabsRelated.on('click', 'li:not(.selected)', methods.switch);
+                        nodes.tabsRelated.on('click', 'li:not(.selected)', methods.switcher);
                     }
                 }
             }

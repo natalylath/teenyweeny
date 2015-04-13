@@ -21,20 +21,34 @@
             <label for="email1" class="form_label">E-mail:</label>
             <div class="tip-wrap">
                 <input type="text" id="email1" class="form_text" />
-                <div class="tip tip_inside">E-mail нужен:</div>
+                <div class="tip tip_inside">E-mail нужен: как логин для входа в аккаунт, для восстановления пароля и для отправления информации о статусе заказа.</div>
             </div>
         </div>
         <div class="form_group" data-hide="changePassword">
             <span>Пароль: <a href="#" class="blue s-toggle" data-toggle="changePassword">изменить пароль</a></span>
         </div>
         <div class="hidden" data-show="changePassword">
-            <div class="form_group">
-                <label for="oldPas" class="form_label">Старый пароль:</label>
-                <input type="password" id="oldPas" class="form_text" />
+            <div class="form_group_full">
+                <div class="form_inline form_inline_middle form_group">
+                    <label for="oldPas" class="form_label">Старый пароль:</label>
+                    <input type="password" id="oldPas" class="form_text s-password" data-password="oldPas" />
+                </div>
+                <label for="show_oldPas" class="form_checkbox">
+                    <input type="checkbox" id="show_oldPas" class="s-show-password" data-password="oldPas" />
+                    <i></i>
+                    Показать пароль
+                </label>
             </div>
-            <div class="form_group">
-                <label for="newPas" class="form_label">Новый пароль:</label>
-                <input type="password" id="newPas" class="form_text" />
+            <div class="form_group_full">
+                <div class="form_inline form_inline_middle form_group">
+                    <label for="newPas" class="form_label">Старый пароль:</label>
+                    <input type="password" id="newPas" class="form_text s-password" data-password="newPas" />
+                </div>
+                <label for="show_newPas" class="form_checkbox">
+                    <input type="checkbox" id="show_newPas" class="s-show-password" data-password="newPas" />
+                    <i></i>
+                    Показать пароль
+                </label>
             </div>
         </div>
         <div class="form_group mb0">

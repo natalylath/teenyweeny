@@ -117,41 +117,49 @@
     <div class="row mb20">
         <p class="semibold mb15">Изменить адрес доставки:</p>
         <form action="#" method="post">
-            <div class="mb10">
-                <label for="delivery2" class="form_radio"><input type="radio" name="delivery-address" id="delivery2" checked/><i></i>Основной адрес (г. Москва, Химкинский бульвар, д. 5, кв.12)</label>
-            </div>
-            <div class="mb10">
-                <label for="delivery3" class="form_radio"><input type="radio" name="delivery-address" id="delivery3" /><i></i>Дача (г. Реутов, ул. Туристическая, 15)</label>
-            </div>
-            <div class="mb20">
-                <label for="delivery4" class="form_radio"><input type="radio" name="delivery-address" id="delivery4" /><i></i>Новый адрес</label>
-            </div>
-            <div class="form_group">
-                <div class="autocomplete-cont">
-                    <label for="city2" class="form_label">Город:</label>
-                    <input type="text" id="city2" class="form_text autocomplete-input" value="М"/>
-                    <div class="autocomplete">
-                        <div class="autocomplete-line">Москва</div>
-                        <div class="autocomplete-line">Мурманск</div>
+            <label for="delivery2" class="form_radio mb10">
+                <input type="radio" name="delivery-address" id="delivery2" class="s-delivery-address" checked/>
+                <i></i>
+                <span>Основной адрес</span>
+                <span class=" s-delivery-address-str">(г. <span class="s-city">Москва</span>, <span class="s-street">Химкинский бульвар</span>, д. <span class="s-house">5</span>, кв.<span class="s-office">12</span>)</span>
+                <span class="form_icon edit s-delivery-address-edit"></span>
+            </label>
+            <label for="delivery3" class="form_radio mb10">
+                <input type="radio" name="delivery-address" id="delivery3" class="s-delivery-address" />
+                <i></i>
+                <span>Дача</span>
+                <span class=" s-delivery-address-str">(г. <span class="s-city">Реутов</span>, ул. <span class="s-street">Туристическая</span>, <span class="s-office">15</span>)</span>
+                <span class="form_icon edit s-delivery-address-edit"></span>
+            </label>
+            <label for="delivery4" class="form_radio mb20"><input type="radio" name="delivery-address" id="delivery4" class="s-delivery-address" data-new="true" /><i></i>Новый адрес</label>
+            <div class="hidden s-delivery-address-form">
+                <div class="form_group">
+                    <div class="autocomplete-cont">
+                        <label for="city2" class="form_label">Город:</label>
+                        <input type="text" id="city2" class="form_text autocomplete-input s-city" value="М"/>
+                        <div class="autocomplete">
+                            <div class="autocomplete-line">Москва</div>
+                            <div class="autocomplete-line">Мурманск</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="form_group_full">
-                <div class="form_inline form_group">
-                    <label for="street2" class="form_label">Улица:</label>
-                    <input type="text" id="street2" class="form_text" />
-                </div>
-                <div class="form_inline form_group_thin">
-                    <label for="house2" class="form_label">Дом:</label>
-                    <input type="text" id="house2" class="form_text" />
-                </div>
-                <div class="form_inline form_group_thin">
-                    <label for="corp2" class="form_label">Строение/корпус:</label>
-                    <input type="text" id="corp2" class="form_text" />
-                </div>
-                <div class="form_inline form_group_thin">
-                    <label for="office2" class="form_label">Квартира/офис:</label>
-                    <input type="text" id="office2" class="form_text" />
+                <div class="form_group_full">
+                    <div class="form_inline form_group">
+                        <label for="street2" class="form_label">Улица:</label>
+                        <input type="text" id="street2" class="form_text s-street" />
+                    </div>
+                    <div class="form_inline form_group_thin">
+                        <label for="house2" class="form_label">Дом:</label>
+                        <input type="text" id="house2" class="form_text s-house" />
+                    </div>
+                    <div class="form_inline form_group_thin">
+                        <label for="corp2" class="form_label">Строение/корпус:</label>
+                        <input type="text" id="corp2" class="form_text s-corp" />
+                    </div>
+                    <div class="form_inline form_group_thin">
+                        <label for="office2" class="form_label">Квартира/офис:</label>
+                        <input type="text" id="office2" class="form_text s-office" />
+                    </div>
                 </div>
             </div>
             <div class="form_group mb20">
@@ -163,18 +171,11 @@
         <p class="semibold mb15">Изменить дату и время доставки:</p>
         <form action="#" method="post" class="form">
             <div class="form_group_full">
-                <div class="form_inline form_group">
-                    <label class="form_label">Дата:</label>
-                    <div class="date-select">
-                        <select class="select2">
-                            <option selected>21.01.2015</option>
-                            <option>22.01.2015</option>
-                            <option>23.01.2015</option>
-                            <option>24.01.2015</option>
-                        </select>
-                    </div>
+                <div class="form_inline form_inline_middle form_group">
+                    <label for="date" class="form_label">Дата:</label>
+                    <input type="text" id="date" class="form_text date s-date" value="04/10/2015" data-dependent="date" disabled/>
                 </div>
-                <label for="soon" class="form_checkbox"><input type="checkbox" id="soon"/><i></i>Как можно раньше</label>
+                <label for="soon" class="form_checkbox"><input type="checkbox" id="soon" class="s-depend" data-depend="date" checked /><i></i>Как можно раньше</label>
             </div>
             <div class="form_group">
                 <label class="form_label">Время:</label>

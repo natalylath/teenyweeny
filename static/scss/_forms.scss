@@ -149,6 +149,9 @@ input.btn {
   display: inline-block;
   margin-right: 10px;
 }
+.form_inline_middle {
+  vertical-align: middle;
+}
 .form_label {
   display: block;
   margin-bottom: 6px;
@@ -189,6 +192,7 @@ input.btn {
     left: 0;
     @include size(100%);
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     cursor: pointer;
   }
 }
@@ -215,8 +219,20 @@ input.btn {
     }
   }
 }
+.ie8 .form_radio {
+  padding-left: 0;
+
+  i {
+    display: none;
+  }
+  input[type="radio"] {
+    display: inline-block;
+    float: left;
+  }
+}
 .form_checkbox {
   display: inline-block;
+  vertical-align: middle;
   position: relative;
   padding: 3px 0 0 23px;
 
@@ -235,6 +251,16 @@ input.btn {
     &:checked + i {
       background-position: 0 100%;
     }
+  }
+}
+.ie8 .form_checkbox {
+  padding: 0;
+
+  i {
+    display: none;
+  }
+  input[type="checkbox"] {
+    display: inline-block;
   }
 }
 .form_icon {

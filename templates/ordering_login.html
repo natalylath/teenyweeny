@@ -67,18 +67,18 @@
                         <input type="radio" name="delivery-address" id="delivery2" class="s-delivery-address" checked/>
                         <i></i>
                         <span class="semibold">Основной адрес</span>
-                        <span class="def-color s-delivery-address-str">(<span class="street">Химкинский бульвар</span>, д. <span class="house">5</span>, корп. <span class="corp">4</span>, кв.<span class="office">12</span>)</span>
+                        <span class="def-color s-delivery-address-str">(<span class="s-street">Химкинский бульвар</span>, д. <span class="s-house">5</span>, корп. <span class="s-corp">4</span>, кв.<span class="s-office">12</span>)</span>
                         <span class="form_icon edit s-delivery-address-edit"></span>
                     </label>
                     <label for="delivery3" class="form_radio mb20">
                         <input type="radio" name="delivery-address" id="delivery3" class="s-delivery-address" />
                         <i></i>
                         <span class="semibold">Дача</span>
-                        <span class="def-color s-delivery-address-str">(ул. <span class="street">Туристическая</span>, <span class="house">15</span>)</span>
+                        <span class="def-color s-delivery-address-str">(ул. <span class="s-street">Туристическая</span>, <span class="s-house">15</span>)</span>
                         <span class="form_icon edit s-delivery-address-edit"></span>
                     </label>
                     <label for="delivery4" class="form_radio mb25">
-                        <input type="radio" name="delivery-address" id="delivery4"  class="s-delivery-address" data-new="true" />
+                        <input type="radio" name="delivery-address" id="delivery4" class="s-delivery-address" data-new="true" />
                         <i></i>
                         <span class="semibold">Новый адрес</span>
                     </label>
@@ -86,21 +86,21 @@
                         <div class="form_group_full">
                             <div class="form_inline form_group">
                                 <label for="street" class="form_label">Улица:</label>
-                                <input type="text" id="street" class="form_text" />
+                                <input type="text" id="street" class="form_text s-street" />
                             </div>
                             <div class="form_group_x-thin fright">
                                 <label for="house" class="form_label">Дом:</label>
-                                <input type="text" id="house" class="form_text" />
+                                <input type="text" id="house" class="form_text s-house" />
                             </div>
                         </div>
                         <div class="form_group form_group_full">
                             <div class="form_inline form_group_x-medium">
                                 <label for="corp" class="form_label">Строение/корпус:</label>
-                                <input type="text" id="corp" class="form_text" />
+                                <input type="text" id="corp" class="form_text s-corp" />
                             </div>
                             <div class="form_group_x-medium fright">
                                 <label for="office" class="form_label">Квартира/офис:</label>
-                                <input type="text" id="office" class="form_text" />
+                                <input type="text" id="office" class="form_text s-office" />
                             </div>
                         </div>
                         <div class="form_group form_group_full">
@@ -108,10 +108,10 @@
                         </div>
                     </form>
                     <p class="semibold mb15">Дата и время доставки:</p>
-                    <div class="form form_group form_group_full">
-                        <div class="form_inline form_group_x-medium">
+                    <div class="form form_inline_middle form_group_full">
+                        <div class="form_inline form_inline_middle form_group form_group_x-medium">
                             <label for="date" class="form_label">Дата:</label>
-                            <input type="text" id="date" class="form_text date" value="04/10/2015" data-dependent="date" disabled/>
+                            <input type="text" id="date" class="form_text date s-date" value="04/10/2015" data-dependent="date" disabled/>
                         </div>
                     <label for="soon" class="form_checkbox"><input type="checkbox" id="soon" class="s-depend" data-depend="date" checked /><i></i>Как можно раньше</label>
                     </div>

@@ -36,7 +36,6 @@ var card = (function(){
                     methods.price.updateTotalPrice();
                 },
                 keydown: function(e){
-                    console.log(6);
                     if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
                         (e.keyCode == 65 && e.ctrlKey === true) ||
                         (e.keyCode >= 35 && e.keyCode <= 40)) {

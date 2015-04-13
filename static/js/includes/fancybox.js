@@ -8,7 +8,7 @@ var fancybox = (function(){
             body: $('body')
         },
         methods = {
-            default: {
+            base: {
                 init: function(){
                     nodes.body.find('.fancybox').fancybox({
                         padding: 0,
@@ -17,7 +17,7 @@ var fancybox = (function(){
                             closeBtn : '<a class="fancybox-item fancybox-close close2"></a>'
                         },
                         afterLoad: function(current) {
-                            methods.default.afterLoad(current);
+                            methods.base.afterLoad(current);
                         }
                     });
                 },
@@ -25,7 +25,7 @@ var fancybox = (function(){
                     if (current.element.hasClass('quick-view-btn')) {
                         setTimeout( function() {
                             if ($('.bxslider-photo-border .bx-arrow-right .bx-next').length < 1) {
-                                methods.default.cardGalleryLayer();
+                                methods.base.cardGalleryLayer();
                             }
                         }, vars.delay);
                     }
@@ -63,14 +63,14 @@ var fancybox = (function(){
             },
             events: {
                 set: function(){
-                    nodes.document.on('click', '.fancy-close', methods.default.close)
+                    nodes.document.on('click', '.fancy-close', methods.base.close)
                 }
             }
 
         };
     return {
         init: function(){
-            methods.default.init();
+            methods.base.init();
             methods.gallery.init();
         }
     }

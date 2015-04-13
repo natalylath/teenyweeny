@@ -4,7 +4,7 @@ var select2 = (function(){
             body: $('body')
         },
         methods = {
-            default: {
+            base: {
                 init: function(){
                     nodes.body.find('.select2').select2({
                         minimumResultsForSearch: 20
@@ -42,7 +42,7 @@ var select2 = (function(){
         };
     return {
         init: function(){
-            methods.default.init();
+            methods.base.init();
             methods.priceList.init();
             methods.productColor.init();
         }

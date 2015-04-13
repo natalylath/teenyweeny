@@ -57,6 +57,9 @@
 .mb0 {
   margin-bottom: 0 !important;
 }
+.mb5 {
+  margin-bottom: 5px;
+}
 .mb10 {
   margin-bottom: 10px;
 }
@@ -115,8 +118,7 @@ a.dashed {
   border-bottom: 1px dashed $color-link-blue;
 
   &:hover {
-    border-bottom: 0;
-    padding-bottom: 1px;
+    border-bottom-color: transparent;
   }
 }
 .link-small {
@@ -139,6 +141,9 @@ a.dashed {
   &.file {
     background: url(../images/ico/orange-file.png) 0 0 no-repeat;
   }
+}
+.semibold {
+  font-family: 'opensanssemibold';
 }
 .helveticabold {
   font-family: 'helveticaneuecyrbold';

@@ -24,7 +24,7 @@ var autocomplete = (function(){
                 }
 
                 item.closest('.autocomplete').hide();
-                item.closest('.autocomplete-cont').find('.autocomplete-input').val(value);
+                item.closest('.autocomplete-cont').find('.autocomplete-input').val(value).change();
             },
             submit: function(){
                 /* add ajax for loading content of specified breed! */

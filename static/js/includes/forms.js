@@ -10,7 +10,7 @@ var forms = (function(){
             active: function(){
                 var keyword = $(this).data('change');
 
-                $('[data-show="' + keyword + '"]').fadeIn(150);
+                $('[data-show="' + keyword + '"]').fadeIn(vars.speed);
 
                 nodes.body
                     .find('.btn_grey[data-change="' + keyword + '"]')
@@ -44,10 +44,11 @@ var forms = (function(){
                     nodes.deliveryAddressForm = nodes.body.find('.s-delivery-address-form');
 
                     if(nodes.deliveryAddressForm.length != 0) {
-                        nodes.deliveryAddressFormStreet = nodes.deliveryAddressForm.find('#street');
-                        nodes.deliveryAddressFormHouse = nodes.deliveryAddressForm.find('#house');
-                        nodes.deliveryAddressFormCorp = nodes.deliveryAddressForm.find('#corp');
-                        nodes.deliveryAddressFormOffice = nodes.deliveryAddressForm.find('#office');
+                        nodes.deliveryAddressFormCity = nodes.deliveryAddressForm.find('.s-city');
+                        nodes.deliveryAddressFormStreet = nodes.deliveryAddressForm.find('.s-street');
+                        nodes.deliveryAddressFormHouse = nodes.deliveryAddressForm.find('.s-house');
+                        nodes.deliveryAddressFormCorp = nodes.deliveryAddressForm.find('.s-corp');
+                        nodes.deliveryAddressFormOffice = nodes.deliveryAddressForm.find('.s-office');
                     }
                 },
                 type: function(){
@@ -97,10 +98,11 @@ var forms = (function(){
                     item.hide();
                     parent.find('.s-delivery-address-str').hide();
 
-                    nodes.deliveryAddressFormStreet.val(parent.find('.street').text());
-                    nodes.deliveryAddressFormHouse.val(parent.find('.house').text());
-                    nodes.deliveryAddressFormCorp.val(parent.find('.corp').text());
-                    nodes.deliveryAddressFormOffice.val(parent.find('.office').text());
+                    nodes.deliveryAddressFormCity.val(parent.find('.s-city').text());
+                    nodes.deliveryAddressFormStreet.val(parent.find('.s-street').text());
+                    nodes.deliveryAddressFormHouse.val(parent.find('.s-house').text());
+                    nodes.deliveryAddressFormCorp.val(parent.find('.s-corp').text());
+                    nodes.deliveryAddressFormOffice.val(parent.find('.s-office').text());
 
                     nodes.deliveryAddressForm
                         .insertAfter(parent)
@@ -111,7 +113,7 @@ var forms = (function(){
             },
             depend: function(){
                 var item = $(this);
-                nodes.body.find('[data-dependent="' + item.data('depend') + '"]').attr('disabled', item.is(':checked'));
+                nodes.body.find('[data-dependent="' + item.data('depend') + '"]').prop('disabled', item.is(':checked'));
             },
             addFile: function(){
                 nodes.body.find('.form_file_name').text($(this).val());
@@ -120,7 +122,7 @@ var forms = (function(){
                 nodes.body.find('.phone-mask').mask('+7 (000) 000-00-00');
             },
             datepicker: function(){
-                nodes.body.find("#date").datepicker();
+                nodes.body.find(".s-date").datepicker();
             },
             events: {
                 set: function(){
