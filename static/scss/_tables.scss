@@ -1,3 +1,4 @@
+/* tables */
 table {
   width: 100%;
 }
@@ -6,4 +7,14 @@ table.cols5 {
 }
 table.cols5 td {
   width: 20%;
+}
+table.eq-cols td {
+  width: 47.5%;
+  padding-right: 2%;
+  border-top: 1px solid $color-grey-light;
+  padding-top: 20px;
+}
+table.eq-cols td.left-td {
+  width: 44%;
+  padding-right: 6%;
 }

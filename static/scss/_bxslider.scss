@@ -1,8 +1,11 @@
+/* bxslider */
 .bxslider-photo-border {
   border: 1px solid $color-bxslider-grey;
   border-radius: 5px;
   margin-bottom: 20px;
   position: relative;
+  height: 330px;
+  overflow: hidden;
 }
 .bxpager {
   display: block;
@@ -32,6 +35,8 @@
   margin-bottom: 30px;
   position: relative;
   border-radius: 3px;
+  height: 70px;
+  overflow: hidden;
 }
 .photo-slide {
   text-align: center;
@@ -47,4 +52,48 @@
 }
 .card-photo-block .bx-arrow-right {
   border-radius: 5px 0 0 5px;
+}
+.bxgallery-cont {
+  position: relative;
+  padding: 0 20px;
+  height: 254px;
+  background: $color-white;
+  overflow: hidden;
+}
+.bxgallery-cont .catalog-item {
+  text-align: center;
+  padding-bottom: 18px;
+}
+.bxgallery-cont .catalog-sep {
+  height: 220px;
+}
+.bxgallery-cont .bx-wrapper img {
+  display: inline-block;
+}
+.bxgallery-cont .bx-arrow-left,
+.bxgallery-cont .bx-arrow-right {
+  top: 39%;
+  visibility: hidden;
+  z-index: 1 !important;
+}
+.bxgallery-cont .bx-arrow-left {
+  border-radius: 0 5px 5px 0;
+}
+.bxgallery-cont .bx-arrow-right {
+  border-radius: 5px 0 0 5px;
+}
+.bxgallery-counter {
+  visibility: hidden;
+}
+.bxslider-photo {
+  z-index: 1;
+}
+.zoomWindow {
+  border: 1px solid $color-bxslider-grey !important;
+  margin-top: -2px;
+  border-radius: 5px;
+  margin-left: 1px;
+}
+.zoomContainer {
+  z-index: 100 !important;
 }
