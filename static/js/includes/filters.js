@@ -115,14 +115,26 @@ var filters = (function(){
                 }
             },
             tag: {
-                remove: function() {
+                select: function(){
                     var item = $(this);
 
-                    if (item.closest('.tags').hasClass('toggle-tags')) {
-                        item.closest('.tag').toggleClass('passive');
-                    } else {
-                        item.closest('.tag').hide();
+                    if(item.hasClass('passive')) {
+                        item.removeClass('passive');
                     }
+                },
+                remove: function(e) {
+                    var item = $(this),
+                        tag = item.closest('.tag');
+
+                    if (item.closest('.tags').hasClass('toggle-tags')) {
+                        if(!tag.hasClass('passive')) {
+                            tag.addClass('passive');
+                        }
+                    } else {
+                        tag.hide();
+                    }
+
+                    e.stopPropagation();
                 }
             },
             events: {
@@ -132,6 +144,7 @@ var filters = (function(){
                         .on('click', '.filter-option', methods.filter.select)
                         .on('click', '.option-del', methods.filter.remove)
                         .on('click', '.sort_btn', methods.sort.toggle)
+                        .on('click', '.toggle-tags .tag', methods.tag.select)
                         .on('click', '.tag-remove', methods.tag.remove);
                 }
             }
