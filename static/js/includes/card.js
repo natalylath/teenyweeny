@@ -53,12 +53,20 @@ var card = (function(){
                     nodes.cardTotal.show();
                 }
             },
+            recom: function(){
+                nodes.body.find('.recom').removeClass('active');
+                $(this).addClass('active');
+            },
             size: function(){
                 nodes.body.find('.size-item').removeClass('selected');
                 $(this).addClass('selected');
             },
             color: function(){
                 nodes.body.find('.color-item').removeClass('selected');
+                $(this).addClass('selected');
+            },
+            complex: function(){
+                nodes.body.find('.card-complex-item').removeClass('selected');
                 $(this).addClass('selected');
             },
             favorite: function(){
@@ -75,8 +83,10 @@ var card = (function(){
                         .on('click', '.count-dec', methods.price.decrement)
                         .on('change', '.card-count-input', methods.price.change)
                         .on('keydown', '.card-count-input', methods.price.keydown)
+                        .on('click','.recom', methods.recom)
                         .on('click','.size-item', methods.size)
                         .on('click','.color-item', methods.color)
+                        .on('click','.card-complex-item', methods.complex)
                         .on('click','.fav-list-item', methods.favorite);
                 }
             }
