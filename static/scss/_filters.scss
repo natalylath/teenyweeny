@@ -191,7 +191,7 @@ a.inner-border {
   display: block;
   padding: 0 44px 0 18px;
   @include gradient-vertical($color-gradient-grey-light, $color-gradient-grey);
-  font: 13px/40px 'helveticaneuecyrbold';
+  font: 13px/40px 'opensanssemibold';
   text-decoration: none;
 
   &:hover {
