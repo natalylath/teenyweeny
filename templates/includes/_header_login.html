@@ -27,9 +27,7 @@
 <body>
 <div class="service-top">
     <div class="width float-cont">
-        <div class="fleft">
-            <a href="" class="city"><span class="city-icon"></span>Мой город: <span class="underline">Москва</span></a>
-        </div>
+        //= _topline_cities.html
         <div class="fleft">
             <span class="delivery-icon"></span>Бесплатная доставка от 999
         </div>
@@ -53,17 +51,41 @@
                 </form>
                 <div class="shop-block">
                     <div class="float-cont login-block">
-                        <div class="notice-block">
-                            <div class="notice-elem">
+                        <div class="notice-block popup-cont">
+                            <div class="notice-elem popup-btn" data-top-offset="20" data-right-offset="-24">
                                 <span class="notice-txt notice-new">1</span>
                             </div>
-                            <div class="notice-layer">
-                                123
-                            </div>                      
+                            <div class="popup-layer popup_colored popup_notice fs13">
+                                <div class="popup-inner row">
+                                    <p>Ваш заказ <a href="#">№12345</a> доставлен!</p>
+                                    <a href="#" class="blue fs11">Оставьте отзыв о работе магазина</a>
+                                </div>
+                                <div class="popup-inner row">
+                                    <p>Ваш заказ <a href="#">№12345</a> собран и передан в курьерскую службу. Ожидайте доставку завтра, 21.10.2014 с 9:00 до 12:00.</p>
+                                </div>
+                                <div class="popup-inner">
+                                    <a href="#" class="blue">Настройка уведомлений</a>
+                                </div>
+                                <div class="popup-close"></div>
+                            </div>
                         </div>
-                        <a href="" class="top-fav">Избранное (20)</a>
-                        <div class="person-block">
-                            <a href="" class="person-link">Константин</a>
+                        <a href="#" class="top-fav popup-btn">Избранное (20)</a>
+                        <div class="person-block popup-cont">
+                            <a href="#" class="person-link popup-btn" data-top-offset="20">Константин</a>
+                            <div class="popup-layer popup_colored popup_person">
+                                <div class="popup-inner row">
+                                    <p><a href="#">Мой аккаунт</a></p>
+                                    <p><a href="#">Мои заказы</a></p>
+                                    <p><a href="#">Избранное</a></p>
+                                    <p><a href="#">Рассылки</a></p>
+                                    <p><a href="#">Бонусы, <br/>промо-коды</a></p>
+                                </div>
+                                <div class="popup-inner">
+                                    <p><a href="#">Выход</a></p>
+                                    <p><a href="#">Помощь</a></p>
+                                </div>
+                                <div class="popup-close"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="shop-cart float-cont">

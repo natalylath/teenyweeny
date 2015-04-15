@@ -11,9 +11,16 @@ var popups = (function(){
                 item.toggleClass('opened');
 
                 if (item.hasClass('opened')) {
-                    if (item.data('yoffset') != '' && item.data('yoffset')) {
-                        layer.css({'top': item.data('yoffset') + 'px'});
+                    var top = item.data('top-offset'),
+                        right = item.data('right-offset');
+
+                    if (top && top != '') {
+                        layer.css({'top': top + 'px'});
                     }
+                    if (right && right != '') {
+                        layer.css({'right': right + 'px'});
+                    }
+
                     layer.show();
                 } else {
                     layer.hide();

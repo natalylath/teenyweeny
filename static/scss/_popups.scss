@@ -13,8 +13,8 @@
   &:before {
     content: '';
     position: absolute;
-    top: -20px;
-    border: 10px solid transparent;
+    top: -18px;
+    border: 9px solid transparent;
   }
 }
 .popup-inner {
@@ -46,14 +46,38 @@
   border-top: 3px solid $color-link-blue;
 
   &:before {
-    top: -23px;
+    top: -21px;
     border-bottom-color: $color-link-blue;
   }
 }
 .popup_city {
-  width: 900px;
+  width: 940px;
+  z-index: 1001;
 
   &:before {
     left: 100px;
+  }
+}
+.popup_notice {
+  width: 290px;
+
+  &:before {
+    right: 33px;
+  }
+  .popup-inner {
+    padding: 15px 20px;
+    line-height: 21px;
+  }
+}
+.popup_person {
+  width: 130px;
+  right: 0;
+
+  &:before {
+    right: 23px;
+  }
+  .popup-inner {
+    padding: 10px 20px 13px;
+    line-height: 25px;
   }
 }

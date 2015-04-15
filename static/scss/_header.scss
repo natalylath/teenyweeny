@@ -188,6 +188,17 @@ a.menu-link .sh-fix {
 .help-icon {
   background: url(../images/ico/topline-help.png) no-repeat;
 }
+.cities {
+  line-height: 23px;
+}
+.cities_col {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+.cities_section {
+  margin-bottom: 23px;
+}
 a.menu-link.underline {
   text-decoration: underline;
   font-size: 13px;
@@ -300,10 +311,6 @@ a.city:hover {
   float: left;
   position: relative;
   margin-right: 20px;
-}
-.notice-layer {
-  position: absolute;
-  display: none;
 }
 .notice-txt {
   background: url(../images/ico/black-notice.png) no-repeat;
