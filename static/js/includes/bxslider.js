@@ -29,8 +29,8 @@ var bxSlider = (function(){
                         nextText: '',
                         prevText: '',
                         mode: 'fade',
-                        nextSelector: '.bxslider-photo-border .bx-arrow-right',
-                        prevSelector: '.bxslider-photo-border .bx-arrow-left',
+                        nextSelector: '.card-photo-cont .bx-arrow-right',
+                        prevSelector: '.card-photo-cont .bx-arrow-left',
                         onSliderLoad: function (currentIndex) {
                             methods.photo.onSliderLoad(currentIndex);
 
@@ -41,15 +41,15 @@ var bxSlider = (function(){
                     });
                 },
                 onSliderLoad: function(currentIndex){
-                    nodes.body.find('.bxslider-photo .photo-slide').eq(currentIndex).addClass('active');
+                    nodes.body.find('.card-photo-cont .photo-slide').eq(currentIndex).addClass('active');
 
-                    nodes.body.find('.bxslider-photo .photo-slide').eq(currentIndex).find('img').elevateZoom({
+                    nodes.body.find('.card-photo-cont .photo-slide').eq(currentIndex).find('img').elevateZoom({
                         zoomWindowWidth: 520,
                         zoomWindowHeight: 330
                     });
                 },
                 onSlideAfter: function($slideElement, oldIndex, newIndex){
-                    nodes.body.find('.bxslider-photo .photo-slide').removeClass('active');
+                    nodes.body.find('.card-photo-cont .photo-slide').removeClass('active');
                     $slideElement.addClass('active');
 
                     $slideElement.find('img').elevateZoom({

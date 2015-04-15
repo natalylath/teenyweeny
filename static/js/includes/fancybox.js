@@ -24,7 +24,7 @@ var fancybox = (function(){
                 afterLoad: function(current){
                     if (current.element.hasClass('quick-view-btn')) {
                         setTimeout( function() {
-                            if ($('.bxslider-photo-border .bx-arrow-right .bx-next').length < 1) {
+                            if ($('.quickview-photo-cont .bx-arrow-right .bx-next').length < 1) {
                                 methods.base.cardGalleryLayer();
                             }
                         }, vars.delay);
@@ -39,8 +39,8 @@ var fancybox = (function(){
                         nextText: '',
                         prevText: '',
                         mode: 'fade',
-                        nextSelector: '.bxslider-photo-border .bx-arrow-right',
-                        prevSelector: '.bxslider-photo-border .bx-arrow-left'
+                        nextSelector: '.quickview-photo-cont .bx-arrow-right',
+                        prevSelector: '.quickview-photo-cont .bx-arrow-left'
                     });
                 },
                 close: function(e){

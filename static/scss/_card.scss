@@ -306,24 +306,23 @@ input.qty {
 	padding-left: 45px;
 	padding-right: 45px;
 }
-.recom,
-.no-recom {
+.recom {
 	display: inline-block;
 	vertical-align: middle;
 	width: 20px;
 	height: 20px;
 	opacity: 0.5;
+  	cursor: pointer;
 }
-.recom {
+.recom_yes {
 	background: url(../images/ico/black-recom.png) no-repeat;
 	margin-right: 10px;
 	margin-left: 5px;
 }
-.no-recom {
+.recom_no {
 	background: url(../images/ico/black-no-recom.png);
 }
-.recom:hover,
-.no-recom:hover {
+.recom:hover, .recom.active {
 	opacity: 1;
 }
 .btn.btn-small {
