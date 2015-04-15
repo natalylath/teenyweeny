@@ -40,24 +40,7 @@ var fancybox = (function(){
                         prevText: '',
                         mode: 'fade',
                         nextSelector: '.quickview-photo-cont .bx-arrow-right',
-                        prevSelector: '.quickview-photo-cont .bx-arrow-left',
-                        onSliderLoad: function (currentIndex) {
-                            nodes.body.find('.quickview-photo-cont .photo-slide').eq(currentIndex).addClass('active');
-
-                            nodes.body.find('.quickview-photo-cont .photo-slide').eq(currentIndex).find('img').elevateZoom({
-                                zoomWindowWidth: 378,
-                                zoomWindowHeight: 330
-                            });
-                        },
-                        onSlideAfter: function ($slideElement, oldIndex, newIndex) {
-                            nodes.body.find('.quickview-photo-cont .photo-slide').removeClass('active');
-                            $slideElement.addClass('active');
-
-                            $slideElement.find('img').elevateZoom({
-                                zoomWindowWidth: 378,
-                                zoomWindowHeight: 330
-                            });
-                        }
+                        prevSelector: '.quickview-photo-cont .bx-arrow-left'
                     });
                 },
                 close: function(e){
