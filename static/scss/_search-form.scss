@@ -4,6 +4,47 @@
   float: left;
   margin-right: 40px;
   margin-top: 30px;
+
+  .search-sub {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+  }
+  .hint {
+    color: $color-brown;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1em;
+
+    a {
+      color: $color-brown;
+      background: url(../images/ico/dot.png) repeat-x left bottom;
+      display: inline-block;
+      padding-bottom: 2px;
+      text-decoration: none;
+
+      &:hover {
+        background-image: none;
+        text-decoration: none;
+      }
+    }
+  }
+  &.full {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+
+    .search-input {
+      box-sizing: border-box;
+      width: 100%;
+      color: $color-link-blue;
+      font-family: 'opensanssemibold';
+      font-size: 16px;
+      height: 40px;
+      line-height: 38px;
+    }
+  }
 }
 .search-sub {
   width: 32px;
@@ -13,10 +54,12 @@
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
+
+  &:hover {
+    background-position: left bottom;
+  }
 }
-.search-sub:hover {
-  background-position: left bottom;
-}
+
 .search-input {
   border-radius: 5px;
   width: 216px;
@@ -24,54 +67,30 @@
   height: 40px;
   line-height: 40px;
   border: none;
+
+  &.dark {
+    background: $color-bg-grey;
+    border: 1px solid $color-grey;
+  }
 }
-.search-block .search-sub {
-  position: absolute;
-  top: 4px;
-  right: 4px;
+
+.search-bottom {
+  .search-block {
+    float: right;
+    width: 49%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .search-input {
+    width: 437px;
+  }
 }
-.search-block .hint {
-  color: $color-brown;
-  margin-top: 8px;
-  text-align: center;
-  font-size: 11px;
-  line-height: 1em;
-}
-.search-block .hint a {
-  color: $color-brown;
-  background: url(../images/ico/dot.png) repeat-x left bottom;
-  display: inline-block;
-  padding-bottom: 2px;
-  text-decoration: none;
-}
-.search-block .hint a:hover {
-  background-image: none;
-  text-decoration: none;
-}
-.search-bottom .search-block {
-  float: right;
-  width: 49%;
-  margin-right: 0;
-  margin-top: 0;
-}
-.search-bottom .search-input {
-  width: 437px;
-}
-.search-block.full {
-  width: 100%;
-  margin-top: 0;
-  margin-right: 0;
- }
-.search-input.dark {
-  background: $color-bg-grey;
-  border: 1px solid $color-grey;
-}
-.search-block.full .search-input {
-  box-sizing: border-box;
-  width: 100%;
-  color: $color-link-blue;
-  font-family: 'opensanssemibold';
-  font-size: 16px;
-  height: 40px;
-  line-height: 38px;
+
+.popup_city {
+  .search-block {
+    margin: 6px 0 22px;
+  }
+  .search-input {
+    width: 374px;
+  }
 }
