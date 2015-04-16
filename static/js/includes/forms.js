@@ -122,7 +122,11 @@ var forms = (function(){
                 nodes.body.find('.phone-mask').mask('+7 (000) 000-00-00');
             },
             datepicker: function(){
-                nodes.body.find(".s-date").datepicker();
+                $.datepicker.setDefaults($.datepicker.regional['ru']);
+
+                nodes.body.find(".s-date").datepicker({
+                    dateFormat: "dd/mm/yy"
+                });
             },
             events: {
                 set: function(){
