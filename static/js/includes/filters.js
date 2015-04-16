@@ -1,6 +1,7 @@
 
 var filters = (function(){
-    var nodes={
+    var vars = {},
+        nodes={
             body: $('body')
         },
         methods = {
@@ -37,63 +38,72 @@ var filters = (function(){
             },
             range: {
                 prepare: function(){
-                    var item = $(this),
-                        par = item.parents('.slider-form'),
-                        minVal =  $(".min", par),
-                        maxVal =  $(".max", par),
-                        currentSlider = item,
-                        MIN_PRICE = 300,
-                        MAX_PRICE = 20000;
+                    nodes.range = nodes.body.find('.slider-range');
 
-                    methods.range.slider(MIN_PRICE, MAX_PRICE, minVal, maxVal);
+                    if(nodes.range.length == 0) return false;
 
-                    minVal.val(nodes.range.slider( "values", 0 ));
-                    maxVal.val(nodes.range.slider( "values", 1 ));
+                    vars.min = 300;
+                    vars.max = 20000;
 
-                    minVal.change(function () {
-                        methods.range.minValChange(this, MIN_PRICE, MAX_PRICE, maxVal, currentSlider);
-                    });
+                    vars.from = 800;
+                    vars.to = 7000;
 
-                    maxVal.change(function () {
-                        methods.range.maxValChange(this, MIN_PRICE, MAX_PRICE, minVal, currentSlider)
-                    });
+                    nodes.sliderForm = nodes.range.parents('.slider-form');
+                    nodes.minInput = nodes.sliderForm.find('.min');
+                    nodes.maxInput = nodes.sliderForm.find('.max');
 
-                    item.find('.ui-slider-handle').eq(0).addClass('left-handle');
+                    methods.range.init();
+
+                    nodes.range.find('.ui-slider-handle').eq(0).addClass('left-handle');
+                    nodes.range.find('.ui-slider-handle').eq(1).addClass('right-handle');
+
+                    methods.events.range();
                 },
-                slider: function(MIN_PRICE, MAX_PRICE, minVal, maxVal){
+                init: function(){
                     nodes.range.slider({
                         range: true,
-                        min: MIN_PRICE,
-                        max: MAX_PRICE,
-                        values: [ 800, 7000 ],
-                        slide: function( event, ui ) {
-                            minVal.val(ui.values[ 0 ]);
-                            maxVal.val(ui.values[ 1 ]);
+                        min: vars.min,
+                        max: vars.max,
+                        values: [vars.from, vars.to],
+                        slide: function(event, ui) {
+                            nodes.minInput.val(ui.values[0]);
+                            nodes.maxInput.val(ui.values[1]);
                         }
                     });
-                },
-                minValChange: function(item, MIN_PRICE, MAX_PRICE, maxVal, currentSlider){
-                    var curValue = item.value;
-                    var maxValue = maxVal.val();
 
-                    if (parseInt(curValue) > maxVal.val()) {
-                        curValue = MIN_PRICE;
-                        maxValue = MAX_PRICE;
-                    }
-                    currentSlider.slider({values: [ parseInt(curValue), maxValue ]});
+                    methods.range.setInputs(nodes.range.slider('values', 0), nodes.range.slider('values', 1));
                 },
-                maxValChange: function(item, MIN_PRICE, MAX_PRICE, minVal, currentSlider){
-                    var curValue = item.value;
-                    var minValue = minVal.val();
+                setInputs: function(min, max){
+                    nodes.minInput.val(min);
+                    nodes.maxInput.val(max);
+                },
+                minChange: function(){
+                    var min = parseInt(nodes.minInput.val()),
+                        max = parseInt(nodes.maxInput.val());
 
-                    if (parseInt(curValue) > MAX_PRICE) {
-                        curValue = MAX_PRICE;
+                    if(min < vars.min || isNaN(min)) {
+                        min = vars.min;
                     }
-                    if (parseInt(curValue) < minValue) {
-                        curValue = MAX_PRICE;
-                        minValue = MIN_PRICE;
+                    if(min > vars.max) {
+                        min = max;
                     }
-                    currentSlider.slider({values: [minValue, parseInt(curValue) ]});
+
+                    nodes.range.slider({values: [min, max]});
+                    methods.range.setInputs(min, max);
+                },
+                maxChange: function(){
+                    var min = parseInt(nodes.minInput.val()),
+                        max = parseInt(nodes.maxInput.val());
+
+                    if(max > vars.max || isNaN(max)) {
+                        max = vars.max;
+                    }
+                    if(max < vars.min) {
+                        max = min;
+                    }
+
+                    nodes.range.slider({values: [min, max]});
+                    methods.range.setInputs(min, max);
                 }
             },
             sort: {
@@ -146,16 +156,16 @@ var filters = (function(){
                         .on('click', '.sort_btn', methods.sort.toggle)
                         .on('click', '.toggle-tags .tag', methods.tag.select)
                         .on('click', '.tag-remove', methods.tag.remove);
+                },
+                range: function(){
+                    nodes.minInput.on('change',methods.range.minChange);
+                    nodes.maxInput.on('change',methods.range.maxChange);
                 }
             }
         };
     return {
         init: function(){
-            nodes.range = nodes.body.find('.slider-range');
-
-            if(nodes.range.length != 0) {
-                $.each(nodes.range, methods.range.prepare);
-            }
+            methods.range.prepare();
 
             methods.events.set();
         }
