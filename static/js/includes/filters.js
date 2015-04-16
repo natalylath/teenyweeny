@@ -48,11 +48,15 @@ var filters = (function(){
                     vars.from = 800;
                     vars.to = 7000;
 
+                    vars.flag = false;
+
                     nodes.sliderForm = nodes.range.parents('.slider-form');
                     nodes.minInput = nodes.sliderForm.find('.min');
                     nodes.maxInput = nodes.sliderForm.find('.max');
 
                     methods.range.init();
+
+                    methods.range.setInputs(vars.from, vars.to);
 
                     nodes.range.find('.ui-slider-handle').eq(0).addClass('left-handle');
                     nodes.range.find('.ui-slider-handle').eq(1).addClass('right-handle');
@@ -66,13 +70,19 @@ var filters = (function(){
                         max: vars.max,
                         values: [vars.from, vars.to],
                         slide: function(event, ui) {
-                            nodes.minInput.val(ui.values[0]);
-                            nodes.maxInput.val(ui.values[1]);
+                            if(vars.flag) {
+                                return false;
+                            }
+
+                            nodes.range.slider({values: methods.range.fixValues(ui.values[0], ui.values[1], true)});
+                            methods.range.setInputs(ui.values[0], ui.values[1]);
+                        },
+                        stop: function(){
+                            vars.flag = false;
                         }
                     });
-
-                    methods.range.setInputs(nodes.range.slider('values', 0), nodes.range.slider('values', 1));
                 },
+
                 setInputs: function(min, max){
                     nodes.minInput.val(min);
                     nodes.maxInput.val(max);
@@ -84,11 +94,11 @@ var filters = (function(){
                     if(min < vars.min || isNaN(min)) {
                         min = vars.min;
                     }
-                    if(min > vars.max) {
+                    if(min > max) {
                         min = max;
                     }
 
-                    nodes.range.slider({values: [min, max]});
+                    nodes.range.slider({values: methods.range.fixValues(min, max)});
                     methods.range.setInputs(min, max);
                 },
                 maxChange: function(){
@@ -98,12 +108,23 @@ var filters = (function(){
                     if(max > vars.max || isNaN(max)) {
                         max = vars.max;
                     }
-                    if(max < vars.min) {
+                    if(max < min) {
                         max = min;
                     }
 
-                    nodes.range.slider({values: [min, max]});
+                    nodes.range.slider({values: methods.range.fixValues(min, max)});
                     methods.range.setInputs(min, max);
+                },
+                fixValues: function(min, max, slide){
+                    if(min == max && min != vars.min && max != vars.max) {
+                        max += 2;
+                        min -= 2;
+
+                        if(slide) {
+                            vars.flag = true;
+                        }
+                    }
+                    return [min, max];
                 }
             },
             sort: {

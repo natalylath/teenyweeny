@@ -190,32 +190,31 @@
 	height: 32px !important;
 	margin: 0 !important;
 	border: 0 !important;
-	border-left: 1px solid #ccc !important;
 	background: url(../images/ico/range-max.png) no-repeat;
 	text-decoration: none;
 	cursor: pointer !important;
 	z-index: 2;
 }
-.ui-slider .ui-slider-handle.left-handle:hover {
-	border-left-color: red !important;
+.ui-slider .ui-slider-handle.left-handle {
+	margin-left: 1px!important;
 }
-.ui-slider .ui-slider-handle.right-handle:hover {
-	border-left-color: green !important;
+.ui-slider .ui-slider-handle.right-handle {
+	margin-left: -1px!important;
 }
 .ui-slider .ui-slider-handle.left-handle:before,
 .ui-slider .ui-slider-handle.right-handle:before {
 	content: '';
-	width: 16px;
+	width: 8px;
 	height: 21px;
 	position: absolute;
 	top: 4px;
 	background: linear-gradient(to bottom, #2fcdff 0%,#0fb1e6 100%);
 }
 .ui-slider .ui-slider-handle.left-handle:before {
-	right: -2px;
+	right: 0;
 }
 .ui-slider .ui-slider-handle.right-handle:before {
-	left: -2px;
+	left: 0;
 }
 .ui-slider .ui-slider-handle.left-handle:after,
 .ui-slider .ui-slider-handle.right-handle:after {
