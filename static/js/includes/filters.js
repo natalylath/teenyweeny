@@ -70,15 +70,19 @@ var filters = (function(){
                         max: vars.max,
                         values: [vars.from, vars.to],
                         slide: function(event, ui) {
+                            var min = ui.values[0],
+                                max = ui.values[1];
+
                             if(vars.flag) {
-                                return false;
+                                if(min == max) {
+                                    return false;
+                                } else {
+                                    vars.flag = false;
+                                }
                             }
 
-                            nodes.range.slider({values: methods.range.fixValues(ui.values[0], ui.values[1], true)});
-                            methods.range.setInputs(ui.values[0], ui.values[1]);
-                        },
-                        stop: function(){
-                            vars.flag = false;
+                            nodes.range.slider({values: methods.range.fixValues(min, max, true)});
+                            methods.range.setInputs(min, max);
                         }
                     });
                 },
