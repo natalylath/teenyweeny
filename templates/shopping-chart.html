@@ -34,7 +34,7 @@
                 </div>
                 <div class="plr20">
                     <table>
-                        <tr class="row">
+                        <tr class="row s-price">
                             <td><span class="chart_del"></span></td>
                             <td class="chart_product">
                                 <a href="#" class="fleft">
@@ -44,23 +44,23 @@
                                     <a href="#" class="chart_link">Royal Canin</a>
                                     <p class="mb10">Adult Neutered Small Dog, корм собак мелких пород</p>
                                     <div class="big-select">
-                                        <select class="select2-complex">
-                                            <option selected data-volume="2,5 кг">725 Р</option>
-                                            <option data-volume="1 кг">320 Р</option>
-                                            <option data-volume="0,5 кг">150 Р</option>
+                                        <select class="select2-complex s-price-select">
+                                            <option selected data-volume="2,5 кг">1000 Р</option>
+                                            <option data-volume="1 кг">500 Р</option>
+                                            <option data-volume="0,5 кг">100 Р</option>
                                         </select>
                                     </div>
                                 </div>
                             </td>
                             <td class="chart_number">
-                                <span class="count-dec"></span><input type="text" class="card-count-input" value="1"/><span class="count-inc"></span>
+                                <span class="count-dec s-price-dec"></span><input type="text" class="card-count-input s-price-input" value="1" maxlength="3" /><span class="count-inc s-price-inc"></span>
                             </td>
                             <td class="chart_price">
-                                <span class="chart_total">5250 Р</span>
-                                <span>(2625 Р x 2)</span>
+                                <span class="chart_total"><span class="s-price-total">1000</span> Р</span>
+                                <span>(<span class="s-price-one">1000</span> Р x <span class="s-price-num">1</span>)</span>
                             </td>
                         </tr>
-                        <tr class="row">
+                        <tr class="row s-price">
                             <td><span class="chart_del"></span></td>
                             <td class="chart_product">
                                 <a href="#" class="fleft">
@@ -96,11 +96,11 @@
                                 </div>
                             </td>
                             <td class="chart_number">
-                                <span class="count-dec"></span><input type="text" class="card-count-input" value="1"/><span class="count-inc"></span>
+                                <span class="count-dec s-price-dec"></span><input type="text" class="card-count-input s-price-input" value="2" maxlength="3" /><span class="count-inc s-price-inc"></span>
                             </td>
                             <td class="chart_price">
-                                <span class="chart_total">2100 Р</span>
-                                <span>(1050 Р x 2)</span>
+                                <span class="chart_total"><span class="s-price-total">1000</span> Р</span>
+                                <span>(<span class="s-price-one">500</span> Р x <span class="s-price-num">2</span>)</span>
                             </td>
                         </tr>
                     </table>
@@ -119,13 +119,13 @@
                             <b>У вас есть 1013 бонусов</b>
                             <span>Если вы хотите использовать их для оплаты, укажите количество бонусов</span>
                         </span><!--
-                        --><span class="chart_input"><input type="text" value="512" class="text-box s-change" data-change="bonus" /></span><!--
-                        --><span class="chart_button"><a href="#" class="btn btn_block" data-change="bonus">Пересчитать</a></span>
+                        --><span class="chart_input"><input type="text" value="100" class="text-box s-change" data-change="bonus" /></span><!--
+                        --><span class="chart_button"><a href="#" class="btn btn_block s-price-button" data-change="bonus">Пересчитать</a></span>
                     </div>
-                    <div class="row chart_cost">Стоимость товаров: 1380 Р</div>
-                    <div class="row chart_promo">Скидка по промо-коду: 300 P</div>
-                    <div class="row chart_bonus">Скидка через бонусы: 520 P</div>
-                    <div class="row chart_final">Стоимость с учетом всех скидок: 560 Р</div>
+                    <div class="row chart_cost">Стоимость товаров: <span class="s-price-total-sum">2000</span> Р</div>
+                    <div class="row chart_promo">Скидка по промо-коду: <span class="s-price-promo">200</span> P</div>
+                    <div class="row chart_bonus">Скидка через бонусы: <span class="s-price-bonus">100</span> P</div>
+                    <div class="row chart_final">Стоимость с учетом всех скидок: <span class="s-price-final">1700</span> Р</div>
                     <div class="chart_action">
                         <span class="chart_checkout">
                             <a href="#" class="btn btn_block">Оформить заказ</a>

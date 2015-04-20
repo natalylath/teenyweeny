@@ -79,10 +79,10 @@ var card = (function(){
             events: {
                 set: function(){
                     nodes.body
-                        .on('click', '.count-inc', methods.price.increment)
-                        .on('click', '.count-dec', methods.price.decrement)
-                        .on('change', '.card-count-input', methods.price.change)
-                        .on('keydown', '.card-count-input', methods.price.keydown)
+                        //.on('click', '.count-inc', methods.price.increment)
+                        //.on('click', '.count-dec', methods.price.decrement)
+                        //.on('change', '.card-count-input', methods.price.change)
+                        //.on('keydown', '.card-count-input', methods.price.keydown)
                         .on('click','.recom', methods.recom)
                         .on('click','.size-item', methods.size)
                         .on('click','.color-item', methods.color)
@@ -96,7 +96,7 @@ var card = (function(){
             nodes.priceActual = nodes.body.find('.prod-price-actual');
 
             if(nodes.priceActual.length != 0) {
-                methods.price.prepare();
+                //methods.price.prepare();
             }
 
             nodes.rateit = nodes.body.find('.rateit');

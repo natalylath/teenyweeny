@@ -13,4 +13,5 @@ $(document).ready(function() {
 	//= includes/filters.js
 	//= includes/popups.js
 	//= includes/card.js
+    //= includes/price.js
 });
