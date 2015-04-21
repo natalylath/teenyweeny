@@ -127,8 +127,10 @@
 }
 .card-count {
 	margin-bottom: 20px;
+  	@include no-user-select();
 }
 .card-total {
+  	display: none;
 	font-size: 21px;
 	font-family: 'opensansbold';
 	line-height: 1em;
@@ -392,9 +394,6 @@ ul.tabs li {
 	border-left-color: $color-orange;
 	border-width: 5px;
 	margin-top: -5px;
-}
-.card-total {
-	display: none;
 }
 .related-suggest {
 	border-radius: 0 0 5px 5px;
