@@ -30,3 +30,10 @@
   background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$top}', endColorstr='#{$bottom}',GradientType=0 ); /* IE6-9 */
 }
+
+@mixin no-user-select() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -35,7 +35,8 @@
 }
 
 .chart_price,
-.chart_title_price {
+.chart_title_price,
+.chart_total {
   width: 140px;
 }
 .chart_price_wide,
@@ -56,6 +57,9 @@
 .chart_number,
 .chart_price {
   padding-top: 30px;
+}
+.chart_number {
+  @include no-user-select();
 }
 .chart_price {
   color: $color-text-grey;
@@ -81,6 +85,7 @@
   font: 34px/22px 'opensansbold';
   color: $color-black;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .chart_params {
   padding-top: 5px;

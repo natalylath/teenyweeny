@@ -9,8 +9,6 @@ var price = (function(){
                 vars.num = [];
                 vars.one = [];
                 vars.total = [];
-                vars.promo = 0;
-                vars.bonus = 0;
 
                 nodes.one = nodes.price.find('.s-price-one');
                 nodes.num = nodes.price.find('.s-price-num');
@@ -42,7 +40,10 @@ var price = (function(){
                 }
 
                 if(nodes.bonus.length != 0) {
-                    vars.bonus = parseInt(nodes.promo.text());
+                    vars.bonus = parseInt(nodes.bonus.text());
+                    vars.bonusMax = parseInt(nodes.body.find('.s-price-bonus-max').text());
+                    nodes.bonusInput = nodes.body.find('.s-price-bonus-input');
+                    nodes.bonusButton = nodes.body.find('.s-price-bonus-button');
                 }
             },
             counter: {
@@ -87,6 +88,28 @@ var price = (function(){
                     methods.update(index);
                 }
             },
+            bonus: {
+                change: function(){
+                    var item = $(this),
+                        value = parseInt(item.val());
+
+                    if(isNaN(value) || value < 1) {
+                        vars.bonus = 0;
+                        item.val('');
+                    } else if(value > vars.bonusMax) {
+                        vars.bonus = vars.bonusMax;
+                        item.val(vars.bonusMax);
+                    } else {
+                        vars.bonus = value;
+                        item.val(value);
+                    }
+                },
+                update: function(){
+                    nodes.bonus.text(vars.bonus);
+                    nodes.final.text(parseInt(nodes.totalSum.text()) - vars.promo - vars.bonus);
+                    return false;
+                }
+            },
             update: function(index){
                 var value = vars.num[index],
                     price = vars.one[index] * value;
@@ -98,14 +121,14 @@ var price = (function(){
                 nodes.total.eq(index).text(price);
 
                 if(nodes.final.length != 0) {
-                    var priceSum = 0;
+                    var totalSum = 0;
 
                     $.each(vars.total, function(){
-                        priceSum += this;
+                        totalSum += this;
                     });
 
-                    nodes.totalSum.text(priceSum);
-                    nodes.final.text(priceSum - vars.promo - vars.bonus);
+                    nodes.totalSum.text(totalSum);
+                    nodes.final.text(totalSum - vars.promo - vars.bonus);
                 }
             },
             events: {
@@ -114,6 +137,8 @@ var price = (function(){
                     nodes.inc.on('click', methods.counter.increment);
                     nodes.input.on('change', methods.counter.change);
                     nodes.select.on('change', methods.select.change);
+                    nodes.bonusInput.on('change', methods.bonus.change);
+                    nodes.bonusButton.on('click', methods.bonus.update);
                 }
             }
         };
@@ -123,9 +148,8 @@ var price = (function(){
 
             if(nodes.price.length != 0) {
                 methods.prepare();
+                methods.events.set();
             }
-
-            methods.events.set();
         }
     }
 }());
