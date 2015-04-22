@@ -44,11 +44,16 @@ var forms = (function(){
                     nodes.deliveryAddressForm = nodes.body.find('.s-delivery-address-form');
 
                     if(nodes.deliveryAddressForm.length != 0) {
+                        nodes.deliveryAddressFormName = nodes.deliveryAddressForm.find('.s-name');
                         nodes.deliveryAddressFormCity = nodes.deliveryAddressForm.find('.s-city');
+                        nodes.deliveryAddressFormStation = nodes.deliveryAddressForm.find('.s-station');
                         nodes.deliveryAddressFormStreet = nodes.deliveryAddressForm.find('.s-street');
                         nodes.deliveryAddressFormHouse = nodes.deliveryAddressForm.find('.s-house');
                         nodes.deliveryAddressFormCorp = nodes.deliveryAddressForm.find('.s-corp');
                         nodes.deliveryAddressFormOffice = nodes.deliveryAddressForm.find('.s-office');
+                        nodes.deliveryAddressFormAccess = nodes.deliveryAddressForm.find('.s-access');
+                        nodes.deliveryAddressFormFloor = nodes.deliveryAddressForm.find('.s-floor');
+                        nodes.deliveryAddressFormIntercom = nodes.deliveryAddressForm.find('.s-intercom');
                     }
                 },
                 type: function(){
@@ -70,7 +75,7 @@ var forms = (function(){
                 },
                 address: function(){
                     var item = $(this),
-                        parent = item.parent();
+                        parent = item.parents('.s-delivery-address-block');
 
                     nodes.body.find('.s-delivery-address-edit').show();
                     nodes.body.find('.s-delivery-address-str').show();
@@ -80,9 +85,16 @@ var forms = (function(){
                             $(this).val('');
                         });
 
-                        nodes.deliveryAddressForm
-                            .insertAfter(parent)
-                            .fadeIn(vars.speed);
+                        if(item.hasClass('btn')) {
+                            nodes.deliveryAddressForm
+                                .insertBefore(item.parent())
+                                .fadeIn(vars.speed);
+                        } else {
+                            nodes.deliveryAddressForm
+                                .insertAfter(parent)
+                                .fadeIn(vars.speed);
+                        }
+
                     } else {
                         nodes.deliveryAddressForm.hide();
                     }
@@ -90,23 +102,35 @@ var forms = (function(){
                 },
                 addressEdit: function(e){
                     var item = $(this),
-                        parent = item.parent();
+                        parent = item.parents('.s-delivery-address-block');
 
-                    nodes.body.find('.s-delivery-address-edit').show();
-                    nodes.body.find('.s-delivery-address-str').show();
-
-                    item.hide();
-                    parent.find('.s-delivery-address-str').hide();
-
+                    nodes.deliveryAddressFormName.val(parent.find('.s-name').text());
                     nodes.deliveryAddressFormCity.val(parent.find('.s-city').text());
+                    nodes.deliveryAddressFormStation.val(parent.find('.s-station').text());
                     nodes.deliveryAddressFormStreet.val(parent.find('.s-street').text());
                     nodes.deliveryAddressFormHouse.val(parent.find('.s-house').text());
                     nodes.deliveryAddressFormCorp.val(parent.find('.s-corp').text());
                     nodes.deliveryAddressFormOffice.val(parent.find('.s-office').text());
+                    nodes.deliveryAddressFormAccess.val(parent.find('.s-access').text());
+                    nodes.deliveryAddressFormFloor.val(parent.find('.s-floor').text());
+                    nodes.deliveryAddressFormIntercom.val(parent.find('.s-intercom').text());
 
-                    nodes.deliveryAddressForm
-                        .insertAfter(parent)
-                        .fadeIn(vars.speed);
+                    nodes.body.find('.s-delivery-address-edit').show();
+                    nodes.body.find('.s-delivery-address-str').show();
+
+                    parent.find('.s-delivery-address-str').hide();
+
+                    if(item.hasClass('btn')) {
+                        nodes.deliveryAddressForm
+                            .insertBefore(item.parent())
+                            .fadeIn(vars.speed);
+                    } else {
+                        item.hide();
+
+                        nodes.deliveryAddressForm
+                            .insertAfter(parent)
+                            .fadeIn(vars.speed);
+                    }
 
                     e.preventDefault();
                 }

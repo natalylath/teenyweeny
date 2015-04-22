@@ -58,73 +58,19 @@
 </div>
 <div class="sh p20" data-scrollTo="addAddress">
     <h2 class="v1">Адрес для доставки</h2>
-    <div class="form_group tip-wrap" data-hide="addAddress">
-        <button class="btn btn_block s-toggle" data-toggle="addAddress">Добавить адрес</button>
-        <div class="tip tip_inside">Заполните 1 раз адрес доставки, и он будет автоматически подставляться при оформлении новых заказов, а также учитываться при доставке. Это удобно!</div>
-    </div>
-    <form action="#" method="post" class="hidden s-change" data-change="addAddress" data-show="addAddress">
-        <div class="form_group">
-            <label for="delivery" class="form_label">Название для адреса:</label>
-            <input type="text" id="delivery" class="form_text" value="Адрес №1" />
-        </div>
-        <div class="form_group">
-            <div class="autocomplete-cont">
-                <label for="city1" class="form_label">Город:</label>
-                <input type="text" id="city1" class="form_text autocomplete-input" value="М"/>
-                <div class="autocomplete">
-                    <div class="autocomplete-line">Москва</div>
-                    <div class="autocomplete-line">Мурманск</div>
-                </div>
-            </div>
-        </div>
-        <div class="form_group">
-            <div class="autocomplete-cont">
-                <label for="station1" class="form_label">Ближайшее метро:</label>
-                <input type="text" id="station1" class="form_text autocomplete-input" value="Ново"/>
-                <div class="autocomplete">
-                    <div class="autocomplete-line">Новокосино</div>
-                    <div class="autocomplete-line">Новослободская</div>
-                    <div class="autocomplete-line">Новокузнецкая</div>
-                    <div class="autocomplete-line">Новогиреево</div>
-                </div>
-            </div>
-        </div>
-        <div class="form_group_full">
-            <div class="form_inline form_group">
-                <label for="street1" class="form_label">Улица:</label>
-                <input type="text" id="street1" class="form_text" />
-            </div>
-            <div class="form_inline form_group_thin">
-                <label for="house1" class="form_label">Дом:</label>
-                <input type="text" id="house1" class="form_text" />
-            </div>
-            <div class="form_inline form_group_thin">
-                <label for="corp1" class="form_label">Строение/корпус:</label>
-                <input type="text" id="corp1" class="form_text" />
-            </div>
-            <div class="form_inline form_group_thin">
-                <label for="office1" class="form_label">Квартира/офис:</label>
-                <input type="text" id="office1" class="form_text" />
-            </div>
-        </div>
-        <div class="form_group form_group_full">
-            <div class="form_inline form_group_thin">
-                <label for="access1" class="form_label">Подъезд:</label>
-                <input type="text" id="access1" class="form_text" />
-            </div>
-            <div class="form_inline form_group_thin">
-                <label for="floor1" class="form_label">Этаж:</label>
-                <input type="text" id="floor1" class="form_text" />
-            </div>
-            <div class="form_inline form_group_thin">
-                <label for="intercom1" class="form_label">Домофон:</label>
-                <input type="text" id="intercom1" class="form_text" />
-            </div>
+    <div class="form_panel s-delivery-address-block">
+        <div class="s-delivery-address-str">
+            <p class="semibold s-name">Основной адрес</p>
+            <p class="mb10">г. <span class="s-city">Москва</span>, м. <span class="s-station">Тульская</span>, <span class="s-street">Химкинский бульвар</span>, д. <span class="s-house">5</span>, корп. <span class="s-corp">4</span>, кв.<span class="s-office">12</span>, подъезд <span class="s-access">1</span>, этаж <span class="s-floor">3</span>, домофон <span class="s-intercom">15</span></p>
         </div>
         <div class="form_group mb0">
-            <input type="submit" class="btn btn_grey" value="Добавить адрес"  data-change="addAddress" disabled />
+            <button class="btn btn_grey s-delivery-address-edit" data-change="address">Изменить адрес</button>
         </div>
-    </form>
+    </div>
+    <div class="form_group tip-wrap">
+        <button class="btn btn_block s-delivery-address" data-new="true">Добавить адрес</button>
+        <div class="tip tip_inside">Заполните 1 раз адрес доставки, и он будет автоматически подставляться при оформлении новых заказов, а также учитываться при доставке. Это удобно!</div>
+    </div>
 </div>
 <div class="sh p20 mb40" data-scrollTo="addPet">
     <h2 class="v1">Мои питомцы</h2>
