@@ -1,6 +1,7 @@
 
 var popups = (function(){
     var nodes = {
+            document: $(document),
             body: $('body')
         },
         methods = {
@@ -8,9 +9,7 @@ var popups = (function(){
                 var item = $(this),
                     layer = item.closest('.popup-cont').find('.popup-layer');
 
-                item.toggleClass('opened');
-
-                if (item.hasClass('opened')) {
+                if (layer.is(':hidden')) {
                     var top = item.data('top-offset'),
                         right = item.data('right-offset');
 
@@ -29,21 +28,27 @@ var popups = (function(){
                 return false;
             },
             hide: function(){
-                var item = $(this);
-
-                item.closest('.popup-layer').hide();
-                item.closest('.popup-cont').find('.popup-btn').removeClass('opened');
+                $(this).closest('.popup-layer').hide();
+            },
+            hideAll: function(e){
+                if($(e.target).parents('.popup-layer').length == 0) {
+                    nodes.popups.hide();
+                }
             },
             events: {
                 set: function(){
                     nodes.body
                         .on('click', '.popup-btn', methods.show)
                         .on('click', '.popup-close', methods.hide);
+
+                    nodes.document.on('click', methods.hideAll);
                 }
             }
         };
     return {
         init: function(){
+            nodes.popups = nodes.body.find('.popup-layer');
+
             methods.events.set();
         }
     }

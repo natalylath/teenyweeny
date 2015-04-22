@@ -4,7 +4,6 @@ var fancybox = (function(){
             delay: 200
         },
         nodes = {
-            document: $(document),
             body: $('body')
         },
         methods = {
@@ -63,7 +62,7 @@ var fancybox = (function(){
             },
             events: {
                 set: function(){
-                    nodes.document.on('click', '.fancy-close', methods.base.close)
+                    nodes.body.on('click', '.fancy-close', methods.base.close)
                 }
             }
 
