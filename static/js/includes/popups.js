@@ -1,6 +1,9 @@
 
 var popups = (function(){
-    var nodes = {
+    var vars = {
+            speed: 150
+        },
+        nodes = {
             document: $(document),
             body: $('body')
         },
@@ -20,7 +23,7 @@ var popups = (function(){
                         layer.css({'right': right + 'px'});
                     }
 
-                    layer.show();
+                    layer.fadeIn(vars.speed);
                 } else {
                     layer.hide();
                 }

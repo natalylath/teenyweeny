@@ -86,11 +86,11 @@ var forms = (function(){
                         });
 
                         if(item.hasClass('btn')) {
-                            nodes.deliveryAddressForm
+                            nodes.deliveryAddressForm.hide()
                                 .insertBefore(item.parent())
                                 .fadeIn(vars.speed);
                         } else {
-                            nodes.deliveryAddressForm
+                            nodes.deliveryAddressForm.hide()
                                 .insertAfter(parent)
                                 .fadeIn(vars.speed);
                         }
@@ -121,13 +121,13 @@ var forms = (function(){
                     parent.find('.s-delivery-address-str').hide();
 
                     if(item.hasClass('btn')) {
-                        nodes.deliveryAddressForm
+                        nodes.deliveryAddressForm.hide()
                             .insertBefore(item.parent())
                             .fadeIn(vars.speed);
                     } else {
                         item.hide();
 
-                        nodes.deliveryAddressForm
+                        nodes.deliveryAddressForm.hide()
                             .insertAfter(parent)
                             .fadeIn(vars.speed);
                     }

@@ -1,11 +1,14 @@
 
 var autocomplete = (function(){
-    var nodes = {
+    var vars = {
+            speed: 150
+        },
+        nodes = {
             body: $('body')
         },
         methods = {
             show: function(){
-                $(this).closest('.autocomplete-cont').find('.autocomplete').show();
+                $(this).closest('.autocomplete-cont').find('.autocomplete').fadeIn(vars.speed);
             },
             hide: function(){
                 var item = $(this);
