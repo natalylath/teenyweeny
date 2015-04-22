@@ -70,14 +70,42 @@
   }
 }
 .popup_person {
-  width: 130px;
+  width: 150px;
   right: 0;
 
   &:before {
     right: 23px;
   }
   .popup-inner {
-    padding: 10px 20px 13px;
-    line-height: 25px;
+    padding: 15px;
+  }
+}
+.popup_person_item {
+  min-height: 25px;
+  padding-left: 25px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  &.person {
+    background-image: url(../images/ico/grey-person.png);
+  }
+  &.order {
+    background-image: url(../images/ico/grey-order.png);
+  }
+  &.favorite {
+    background-image: url(../images/ico/grey-favorite.png);
+  }
+  &.mail {
+    background-image: url(../images/ico/grey-mail.png);
+  }
+  &.promo {
+    background-image: url(../images/ico/grey-promo.png);
+  }
+  &.exit {
+    background-image: url(../images/ico/grey-exit.png);
+  }
+  &.help {
+    min-height: 0;
+    background-image: url(../images/ico/grey-help.png);
   }
 }
