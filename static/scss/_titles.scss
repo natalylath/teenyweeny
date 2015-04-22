@@ -65,11 +65,17 @@ h4, .h4 {
   font-family: 'helveticaneuecyrbold';
   font-weight: normal;
   margin-bottom: 5px;
-}
-.h4.black {
-  font-family: 'helveticaneuecyrblack';
-  text-transform: none;
-  margin-bottom: 15px;
+
+  &.v2 {
+    text-transform: none;
+    font-size: 14px;
+    font-family: 'opensanssemibold';
+  }
+  &.black {
+    font-family: 'helveticaneuecyrblack';
+    text-transform: none;
+    margin-bottom: 15px;
+  }
 }
 
 h5,.h5 {
