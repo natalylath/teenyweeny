@@ -6,11 +6,11 @@
   color: $color-black;
 }
 .menu {
+  height: 58px;
   background-color: $color-black;
   color: $color-white;
   margin-bottom: 22px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  overflow: hidden;
 }
 .menu .width {
   padding-left: 0;
